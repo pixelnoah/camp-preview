@@ -1,0 +1,153 @@
+#content{
+  padding-bottom: 160px;
+}
+
+#topBar {
+  background: rgba(80, 86, 100, 0.8);
+  position: absolute;
+}
+
+#topBarHome #phone{
+  line-height: 30px;
+  font-size: 14px;
+  display: inline-block;
+  float: left;
+  margin-left: 75px;
+}
+
+#phoneNumber .emph{
+  font-family: 'Header';
+  font-weight: bold;
+  display: inline-block;
+  height: 20px;
+
+}
+
+#bottomBar {
+  bottom: 0px !important;
+}
+
+/* MAIN SECTION */
+#mainSection {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url("images/front_5.JPG");
+  background-size: cover;
+  background-position: center; 
+}
+
+#mainSectionText {
+  padding: 15px;
+  position: absolute;
+  right: 75px;
+  bottom: 25%;
+  max-width: 350px;
+  font-size: 32px;
+  font-weight: bold;
+  background-color:  rgba(80, 86, 100, 0.9);
+  color: #ffffff;
+  font-family: "Header"; 
+}
+#mainSectionBanner {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-image: url("images/home_page_banner.jpg");
+  background-size: cover; 
+  border-top: solid #e54785 2px;
+}
+#mainSectionMainText {
+  margin-bottom: 20px; 
+  color: #eee;
+}
+#mainSectionSubText {
+  font-size: 16px;
+  line-height: 21px;
+  color: #eee; 
+  font-weight: normal;
+  font-family: "Body"; 
+}
+#mainSectionLocations {
+  line-height: 22px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  font-weight: normal;
+  font-family: "Body"; 
+  color: #eee;
+}
+#mainSectionLocations a {
+  text-decoration: underline;
+  color: #ffffff; 
+}
+#mainSectionCTA #mainSectionCTA1 {
+  margin-bottom: 15px; 
+}
+#mainSectionCTA #mainSectionCTA1, #mainSectionCTA #mainSectionCTA2 {
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  width: 100%;
+  font-size: 18px;
+  line-height: 60px;
+  height: 60px;
+  background: #ff017e;
+  font-weight: normal;
+  color: white; 
+}
+#mainSectionCTA #mainSectionCTA1:hover, #mainSectionCTA #mainSectionCTA2:hover {
+  background: #e54785;
+  cursor: pointer;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  #topBar{
+    background: rgb(80, 86, 100);
+  }
+
+}
+
+
+/* HOME PAGE MOBILE */
+@media screen and (max-width: 815px) {
+    #mainSection {
+      text-align: center; 
+    }
+    #mainSectionText {
+      padding: 15px;
+      position: relative;
+      left: 0px;
+      width: 275px;
+      top: 225px;
+      margin: auto;
+      bottom: 0;
+      font-size: 24px; 
+    }
+    #mainSectionSubText{
+      font-size: 14px;
+      line-height: 16px;
+    }
+    #mainSectionCTA #mainSectionCTA1 {
+      margin-bottom: 15px; 
+    }
+    #mainSectionCTA #mainSectionCTA1, #mainSectionCTA #mainSectionCTA2 {
+      text-decoration: none;
+      display: block;
+      text-align: center;
+      width: 100%;
+      font-size: 18px;
+      line-height: 45px;
+      height: 45px; 
+    } 
+    #mainSectionBanner{
+      height: 60px;
+    }
+}
+
+
+
+/*# sourceMappingURL=home.css.map */

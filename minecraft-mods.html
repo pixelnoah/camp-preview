@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<!-- This site was created in Webflow. http://www.webflow.com-->
+<!-- Last Published: Mon Aug 11 2014 02:04:12 GMT+0000 (UTC) -->
+<html data-wf-site="53d286737f5e558e4bb64086">
+<head>
+  <meta charset="utf-8">
+  <title>Pixel Academy - Minecraft Mods</title>
+  <meta name="description" content="Technology workshops for kids and teens.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="Webflow">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/webflow.css">
+  <link rel="stylesheet" type="text/css" href="css/pixel-academy.webflow.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ["Alegreya Sans:regular,italic,500,700","Amatic SC:regular,700","Bowlby One SC:regular","Patua One:regular"]
+      }
+    });
+  </script>
+  <script type="text/javascript" src="js/modernizr.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon2.png">
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-31308117-1'], ['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script');
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+  <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+  <script>
+    var json;
+    $(document).ready(function() {
+        //set buttons
+        $('#about-us-btn').on('click', function (evt) {
+            $('#about-us-tab').triggerHandler('click');
+            console.log("click");
+         });
+         $('#examples-btn').on('click', function (evt) {
+            $('#examples-tab').triggerHandler('click');
+            console.log("click");
+         });
+         $('#calendar-btn').on('click', function (evt) {
+            $('#calendar-tab').triggerHandler('click');
+            console.log("click");
+         });
+         $('#faq-btn').on('click', function (evt) {
+            $('#faq-tab').triggerHandler('click');
+            console.log("click");
+         });
+         $('#visit-btn').on('click', function (evt) {
+            $('#visit-tab').triggerHandler('click');
+            console.log("click");
+         });
+         $('#join-btn').on('click', function (evt) {
+            $('#join-tab').triggerHandler('click');
+            console.log("click");
+         });
+         $('#camp-btn').on('click', function (evt) {
+            $('#camps-tab').triggerHandler('click');
+            console.log("click");
+         });
+         $('#off-sites-btn').on('click', function (evt) {
+            $('#off-sites-tab').triggerHandler('click');
+            console.log("click");
+         });
+         $('#teens-btn').on('click', function (evt) {
+            $('#teens-tab').triggerHandler('click');
+            console.log("click");
+         });
+       //set calendar (current month)
+            var date = new Date();
+            var d1 = new Date(date.getFullYear(), date.getMonth(), 1);
+            var n = d1.getDay();
+            var monthNames = [ "January", "February", "March", "April", "May", "June",
+            "July", "August", "September", "October", "November", "December" ];
+            function daysInMonth(month,year) {
+                return new Date(year, month, 0).getDate();
+            }
+            $(".month-label-text").text(monthNames[date.getMonth()]);
+            var dayCount=1;
+            var lastDay = daysInMonth(date.getMonth()+1, date.getFullYear());
+            $("#month1 .calendar-day").each(function(index) {
+                $(this).removeClass("selected");
+                if (dayCount>lastDay) {
+                  $(this).hide();
+                }
+                else if (index<n) $(this).css("visibility", "hidden");
+                else {
+                    $(this).attr("date",date.getMonth()+1+"/"+dayCount);
+                    $(this).find(".date-cube-text").text(dayCount++);  
+                    $(this).find(".calendar-day-info").text(" ");
+                    $(this).removeClass("none");
+                    $(this).addClass("closed");
+                    $(this).click(function() {
+                        $(".calendar-day").each(function(index) {
+                            $(this).removeClass("selected");
+                        });
+                        $(this).addClass("selected");
+                        $(".calendar-copy-col1").html(
+                            $(this).attr("time1") + "<br>" +
+                            $(this).attr("time2") + "<br>" +
+                            $(this).attr("time3")
+                        );
+                        $(".calendar-copy-col2").html(
+                            $(this).attr("desc1") + "<br>" +
+                            $(this).attr("desc2") + "<br>" +
+                            $(this).attr("desc3")
+                        );
+                        $(".calendar-copy-col3").html(
+                            $(this).attr("daysummary")
+                        );
+                    });
+                }
+            }
+            );
+            //set calendar (next month)
+            var date = new Date();
+            var nextMonth = 0;
+            date.getMonth() == 11 ? nextMonth = 0 : nextMonth = date.getMonth()+1;
+            var d1 = new Date(date.getFullYear(), nextMonth, 1);
+            var n = d1.getDay();
+            var monthNames = [ "January", "February", "March", "April", "May", "June",
+            "July", "August", "September", "October", "November", "December" ];
+            function daysInMonth(month,year) {
+                return new Date(year, month, 0).getDate();
+            }
+            $("#month2 .month-label-text").text(monthNames[nextMonth]);
+            var dayCount=1;
+            var lastDay = daysInMonth(nextMonth+1, date.getFullYear());
+            console.log(daysInMonth(7,2014));
+            console.log(daysInMonth(8,2014));
+            console.log(daysInMonth(9,2014));
+            $("#month2 .calendar-day").each(function(index) {
+                $(this).removeClass("selected");
+                if (dayCount>lastDay) {
+                  $(this).hide();
+                }
+                else if (index<n) $(this).css("visibility", "hidden");
+                else {
+                    $(this).attr("date", (nextMonth+1)+"/"+dayCount);
+                    $(this).find(".date-cube-text").text(dayCount++);  
+                    $(this).find(".calendar-day-info").text(" ");
+                    $(this).removeClass("none");
+                    $(this).addClass("closed");
+                    $(this).click(function() {
+                        $(".calendar-day").each(function(index) {
+                            $(this).removeClass("selected");
+                        });
+                        $(this).addClass("selected");
+                        $(".calendar-copy-col1").html(
+                            $(this).attr("time1") + "<br>" +
+                            $(this).attr("time2") + "<br>" +
+                            $(this).attr("time3")
+                        );
+                        $(".calendar-copy-col2").html(
+                            $(this).attr("desc1") + "<br>" +
+                            $(this).attr("desc2") + "<br>" +
+                            $(this).attr("desc3")
+                        );
+                        $(".calendar-copy-col3").html(
+                            $(this).attr("daysummary")
+                        );
+                    });
+                }
+            }
+            );
+        console.log("cla set");
+        $("#calendar-section").mouseleave(function() {
+            console.log("mouse out");
+            $("#calendar-info-popup").hide();
+        })
+       $("#loadhere").load("https://spreadsheets.google.com/feeds/list/12C-ZH0CafxZSvuN98jx3KQDKmSFNGKlBTYhWFcpjLWY/od6/public/full?alt=json-in-script&callback=setCal");
+        // $.ajax({
+        //       dataType: "json",
+        //       url: "https://spreadsheets.google.com/feeds/list/12C-ZH0CafxZSvuN98jx3KQDKmSFNGKlBTYhWFcpjLWY/od6/public/full?alt=json-in-script&callback=setCal",
+        //       success: setCal
+        // });
+        var defaultText = $(".things-description").html();
+        $("#thing-3d").mouseover(function() {
+            $(".things-description").html("Learn to design and print <strong>3D objects</strong>! We use professional <strong>CAD software</strong> to teach kids how to design keychains, toys, and tools. Plus: Members get free use of our 3D printers!");
+            $(".things-description").css("font-size","38px");
+            $(".things-description").css("line-height","38px");
+        });
+        $("#thing-games").mouseover(function() {
+            $(".things-description").html("The only thing more fun than playing games is making games! We use <strong>Unity</strong>, <strong>Stencyl</strong>, <strong>Unreal Development Kit</strong> and other platforms to create 2D, 3D, and mobile games.");
+            $(".things-description").css("font-size","38px");
+            $(".things-description").css("line-height","38px");
+        });
+        $("#thing-programming").mouseover(function() {
+            $(".things-description").html("Learn to code! Our instructors teach <strong>Javascript</strong>, <strong>HTML</strong>, <strong>Python</strong>, and so much more. Whether it's game design, web design, or app creating we've got the workshops to get kids coding quick.");
+            $(".things-description").css("font-size","38px");
+            $(".things-description").css("line-height","38px");
+        });
+        $("#thing-minecraft").mouseover(function() {
+            $(".things-description").html("Minecraft is full of opportunities to learn technology. We teach kids how to make <strong>mods using Java</strong>, design <strong>skins using Photoshop</strong>, and learn to <strong>code in LUA</strong> using ComputerCraft.");
+            $(".things-description").css("font-size","38px");
+            $(".things-description").css("line-height","38px");
+        });
+        $("#thing-electronics").mouseover(function() {
+            $(".things-description").html("From basic circuits to advanced Arduino programming, we're got it all covered. Learn to use electronic components, Arduino, and the Raspberry Pi.");
+            $(".things-description").css("font-size","38px");
+            $(".things-description").css("line-height","38px");
+        });
+        $("#thing-music").mouseover(function() {
+            $(".things-description").html("Rock out on the electric guitar or program some EDM with Ableton Live or Traktor. We teach all aspects of digital music, from composition to video game sound effects.");
+            $(".things-description").css("font-size","38px");
+            $(".things-description").css("line-height","38px");
+        });
+        $("#thing-web").mouseover(function() {
+            $(".things-description").html("We teach kids to work with <strong>HTML</strong> and <strong>JavaScript</strong> to create functioning web sites. For the adventurous we'll even dive into some <strong>PHP</strong> for server scripting.");
+            $(".things-description").css("font-size","40px");
+            $(".things-description").css("line-height","40px");
+        });
+        $("#thing-more").mouseover(function() {
+            $(".things-description").html("We've got tons more... from <strong>virtual reality</strong> with the <strong>Oculus Rift</strong> to <strong>stop-motion animation</strong> and <strong>special effects</strong>! Check the calendar for all the workshops!");
+            $(".things-description").css("font-size","40px");
+            $(".things-description").css("line-height","40px");
+        });
+        $(".thing-btn").mouseout(function() {
+            $(".things-description").html(defaultText);
+            $(".things-description").css("font-size","64px");
+            $(".things-description").css("line-height","64px");
+        });
+            $('div[data-type="scroll-background"]').each(function(){
+                var $bgobj = $(this); // assigning the object
+                $(window).scroll(function() {
+                    var yPos = -($(window).scrollTop() / $bgobj.data('speed')) - 10; 
+                    // Put together our final background position
+                    var coords = '50% '+ yPos + 'px';
+                    // Move the background
+                    $bgobj.css({ backgroundPosition: coords });
+                }); 
+                var yPos = -($(window).scrollTop() / $bgobj.data('speed')) - 10; 
+                    // Put together our final background position
+                var coords = '50% '+ yPos + 'px';
+                    // Move the background
+                $bgobj.css({ backgroundPosition: coords });
+             });   
+    }
+    );
+    function setCal(root) {
+        console.log("setting calendar");
+        json = root;
+        var feed = root.feed;
+        var entries = feed.entry || [];
+        var date = new Date();
+        var m = date.getMonth() + 1;
+        for (var i = 0; i < entries.length; ++i) {
+          var entry = entries[i];
+          var title = (entry.title.type == 'html') ? entry.title.$t : escape(entry.title.$t);
+          var day = (entry['gsx$date']).$t;	
+          var splitString = day.split('/');
+          if (true) {
+              console.log(splitString[0]+"/"+splitString[1]);
+              switch ((entry['gsx$code']).$t) {
+                case "open":
+                    $("div[date='"+splitString[0]+"/"+splitString[1]+"']").removeClass("closed");
+                    $("div[date='"+splitString[0]+"/"+splitString[1]+"']").addClass("open");
+                    break;
+                case "closed":
+                    $("div[date='"+splitString[0]+"/"+splitString[1]+"']").addClass("closed");
+                    break;
+                case "special":
+                    $("div[date='"+splitString[0]+"/"+splitString[1]+"']").removeClass("closed");
+                    $("div[date='"+splitString[0]+"/"+splitString[1]+"']").addClass("special");
+                    break;
+                default:
+                    break;
+              }
+              $("div[date='"+splitString[0]+"/"+splitString[1]+"']").attr("time1",(entry['gsx$time1']).$t);
+              $("div[date='"+splitString[0]+"/"+splitString[1]+"']").attr("time2",(entry['gsx$time2']).$t);
+              $("div[date='"+splitString[0]+"/"+splitString[1]+"']").attr("time3",(entry['gsx$time3']).$t);
+              $("div[date='"+splitString[0]+"/"+splitString[1]+"']").attr("desc1",(entry['gsx$description1']).$t);
+              $("div[date='"+splitString[0]+"/"+splitString[1]+"']").attr("desc2",(entry['gsx$description2']).$t);
+              $("div[date='"+splitString[0]+"/"+splitString[1]+"']").attr("desc3",(entry['gsx$description3']).$t);
+              $("div[date='"+splitString[0]+"/"+splitString[1]+"']").attr("daysummary",(entry['gsx$daysummary']).$t);
+              $("div[date='"+splitString[0]+"/"+splitString[1]+"']")
+                .find(".calendar-day-info")
+                .text(
+                    ((entry['gsx$internaltext']).$t)
+                    );
+          }
+        }
+    }
+  </script>
+</head>
+<body>
+  <div class="w-hidden-tiny top-section" id="header">
+    <div class="w-clearfix top-bar">
+      <a class="w-inline-block back-btn" href="index.html">
+        <div>BACK</div>
+      </a>
+      <a class="w-inline-block email-btn" href="mailto:info@pixelacademy.org" target="_blank"></a>
+      <div class="title-bar">Minecraft Mod Tutorial</div>
+    </div>
+  </div>
+  <div class="content-section" id="about-section">
+    <p>Welcome to the Pixel Academy Modding Tutorial! This page goes through the steps for installing a Forge mod for Minecraft, whether its a popular mod that you heard of on the Internet, or a mod that you yourself made. I created this guide to be followable
+      by children as well as adults, and certain steps have helpful screenshots to make following the guide easier. This guide is for both PC and Mac. If you are having trouble seeing the screenshots, simply click them to open in a new tab.
+      <br>
+      <br><strong>Please Note</strong>: This guide is for installing Forge Mods into Minecraft for <em>version 1.6.4</em>. The steps for different versions of Forge are similar, you simply have to install a different version of Forge, and the rest of the instructions
+      are the same.
+      <br>
+      <br><span class="inside-title">Step 1<br></span>Please <a href="http://files.minecraftforge.net/" class="link" target="_blank">click here</a> to download Forge Mod Loader (or FML)
+      <br>
+      <br><span class="inside-title">Step 2</span>
+      <br>
+      <div>Locate the row <em>labeled 1.6.4-Recommended</em> and on that row, click the link that says Installer. Please see below screenshot for reference.
+        <br>
+      </div>
+    </p>
+    <a class="w-lightbox w-inline-block" href="#">
+      <img class="img" src="images/forge1.png" alt="53d5796c4c2a19f91f1a21af_forge1.png">
+      <script type="application/json" class="w-json">
+        {
+          "images": []
+        }
+      </script>
+    </a>
+    <p><span class="inside-title">Step 3</span>
+      <br>Locate the downloaded item on your computer. By default, you can find this in the downloads folder. Simply double click this downloaded file to start it. It is usually called <strong>forge-1.6.4-9.1.1.1.965-installer.jar</strong>. Please see screenshot
+      below for what the forge installer program looks like when you double click the above file.</p>
+    <img class="img" src="images/fml-installer.png" alt="53d57a1b6d7fe4ae691f0bd6_fml-installer.png">
+    <p><span class="inside-title">Step 4</span>
+      <br>Make sure that the "Install Client" radio button is selected (as shown in below screenshot) and click the "OK" button to begin installing Forge. This process may take a couple of minutes to complete. Once the process is complete, Forge has been
+      installed. If there were any errors (For example, it says "You must run Minecraft 1.6.4 at least once") please see the section below labeled <a href="#common-issues" class="link">Common Issues</a>.</p>
+    <img class="img" src="images/fml-installer2.png"
+    alt="53d57af56d7fe4ae691f0be0_fml-installer2.png">
+    <p><span class="inside-title">Step 5</span>
+      <br>Now start the Minecraft launcher by clicking the Minecraft Icon like you normally would when you want to play Minecraft. DO NOT click the "Play" button. there are a few more steps before we are ready to play with mods. See screenshot in step 6 for
+      what the screen should look like.
+      <br>
+      <br><span class="inside-title">Step 6</span>
+      <br>At this point, Forge is installed, but first you must switch to the Forge profile, and afterwards install whatever Mod(s) you would like to play with. To switch to the Forge profile, click the drop down menu labelled Profile: (On the bottom left
+      of the Minecraft Launcher. See Screenshot for reference.) Select the profile labelled Forge in this drop down menu.</p>
+    <img class="img" src="images/launcher1.png" alt="53d57b4a4c2a19f91f1a21c3_launcher1.png">
+    <p>NOTE:&nbsp;Whenever you want to play with Mods, simply follow the above step (if not already in the Forge profile). When you want to NOT play with mods, simply repeat the above step, but pick the other profile (that ISN'T Forge).
+      <br>
+      <br><span class="inside-title">Step 7</span>
+      <br>Now we must install the mod(s) that we want to play. This guide does NOT cover downloading mods, and assumes you have the .jar or .zip file needed for the Mod. If using a Mod made by a camper at Camp Pixel, they should have a .zip file that contains
+      their mod. Locate this file (whether its on a flash drive for a camper, or in the downloads folder if you downloaded the mod). Now, Open the Minecraft launcher again. This time, click the button labelled "Edit Profile" in the bottom left corner
+      and a smaller window will pop up. See screenshot for reference on the botton.</p>
+    <img class="img" src="images/launcher2.png" alt="53d57ba54c2a19f91f1a21e4_launcher2.png">
+    <p><span class="inside-title">Step 8</span>
+      <br>Now, in the Edit Profile window, click the button labelled "Open Game Dir" (see screenshot for reference) on the bottom right corner. This will open the Game folder that Minecraft uses.</p>
+    <img class="img" src="images/editprofile.png"
+    alt="53d57bf2ad790af81f1ecfa7_editprofile.png">
+    <p><span class="inside-title">Step 9</span>
+      <br>Once in this folder, look for a locate a folder called "mods" (all lowercase). If you CANNOT find this folder, simply create a new folder labelled "mods" (again all lowercase). Whether on Windows or Mac, you should be able to simply right click
+      inside the Minecraft folder, and select the "New Folder" option (On windows, you may have to select new, and then select folder in the drop down sub menu)
+      <br>
+      <br><span class="inside-title">Step 10</span>
+      <br>Double click the "mods" folder that was there or that you just made. This is the folder that all mods go into. Simply copy and paste or drag the mod file(s) you located in Step 7 into this folder. Now close the folder, and any other windows that
+      may be open, and start Minecraft normally. Make sure that you are using the Forge profile (See Step 6) and you should be able to start Minecraft and play with the Mod(s) desired)</p>
+  </div>
+  <div class="content-section" id="common-issues">
+    <p><span class="inside-title">Common Issues</span>
+      <br>One of the most common issues, and one that is the most common to occur is the error that happens around Step 4 where, when you try to install forge, an error message pops up that says something to the effect of "You must start Minecraft version
+      1.6.4 at least once". This error happens alot, especially if you have only recently brought Minecraft, or have recently formatted or wiped your computer, and reinstalled Minecraft. Without going into Much details, you must run the version of Minecraft
+      that Forge is for before installing Forge (So if you want Forge for 1.6.4 you must play regular 1.6.4 at least once.
+      <br>
+      <br>To fix this error, we must create a new profile. First Open the Minecraft Launcher, then click the button labelled "New Profile" (See screenshot below).</p>
+    <img class="img" src="images/launcher_error.png"
+    alt="53d57c7bbf6b92ac694483b4_launcher_error.png">
+    <p>That will open the following Window (See screenshot). Simply give it a name (Probably "Version 1.6.4" if you aren't sure). The name doesn't matter, as long as it's not blank.</p>
+    <img class="img" src="images/newprofile.png"
+    alt="53d57ca6bf6b92ac694483b6_newprofile.png">
+    <p>Now, select the drop down labelled "Version" (See below screenshot) You want to select version 1.6.4 (Screenshots below) and when finished select the "Save Profile" button in the bottom right corner.</p>
+    <img class="img" src="images/newprofile2.png"
+    alt="53d57cc6bf6b92ac694483b8_newprofile2.png">
+    <p>The Menu should look like the following after you have selected the right version:</p>
+    <img class="img" src="images/version.png" alt="53d57ce34c2a19f91f1a21ee_version.png">
+    <p>Now simply click the save profile button in the bottom right corner of the "New Profile" menu. This will close the menu. The Selected profile should automatically change to the profile we created in the above step. If NOT, simply follow step 6 above,
+      but select the profile you just created instead of the Forge profile.Now simply click the "Play" button to start Minecraft. Once Minecraft loads, you can then close it, and follow the directions again.</p>
+  </div>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script type="text/javascript" src="js/webflow.js"></script>
+  <!--[if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
+  <script id="loadhere"></script>
+  <!--Start of Zopim Live Chat Script-->
+  <script type="text/javascript">
+    window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+    d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+    _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute('charset','utf-8');
+    $.src='//v2.zopim.com/?154sLdSAaw4zX6Hoq65ZMP28r6UXYRlH';z.t=+new Date;$.
+    type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
+  </script>
+  <!--End of Zopim Live Chat Script-->
+</body>
+</html>

@@ -1,0 +1,268 @@
+#campFactsSectionHeader .mainSectionImage {
+  background-image: url("images/facts-header2.jpg") !important;
+  background-position: right 35%; 
+}
+
+.sectionBlurb {
+  font-size: 12px;
+  width: 100%; 
+ margin-bottom: 30px;
+}
+
+.sectionImage {
+  float: right;
+  height: 290px;
+  width: 400px;
+  background-image: url("images/facts-instructor.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 0 0 10px 40px; 
+}
+
+#factTableHeader{
+  text-align: center;
+  margin: auto;
+  font-family: "Body";
+  font-size:22px;
+  line-height: 28px;
+  margin-bottom: 25px;
+}
+
+#factTableContainer {
+  position: relative;
+  text-align: center; 
+}
+
+#factTableContainerCTA {
+  font-size: 12px;
+  font-style: italic;
+  color: #999999;
+  text-align: left;
+  margin-bottom: 15px; 
+}
+
+#factTableContainer table {
+  margin: auto;
+  width: 100%;
+  padding: 75px;
+  table-layout: fixed;
+}
+
+#desktopTable {
+  /*display: block; */
+}
+
+#mobileTable {
+  display: none; 
+}
+.fact {
+  color: #1b2325;
+  padding-bottom: 15px; 
+}
+
+.fact .factHeader, .fact .factBlurb {
+  margin: 5px;
+  overflow: hidden; 
+}
+
+.fact .factBlurb {
+  font-size: 16px;
+  line-height: 20px;
+  max-height: 200px;
+  -webkit-transition: max-height .5s;
+  -moz-transition: max-height .5s;
+  -ms-transition: max-height .5s;
+  -o-transition: max-height .5s;
+  transition: max-height .5s; 
+}
+
+#factTableContainer .fact .factHeader {
+  background: #7fcca8;
+  height: 35px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Header";
+  padding-top: 15px; 
+}
+
+#factTableContainer .fact .factHeader:hover {
+  cursor: pointer;
+  background-color: #59a4a3; 
+}
+
+#factTableContainer .fact .factSelected {
+  background-color: #59a4a3; 
+}
+
+
+#factsExtension {
+  max-height: 0px;
+  overflow: hidden;
+  margin: 5px auto;
+  margin-bottom: 25px;
+  -webkit-transition: max-height .5s;
+  -moz-transition: max-height .5s;
+  -ms-transition: max-height .5s;
+  -o-transition: max-height .5s;
+  transition: max-height .5s; 
+  /* background-image: url("images/facts-81.jpg"); */
+  background-size: cover;
+  background-position: center;
+}
+
+#factsExtensionContainer {
+  padding: 25px;
+}
+
+#closeExtensionButton {
+    font-family: "Header";
+    font-size: 22px;
+    text-align: left;
+    color: #59a4a3; 
+}
+
+#closeExtensionButton:hover {
+      cursor: pointer;
+      color: #7fcca8;
+}
+
+#extensionTitle {
+    color: #7fcca8;
+    font-family: "Header";
+    font-size: 26px;
+    padding-bottom: 15px;
+}
+
+#extensionText {
+    font-size: 18px;
+    color: #ffffff;
+    text-align: left;
+    margin: 15px 0px 30px 0px;
+    line-height: 22px; 
+}
+
+.extensionButton {
+    background-color: #ff017e;
+    color: #ffffff;
+    height: 60px;
+    width: 250px;
+    margin: 0 5px;
+    display: inline-block;
+    margin-bottom: 15px;
+    text-align: center;
+    line-height: 60px;
+    cursor: pointer;
+    font-family: "Header";
+    font-size: 18px; 
+}
+
+.extensionButton:hover {
+    background-color: #e54785; 
+    color: #fff;
+}
+
+.mapTableContainer {
+
+}
+
+.mapTableHeader {
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+table.mapTable {  
+    text-align: center;
+    margin: 0 auto;
+    border-collapse: separate;
+    border-spacing: 20px;
+    overflow: none;
+}
+
+table.mapTable td {
+    background: url("images/crumples.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.locationMap{
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.locationBuyButton {
+    font-family: "Header";
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    font-size: 18px;
+    line-height: 40px;
+    height: 50px;
+    background: #ff017e;
+    font-weight: normal;
+    margin: auto;
+    color: white;
+    border-style: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+}
+.locationBuyButton:hover {
+    background-color: gray;
+}
+
+@media screen and (max-width: 690px) {
+  
+    #factTableContainer table {
+        padding: 0;
+    }
+    
+    #factsCTA1 {
+    margin-right: 0px;
+    margin-bottom: 15px; 
+  }
+
+  .sectionBlurb {
+    font-size: 12px;
+    width: 100%; 
+  }
+
+  .sectionImage {
+    float: none;
+    height: 290px;
+    width: 100%;
+    /* background-image: url("images/facts-top.jpg"); */
+    background-size: cover;
+    background-position: center;
+    margin: 0 0 20px 0; 
+  }
+
+  #factsExtension table #imagetd {
+    display: none; 
+  }
+  
+  #factsExtension table td {
+    width: 100%; 
+  }
+  
+  #factsExtension #extensionImage {
+    display: none; 
+  } 
+}
+
+
+@media screen and (max-width: 850px) {
+  #desktopTable {
+    display: none !important; 
+  }
+
+  #mobileTable {
+    display: block !important;
+  } 
+}
+
+

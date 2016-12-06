@@ -1,0 +1,260 @@
+#topicsSectionHeader .mainSectionImage {
+  background-image: url("images/Topics_header.jpg") !important;
+  background-position: right center; 
+}
+
+#topicsBlurb{
+    font-family: "Body";
+    line-height: 24px;
+    font-size: 16px;
+}
+.topicsWeeks{
+  font-size: 16px;
+  font-family: "Body";
+  margin-top: 3px;
+}
+
+
+.topic{
+  width: 48%;
+  display: inline-block;
+  margin-bottom: 25px;
+  vertical-align: top;
+}
+
+.topic.left{
+  margin-right: 2%;
+}
+
+.topicsPicture{
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+  background-position: center;
+}
+.iconsContainer {
+  display: block;
+  overflow: none;
+  margin-top: 20px;
+}
+.topicsIcon{
+  width: 60px !important;
+  margin-right: 5px;
+}
+
+.topicsTitle{
+  position: relative;
+  font-family: "Header";
+  font-size: 28px;
+  padding: 15px 0px;
+  background-color: #7fcca8;
+  color: white;
+  text-align: center;
+}
+
+.topic:hover .topicsTitle{
+  background-color: #59a4a3;
+}
+
+.topicsPicture img{
+  width: 100%;
+}
+
+.topicsInformation{
+  text-align: left;
+  position: absolute;
+  background-color: rgba(48, 50, 55, 0.8);
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  opacity: 0; 
+  transition-property: opacity;
+  transition-duration: .3s;
+}
+
+.topicsDescription span{
+  font-family: "Header";
+}
+
+
+#topicsTable{
+  margin: 35px 0;
+  overflow: auto;
+}
+
+ 
+.topicsDescription{
+  line-height: 24px;
+  font-size: 20px;
+  padding: 10px;
+  color: #ffffff;
+  position: absolute;
+  left: 15px;
+  bottom: 0px;
+  right:15px;
+  top: 15px;
+}
+
+.topicDates{
+  margin: 15px 0px;
+  font-family: "Special";
+  font-size: 14px;
+  font-style: bold;
+  color: #7fcca8;
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  line-height: 20px;
+  right: 15px;
+}
+
+.topicsSignUp{
+  width: 100%;
+  position: relative;
+  background-color: #ff017e;
+}
+
+
+.topicsSignUp a{
+  text-align: center;
+  position: relative;
+  font-family: "Header";
+  color: #ffffff;
+  width: 48%;
+  display: inline-block;
+  background-color: #ff017e;
+  font-size: 22px;
+  line-height: 15px;
+  cursor: pointer;
+  padding: 20px 0px;
+}
+
+.topicsSignUp a:first-child{
+  border-right: 5px solid #e54785;
+}
+
+.topicsSignUp a:hover{
+  color: #505664;
+}
+
+.topic:hover .topicsInformation{
+  color: red;
+  opacity: 1;
+}
+
+.spacer{
+    height: 18px;
+  }
+
+  .newTopic{
+    background-color: yellow;
+    display: inline-block;
+    position: relative;
+    width: 40px;
+    font-size: 19px;
+    text-align: center;
+    vertical-align: top;
+    color: #7fcca8;
+    padding: 4px;
+    border-radius: 5px;
+  }
+
+@media screen and (max-width: 1240px) { 
+  .topicsDescription{
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .spacer{
+    height: 14px;
+  }
+}
+
+@media screen and (max-width: 1060px) { 
+  .topicsDescription{
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .spacer{
+    height: 15px;
+  }
+}
+
+
+
+@media screen and (max-width: 955px) { 
+  .topicsInformation{
+    opacity: 1;
+  }
+  .topicsTitle{
+    background-color: #59a4a3;
+  }
+  .topic{
+    width: 100%;
+    margin: auto 0;
+    margin-bottom: 25px;
+  }
+  .topicsDescription{
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .topicDates{
+    font-size: 18px;
+  }
+  .spacer{
+    height: 24px;
+  }
+}
+
+@media screen and (max-width: 670px) { 
+  .topic{
+    margin: auto 0;
+    margin-bottom: 25px;
+  }
+  
+  .topicsDescription{
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .topicDates{
+    font-size: 14px;
+  }
+  .spacer{
+    height: 8px;
+  }
+}
+
+@media screen and (max-width: 550px) { 
+  .topic{
+
+    margin: auto 0;
+    margin-bottom: 25px;
+  }
+  
+  .topicsDescription{
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .topicDates{
+    display: none;
+  }
+  .spacer{
+    height: 20px;
+  }
+}
+
+@media screen and (max-width: 420px) { 
+  .topic{
+    margin: auto 0;
+    margin-bottom: 25px;
+  }
+  
+  .topicDates{
+    display: none;
+  }
+  .spacer{
+    height: 20px;
+  }
+}
+
+/*# sourceMappingURL=campfacts.css.map */

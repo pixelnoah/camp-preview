@@ -1,0 +1,1324 @@
+<html>
+    <head>
+        <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+        <link rel="manifest" href="favicon/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+        <link rel="stylesheet" type="text/css" href="cssReset.css">
+        <link rel="stylesheet" type="text/css" href="sharedStyle.css">
+        <link rel="stylesheet" type="text/css" href="sharedStyleMobile.css">
+        <link rel="stylesheet" type="text/css" href="topBar.css">
+        <link rel="stylesheet" type="text/css" href="cost.css">
+        <link rel="stylesheet" type="text/css" href="location.css">
+        <link rel="stylesheet" type="text/css" href="topic.css">
+        <script src="jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="ejs_production.js">	</script>
+        <!-- Renders the page -->
+        <!-- EJS HERE -->
+        <script type="text/javascript">
+            $(document).ready(function(){
+            	var topBar = new EJS({url: 'topBar.ejs'}).render();
+            	var bottomBar = new EJS({url: 'bottomBar.ejs'}).render();
+            
+            $("#wrapper").prepend(topBar);
+            $("#wrapper").append(bottomBar);
+            });
+        </script>
+        <script src="allPages.js"></script>
+        <script src="topic.js"></script>
+        <!-- Embedded affirm logo (cost page) -->
+        <script>
+            var _affirm_config = {
+              public_api_key:  "XXXXXXXXXXXXXXX",
+              script:          "https://cdn1-sandbox.affirm.com/js/v2/affirm.js"
+            };
+            (function(l,g,m,e,a,f,b){var d,c=l[m]||{},h=document.createElement(f),n=document.getElementsByTagName(f)[0],k=function(a,b,c){return function(){a[b]._.push([c,arguments])}};c[e]=k(c,e,"set");d=c[e];c[a]={};c[a]._=[];d._=[];c[a][b]=k(c,a,b);a=0;for(b="set add save post open empty reset on off trigger ready setProduct".split(" ");a<b.length;a++)d[b[a]]=k(c,e,b[a]);a=0;for(b=["get","token","url","items"];a<b.length;a++)d[b[a]]=function(){};h.async=!0;h.src=g[f];n.parentNode.insertBefore(h,n);delete g[f];d(g);l[m]=c})(window,_affirm_config,"affirm","checkout","ui","script","ready");
+        </script>
+        <!--Start of Zopim Live Chat Script-->
+        <script type="text/javascript">
+            window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+                    d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+                    _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+                $.src="//v2.zopim.com/?154sLdSAaw4zX6Hoq65ZMP28r6UXYRlH";z.t=+new Date;$.
+                        type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+        </script>
+        <!-- Google Analytics -->
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+            ga('create', 'UA-31308117-1', 'auto');
+            ga('require', 'linkid', 'linkid.js');
+            ga('send', 'pageview');
+            
+            var trackOutboundLink = function(url) {
+              		ga('send', 'event', url, 'click', url, {'hitCallback':
+                	function () {
+                
+                	}
+              	});
+            }
+        </script>
+         <!-- Drip -->
+        <script type="text/javascript">
+              var _dcq = _dcq || [];
+              var _dcs = _dcs || {};
+              _dcs.account = '9346191';
+
+              (function() {
+                var dc = document.createElement('script');
+                dc.type = 'text/javascript'; dc.async = true;
+                dc.src = '//tag.getdrip.com/9346191.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(dc, s);
+              })();
+        </script>
+        <!--End Drip-->
+        <!-- Begin Inspectlet Embed Code -->
+            <script type="text/javascript" id="inspectletjs">
+            window.__insp = window.__insp || [];
+            __insp.push(['wid', 575740643]);
+            (function() {
+            function ldinsp(){if(typeof window.__inspld != "undefined") return; window.__inspld = 1; var insp = document.createElement('script'); insp.type = 'text/javascript'; insp.async = true; insp.id = "inspsync"; insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://cdn.inspectlet.com/inspectlet.js'; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(insp, x); };
+            setTimeout(ldinsp, 500); document.readyState != "complete" ? (window.attachEvent ? window.attachEvent('onload', ldinsp) : window.addEventListener('load', ldinsp, false)) : ldinsp();
+            })();
+            </script>
+<!-- End Inspectlet Embed Code -->
+        <!-- Page Title -->
+        <title> CAMP/pixel: CAMP/topics: NYC's Best Technology Day Camp</title>
+        <meta name="description" content="Each topic includes cutting-edge technology, expert instructors, 21st-century skills, a hands-on, inquiry-based learning experience unique to CAMP/pixel.">
+    </head>
+<body>
+		<div id="wrapper">
+		
+
+		<div id="content">
+			<!-- TEMPLATE -->
+				<div class="template" id="APPcoding">
+					<div id="mainSection">
+					<div class="topicTemplate" >
+						<div class="topicTemplateInner" id="APPcodingPic">
+
+						</div>
+						<div class="blackMask">
+							<a href="topics.html">
+								<span class="backToTopics">	
+									<img height="12" src="images/icon_arrow_back.png" style="margin-right:10px"/> Back to CAMP/topics
+								</span>
+							</a>
+							<div class="topTopicTemplate">
+								<span id="topicsNav">
+								<span class="navLink" onclick="prevTopic('APPcoding');">	
+									<img height="12" src="images/icon_arrow_back.png" style="margin-right:10px"/> Previous 
+								</span>
+								<span style="color:white;">
+								/
+								</span>
+								<span class="navLink" onclick="nextTopic('APPcoding');">	
+									Next Topic
+									<img height="12" src="images/icon_arrow_forward.png" style="margin-right:10px"/> 
+								</span>
+							</span>
+								<div class="topicName">
+									APP/coding
+								</div>
+								<div class="topicBlurb">
+									Code a Mobile Application / Laser-Cut a Custom Phone Case
+								</div>
+								<center id="scrollDown"> 
+									Scroll Down
+								</center>
+							</div>
+							
+						</div>
+					</div>
+					</div>
+					<div class="bottomTopicTemplate">
+						<div class="projectDescriptions">
+							<span class="digitalProjectDescription">
+								<div class="digitalProjectText">
+									Enter the world of software development by designing and branding your own mobile app! Great for aspiring coders, young entrepreneurs, and visual artists. Campers learn programming skills, app-design principles, and vector graphics software, plus experience safe and supervised operation of a laser cutter.	
+								</div>
+								<div class="topicScheduleLength">
+									<div class="scheduleLabel">Location (Ages)</div> Brooklyn (9 - 14), TriBeCa (7 - 11), UES (9 - 11)
+								</div>
+								<div class="topicScheduleLength">
+									<div class="scheduleLabel">Dates</div> <a href = "http://hq.pixelacademy.org/tickets/camp-pixel">View Dates</a>
+								</div>
+								<div class="topicScheduleDates">
+									<div class="scheduleLabel">Pairs Well With</div> 
+										<a href="topic.html#FLIGHTdesign">
+											FLIGHT/design, 
+										</a>
+										<a href="topic.html#VRdesign">
+											VR/design
+										</a>
+								</div>
+							</span>	
+							<span class="physicalProjectDescription">
+								<div class="physicalProjectLabel">
+									Skills Used
+								</div>
+								<div class = "iconRow">
+									<div class="skillIconContainer">
+										<img src = "images/skill_coding.png" class = "skillIcon">
+									<div class = "skillText" id = "skillCoding">CODING</div>
+									</div>
+									<p class = "iconDescription">Coding is the way we communicate with computers. At CAMP/pixel, campers can learn common, transferrable coding languages such as Java, Lua, C+, HTML, and CSS. Coding skills are used to to develop video games, mobile apps, and crazy tech innovation like Google's Self-Driving Car Project.</p>
+								</div>
+								<div class = "iconRow">
+									<div class="skillIconContainer">
+										<img src = "images/skill_lasercutting.png" class = "skillIcon">
+										<div class = "skillText" id = "skillLaser">LASER CUTTING</div>
+									</div>
+									<div class = "iconDescription">Laser Cutting is the act of cutting precise vectors into various materials with an actual laser. At CAMP/pixel, campers can use vector-based design software (like Adobe Illustrator) to create their own unique designs that are cut on our totally safe equipment. Vector design is used to create digital images that can be made smaller or larger without losing resolution.</div>
+								</div>
+							</span>	
+						</div>
+
+					</div>
+				</div>
+				<!-- END TEMPLATE -->
+				
+				<!-- TEMPLATE -->
+				<div class="template" id="DJproduction">
+					<div id="mainSection">
+					<div class="topicTemplate" >
+						<div class="topicTemplateInner" id="DJproductionPic">
+
+						</div>
+						<div class="blackMask">
+							<a href="topics.html">
+								<span class="backToTopics">	
+									<img height="12" src="images/icon_arrow_back.png" style="margin-right:10px"/> Back to CAMP/topics
+								</span>
+							</a>
+
+
+							
+
+							<div class="topTopicTemplate">
+								<span id="topicsNav">
+								<span class="navLink" onclick="prevTopic('DJproduction');">	
+									<img height="12" src="images/icon_arrow_back.png" style="margin-right:10px"/> Previous 
+								</span>
+								<span style="color:white;">
+								/
+								</span>
+								<span class="navLink" onclick="nextTopic('DJproduction');">	
+									Next Topic
+									<img height="12" src="images/icon_arrow_forward.png" style="margin-right:10px"/> 
+								</span>
+							</span>
+								<div class="topicName">
+									DJ/production
+								</div>
+								<div class="topicBlurb">
+									Make and Mix Music Samples / Spin and Scratch on DJ Equipment
+								</div>
+								<center id="scrollDown"> 
+									Scroll Down
+								</center>
+							</div>
+							
+						</div>
+					</div>
+					</div>
+					<div class="bottomTopicTemplate">
+						<div class="projectDescriptions">
+							<span class="digitalProjectDescription">
+								<div class="digitalProjectText">
+									Start your music production career with a fun, interactive DJing project! Use professional-grade  DJing hardware and software to create your own original set! Great for anyone who likes music and tactile learning. Campers learn to apply samples and MIDI instruments in DAWs to mix and remix until they&#39;re ready to create and export their own completely custom-made mega-mixes!
+								</div>
+							<div class="topicScheduleLength">
+								<div class="scheduleLabel">Location (Ages)</div> Brooklyn (7 - 9), TriBeCa (7 - 9), UES (7 - 9)
+							</div>
+							<div class="topicScheduleLength">
+								<div class="scheduleLabel">Dates</div> <a href = "http://hq.pixelacademy.org/tickets/camp-pixel">View Dates</a>
+							</div>
+							<div class="topicScheduleDates">
+								<div class="scheduleLabel">Pairs Well With</div> 
+									<a href="topic.html#FASHIONdesign">
+										FASHION/design, 
+									</a>
+									<a href="topic.html#MINECRAFTcircuits">
+										MINECRAFT/circuits
+									</a>
+							</div>
+							</span>	
+							<span class="physicalProjectDescription">
+								<div class="physicalProjectLabel">
+									Skills Used
+								</div>
+								<div class = "iconRow">
+									<div class="skillIconContainer">
+										<img src = "images/skill_digitalmusic.png" class = "skillIcon">
+									<div class = "skillText" id = "skillDigitalMusic">DIGITAL ARTS</div>
+									</div>
+									<p class = "iconDescription">Digital Art is any creative practice or presentation that uses digital technology. At CAMP/pixel, campers can creatively use pro-grade production software to learn new industries like digital music and fashion. Digital Art is everywhere, like from app icons on our phones to the phones themselves, or from the characters of a video game to its music and sound effects.</p>
+								</div>
+								<div class = "iconRow">
+									<div class="skillIconContainer">
+										<img src = "images/skill_electronics.png" class = "skillIcon">
+										<div class = "skillText" id = "skillElectronics">ELECTRO-<br>NICS</div>
+									</div>
+									<div class = "iconDescription">Electronics are circuits or devices that use transistors, microchips, and other components. At CAMP/pixel, campers can work with wires, buttons, and circuitboards to make lights, sounds, games, and unique systems. Electrical engineers work with all kinds of electronic devices, from the smallest pocket devices to large supercomputers.</div>
+								</div>
+							</span>	
+						</div>
+					</div>
+				</div>
+				<!-- END TEMPLATE -->
+
+				<!-- TEMPLATE -->
+				<!--<div class="template" id="DRIVEdesign">
+					<div id="mainSection">
+					<div class="topicTemplate" >
+						<div class="topicTemplateInner" id="DRIVEdesignPic">
+
+						</div>
+						<div class="blackMask">
+							<a href="topics.html">
+								<span class="backToTopics">	
+									<img height="12" src="images/icon_arrow_back.png" style="margin-right:10px"/> Back to CAMP/topics
+								</span>
+							</a>
+
+
+							
+
+							<div class="topTopicTemplate">
+								<span id="topicsNav">
+								<span class="navLink" onclick="prevTopic('DRIVEdesign');">	
+									<img height="12" src="images/icon_arrow_back.png" style="margin-right:10px"/> Previous 
+								</span>
+								<span style="color:white;">
+								/
+								</span>
+								<span class="navLink" onclick="nextTopic('DRIVEdesign');">	
+									Next Topic
+									<img height="12" src="images/icon_arrow_forward.png" style="margin-right:10px"/> 
+								</span>
+							</span>
+								<div class="topicName">
+									DRIVE/design
+								</div>
+								<div class="topicBlurb">
+									Develop a Racing Video Game / Design and 3D Print a Toy Car!
+								</div>
+								<center id="scrollDown"> 
+									Scroll Down
+								</center>
+							</div>
+							
+						</div>
+					</div>
+					</div>
+					<div class="bottomTopicTemplate">
+						<div class="projectDescriptions">
+							<span class="digitalProjectDescription">
+								<div class="digitalProjectLabel">
+									Racing Game with Unreal Engine
+									<div class="projectLabel">Digital Project</div> 
+								</div>
+								<div class="digitalProjectText">
+									Drivers, start your game engines! Campers embark on a fast-track course to make a custom racing video game using the pro-grade gaming software Unreal Engine 4! Campers learn and apply concepts such as lighting, landscaping, visual scripting, and even create cut scenes to develop an intricate race track and finish with a playable racing game!
+								</div>
+							</span>	
+							<span class="physicalProjectDescription">
+								<div class="physicalProjectLabel">
+									Toy Car Prototyping with TinkerCAD
+									<div class="projectLabel">Physical Project</div> 
+								</div>
+								<div class="physicalProjectText">
+									Campers use 3D CAD (computer-aided design) software to develop prototypes for toy cars! They learn to create in a three-dimensional workspace and use basic geometric shapes to create something completely unique to their imagination. Campers enter the realm of mechanical engineering and come away with their own 3D-printed projects!
+								</div>
+							</span>	
+						</div>
+						<div class="topicSchedule">
+							<div class="topicScheduleLength">
+								<div class="scheduleLabel">Location (Ages)</div> One Week
+							</div>
+							<div class="topicScheduleLength">
+								<div class="scheduleLabel">Dates</div> Jun-July 27-1 / July 11-15 / July 25-29 / Aug 8-12 / Aug 22-26 / Aug-Sept 29-2
+							</div>
+							<div class="topicScheduleDates">
+								<div class="scheduleLabel">Pairs Well With</div> 
+									<a href="ages.html#1" style="color:white;">
+										7-9, 
+									</a>
+									<a href="ages.html#2" style="color:white;">
+										9-11
+									</a>
+							</div>
+						</div>
+					</div>
+				</div> -->
+				<!-- END TEMPLATE --> 
+
+				<!-- TEMPLATE -->
+				<div class="template" id="FLIGHTdesign">
+					<div id="mainSection">
+					<div class="topicTemplate" >
+						<div class="topicTemplateInner" id="FLIGHTdesignPic">
+
+						</div>
+						<div class="blackMask">
+							<a href="topics.html">
+								<span class="backToTopics">	
+									<img height="12" src="images/icon_arrow_back.png" style="margin-right:10px"/> Back to CAMP/topics
+								</span>
+							</a>
+
+
+							
+
+							<div class="topTopicTemplate">
+								<span id="topicsNav">
+								<span class="navLink" onclick="prevTopic('FLIGHTdesign');">	
+									<img height="12" src="images/icon_arrow_back.png" style="margin-right:10px"/> Previous 
+								</span>
+								<span style="color:white;">
+								/
+								</span>
+								<span class="navLink" onclick="nextTopic('FLIGHTdesign');">	
+									Next Topic
+									<img height="12" src="images/icon_arrow_forward.png" style="margin-right:10px"/> 
+								</span>
+							</span>
+								<div class="topicName">
+									FLIGHT/design
+								</div>
+								<div class="topicBlurb">
+									Develop a 3D Video Game / Laser-cut a Model Rocket
+								</div>
+								<center id="scrollDown"> 
+									Scroll Down
+								</center>
+							</div>
+							
+						</div>
+					</div>
+					</div>
+					<div class="bottomTopicTemplate">
+						<div class="projectDescriptions">
+							<span class="digitalProjectDescription">
+								<div class="digitalProjectText">
+									Develop a 3D video game and laser-cut your own customized model rocket! Great for gamers, artists, and future coders (no typing necessary.) Campers are introduced to coding through logic-based building blocks and develop skills in physics, programming, game design, vector-art, and laser-cutting!
+								</div>
+							<div class="topicScheduleLength">
+								<div class="scheduleLabel">Location (Ages)</div> Brooklyn (7 - 9), TriBeCa (7 - 11), UES (7 - 9)
+							</div>
+							<div class="topicScheduleLength">
+								<div class="scheduleLabel">Dates</div> <a href = "http://hq.pixelacademy.org/tickets/camp-pixel">View Dates</a>
+							</div>
+							<div class="topicScheduleDates">
+								<div class="scheduleLabel">Pairs Well With</div> 
+									<a href="topic.html#ARCADEdesign">
+										ARCADE/design, 
+									</a>
+									<a href="topic.html#VRdesign">
+										VR/design
+									</a>
+							</div>
+							</span>	
+							<span class="physicalProjectDescription">
+								<div class="physicalProjectLabel">
+									Skills Used
+								</div>
+								<div class = "iconRow">
+									<div class="skillIconContainer">
+										<img src = "images/skill_gamedesign.png" class = "skillIcon">
+									<div class = "skillText" id = "skillGameDesign">GAME DESIGN</div>
+									</div>
+									<p class = "iconDescription">Game Design combines storytelling, rulemaking, visual aesthetics, and interactive experience. At CAMP/pixel, campers learn to develop with industry-standard game engines, visual scripting or real code, and the fundamentals of game design. Outside of video games, game design elements can be seen everywhere from user experience to social media.</p>
+								</div>
+								<div class = "iconRow">
+									<div class="skillIconContainer">
+										<img src = "images/skill_lasercutting.png" class = "skillIcon">
+										<div class = "skillText" id = "skillLaser">LASER CUTTING</div>
+									</div>
+									<div class = "iconDescription">Laser Cutting is the act of cutting precise vectors into various materials with an actual laser. At CAMP/pixel, campers can use vector-based design software (like Adobe Illustrator) to create their own unique designs that are cut on our totally safe equipment. Vector design is used to create digital images that can be made smaller or larger without losing resolution.</div>
+								</div>
+							</span>	
+						</div>
+					</div>
+				</div>
+				<!-- END TEMPLATE -->
+				<!-- TEMPLATE -->
+				<div class="template" id="FUTUREgaming">
+					<div id="mainSection">
+					<div class="topicTemplate" >
+						<div class="topicTemplateInner" id="FUTUREgamingPic">
+
+						</div>
+						<div class="blackMask">
+							<a href="topics.html">
+								<span class="backToTopics">	
+									<img height="12" src="images/icon_arrow_back.png" style="margin-right:10px"/> Back to CAMP/topics
+								</span>
+							</a>
+
+
+							
+
+							<div class="topTopicTemplate">
+								<span id="topicsNav">
+								<span class="navLink" onclick="prevTopic('FUTUREgaming');">	
+									<img height="12" src="images/icon_arrow_back.png" style="margin-right:10px"/> Previous 
+								</span>
+								<span style="color:white;">
+								/
+								</span>
+								<span class="navLink" onclick="nextTopic('FUTUREgaming');">	
+									Next Topic
+									<img height="12" src="images/icon_arrow_forward.png" style="margin-right:10px"/> 
+								</span>
+							</span>
+								<div class="topicName">
+									FUTURE/gaming
+								</div>
+								<div class="topicBlurb">
+									Design a 3D Video Game / Create a Multi-Dimensional Volumetric Experience
+								</div>
+								<center id="scrollDown"> 
+									Scroll Down
+								</center>
+							</div>
+							
+						</div>
+					</div>
+					</div>
+					<div class="bottomTopicTemplate">
+						<div class="projectDescriptions">
+							<span class="digitalProjectDescription">
+								<div class="digitalProjectText">
+									<span style = "color:yellow; font-weight: bold">Exclusively at CAMP/pixel:</span> Play your own completely custom-made 3D video game on the first ever volumetric 3D-gaming display that requires no glasses or headsets. Great for gamers, storytellers, and anyone excited about the future of creating 3D experiences. Campers learn to use industry-standard game-engine software and exclusive cutting-edge multi-dimensional proto-holographic visual hardware to create and play their own 3D games! Get an exclusive first look at brand new technology, and design a game for it!	
+								</div>
+							<div class="topicScheduleLength">
+								<div class="scheduleLabel">Location (Ages)</div> Brooklyn (7 - 11), UES (7 - 11)
+							</div>
+							<div class="topicScheduleLength">
+								<div class="scheduleLabel">Dates</div> <a href = "http://hq.pixelacademy.org/tickets/camp-pixel">View Dates</a>
+							</div>
+							<div class="topicScheduleDates">
+								<div class="scheduleLabel">Pairs Well With</div> 
+									<a href="topic.html#VRdesign">
+										VR/design, 
+									</a>
+									<a href="topic.html#FLIGHTdesign">
+										FLIGHT/design
+									</a>
+							</div>
+							</span>	
+							<span class="physicalProjectDescription">
+								<div class="physicalProjectLabel" style = "color:yellow">
+									Product Feature: <a href = "https://lookingglassfactory.com/" target = "_blank">Volume</a>
+								</div>
+								<div class = "iconRow">
+									<div class="skillIconContainer">
+										<a href = "https://lookingglassfactory.com/" target = "_blank"><img src = "images/LKGBrand.png" class = "skillIcon"></a>
+									<div class = "skillText" style = "color:black">VOLUME</div>
+									</div>
+									<p class = "iconDescription">CAMP/pixel is thrilled to be the first to feature <a href = "https://lookingglassfactory.com/" target = "_blank">Volume</a>, the world's first personal volumetric display. The headgear-free new tech is 3D creation made easy for creators, artists and developers using tools you know like Unity, Adobe and more. At CAMP/pixel, campers will be getting a first look at this developer-level tech and creating something few have created before. Visit the <a href = "https://lookingglassfactory.com/" target = "_blank">Looking Glass website</a> to learn more.</p>
+								</div>
+								<div class="physicalProjectLabel">
+									Skills Used
+								</div>
+								<div class = "iconRow">
+									<div class="skillIconContainer">
+										<img src = "images/skill_vr.png" class = "skillIcon">
+									<div class = "skillText" id = "skillVR">IMMERSION GAMING</div>
+									</div>
+									<p class = "iconDescription">Immersion Gaming enhances players' experiences beyond interacting with a flat screen. At CAMP/pixel, campers can learn with the first-ever volumetric display and cutting-edge virtual reality to create their own experiences. Arguably the future of digital experiences, immersion gaming experimentation and skills are swiftly being adopted by digital storytellers worldwide.</p>
+								</div>
+								<div class = "iconRow">
+									<div class="skillIconContainer">
+										<img src = "images/skill_gamedesign.png" class = "skillIcon">
+										<div class = "skillText" id = "skillGameDesign">GAME DESIGN</div>
+									</div>
+									<div class = "iconDescription">Game Design combines storytelling, rulemaking, visual aesthetics, and interactive experience. At CAMP/pixel, campers learn to develop with industry-standard game engines, visual scripting or real code, and the fundamentals of game design. Outside of video games, game design elements can be seen everywhere from user experience to social media.</div>
+								</div>
+							</span>	
+						</div>
+					</div>
+				</div>
+				<!-- END TEMPLATE -->
+				<!-- TEMPLATE -->
+				<div class="template" id="MINECRAFTdesign">
+					<div id="mainSection">
+					<div class="topicTemplate" >
+						<div class="topicTemplateInner" id="MINECRAFTdesignPic">
+
+						</div>
+						<div class="blackMask">
+							<a href="topics.html">
+								<span class="backToTopics">	
+									<img height="12" src="images/icon_arrow_back.png" style="margin-right:10px"/> Back to CAMP/topics
+								</span>
+							</a>
+
+
+							
+
+							<div class="topTopicTemplate">
+								<span id="topicsNav">
+								<span class="navLink" onclick="prevTopic('MINECRAFTdesign');">	
+									<img height="12" src="images/icon_arrow_back.png" style="margin-right:10px"/> Previous 
+								</span>
+								<span style="color:white;">
+								/
+								</span>
+								<span class="navLink" onclick="nextTopic('MINECRAFTdesign');">	
+									Next Topic
+									<img height="12" src="images/icon_arrow_forward.png" style="margin-right:10px"/> 
+								</span>
+							</span>
+								<div class="topicName">
+									MINECRAFT/design
+								</div>
+								<div class="topicBlurb">
+									Code in Minecraft / Become an Architect of the Future
+								</div>
+								<center id="scrollDown"> 
+									Scroll Down
+								</center>
+							</div>
+							
+						</div>
+					</div>
+					</div>
+					<div class="bottomTopicTemplate">
+						<div class="projectDescriptions">
+							<span class="digitalProjectDescription">
+								<div class="digitalProjectText">
+									Design buildings in Minecraft and 3D-modeling CAD software and learn to have virtual turtles (Minecraft robots) and real-life 3D printers make your ideas come to life! Great for artists, Minecraft-lovers, aspiring coders, and future architects looking for a practical application for their imaginations! Campers are introduced to the widely-used scripting language LUA and get to program directly inside the world of Minecraft, learn the fundamentals of coding and how to program Minecraft robots to complete tasks (like creating a mine, building a house, protecting a door), and design and 3D print their own architectural creations that attempt to solve the problems that cities of the future will encounter. 	
+								</div>
+							<div class="topicScheduleLength">
+								<div class="scheduleLabel">Location (Ages)</div> Brooklyn (7 - 9), TriBeCa (7 - 9), UES (7 - 9)
+							</div>
+							<div class="topicScheduleLength">
+								<div class="scheduleLabel">Dates</div> <a href = "http://hq.pixelacademy.org/tickets/camp-pixel">View Dates</a>
+							</div>
+							<div class="topicScheduleDates">
+								<div class="scheduleLabel">Pairs Well With</div> 
+									<a href="topic.html#MINECRAFTcoding">
+										MINECRAFT/coding, 
+									</a>
+									<a href="topic.html#FASHIONdesign">
+										FASHION/design
+									</a>
+							</div>
+							</span>	
+							<span class="physicalProjectDescription">
+								<div class="physicalProjectLabel">
+									Skills Used
+								</div>
+								<div class = "iconRow">
+									<div class="skillIconContainer">
+										<img src = "images/skill_coding.png" class = "skillIcon">
+									<div class = "skillText" id = "skillCoding">CODING</div>
+									</div>
+									<p class = "iconDescription">Coding is the way we communicate with computers. At CAMP/pixel, campers can learn common, transferrable coding languages such as Java, Lua, C+, HTML, and CSS. Coding skills are used to to develop video games, mobile apps, and crazy tech innovation like Google's Self-Driving Car Project.</p>
+								</div>
+								<div class = "iconRow">
+									<div class="skillIconContainer">
+										<img src = "images/skill_minecraft.png" class = "skillIcon">
+										<div class = "skillText" id = "skillMinecraft">MINECRAFT PROGRAM-<br>MING</div>
+									</div>
+									<div class = "iconDescription">Minecraft Programming uses Minecraft as a vehicle to apply introductory coding and engineering concepts. At CAMP/pixel, campers use command blocks, program in-game robots, and even mod the game itself using visual scripting or coding languages like Lua or Java. Our Minecraft programmers learn critical digital thinking skills also used in software development, video games, and more.</div>
+								</div>
+								<div class = "iconRow">
+									<div class="skillIconContainer">
+										<img src = "images/skill_3d.png" class = "skillIcon">
+										<div class = "skillText" id = "skill3D">3D MODELING</div>
+									</div>
+									<div class = "iconDescription">3D modeling means designing three-dimensional shapes on a digital interface. At CAMP/pixel, campers use Computer-Aided Design (CAD) software and spacial thinking to create models for projects made with 3D printers or 3D video-game design engines. Engineers, Architects, Fashion Designers, and Animators often use CAD software for 3D modeling.</div>
+								</div>
+							</span>	
+						</div>
+					</div>
+				</div>
+				<!-- END TEMPLATE -->
+				<!-- TEMPLATE -->
+				<div class="template" id="MINECRAFTcoding">
+					<div id="mainSection">
+					<div class="topicTemplate" >
+						<div class="topicTemplateInner" id="MINECRAFTcodingPic">
+
+						</div>
+						<div class="blackMask">
+							<a href="topics.html">
+								<span class="backToTopics">	
+									<img height="12" src="images/icon_arrow_back.png" style="margin-right:10px"/> Back to CAMP/topics
+								</span>
+							</a>
+
+							<div class="topTopicTemplate">
+								<span id="topicsNav">
+								<span class="navLink" onclick="prevTopic('MINECRAFTcoding');">	
+									<img height="12" src="images/icon_arrow_back.png" style="margin-right:10px"/> Previous 
+								</span>
+								<span style="color:white;">
+								/
+								</span>
+								<span class="navLink" onclick="nextTopic('MINECRAFTcoding');">	
+									Next Topic
+									<img height="12" src="images/icon_arrow_forward.png" style="margin-right:10px"/> 
+								</span>
+							</span>
+								<div class="topicName">
+									MINECRAFT/coding
+								</div>
+								<div class="topicBlurb">
+									Program a Minecraft Mod / Connect an Arduino Controller
+								</div>
+								<center id="scrollDown"> 
+									Scroll Down
+								</center>
+							</div>
+							
+						</div>
+					</div>
+					</div>
+					<div class="bottomTopicTemplate">
+						<div class="projectDescriptions">
+							<span class="digitalProjectDescription">
+								<div class="digitalProjectText">
+									The best-seller returns, back and better than ever! Program your own Minecraft mod with Java! Great for aspiring coders, minecraft-lovers, and critical thinkers. Campers learn to use Java programming to make their own mod, get introduced to high school and college-level coding concepts like variables, functions, and classes, and bring their creations into the real world by customizing Arduino controllers for their games.	
+								</div>
+							<div class="topicScheduleLength">
+								<div class="scheduleLabel">Location (Ages)</div> Brooklyn (7 - 11), TriBeCa (7 - 11), UES (7 - 11)
+							</div>
+							<div class="topicScheduleLength">
+								<div class="scheduleLabel">Dates</div> <a href = "http://hq.pixelacademy.org/tickets/camp-pixel">View Dates</a>
+							</div>
+							<div class="topicScheduleDates">
+								<div class="scheduleLabel">Pairs Well With</div> 
+									<a href="topic.html#MINECRAFTcodingplus">
+										MINECRAFT/coding+, 
+									</a>
+									<a href="topic.html#MINECRAFTdesign">
+										MINECRAFT/design,
+									</a>
+									<a href="topic.html#APPcoding">
+										APP/coding
+									</a>
+							</div>
+							</span>	
+							<span class="physicalProjectDescription">
+								<div class="physicalProjectLabel">
+									Skills Used
+								</div>
+								<div class = "iconRow">
+									<div class="skillIconContainer">
+										<img src = "images/skill_coding.png" class = "skillIcon">
+									<div class = "skillText" id = "skillCoding">CODING</div>
+									</div>
+									<p class = "iconDescription">Coding is the way we communicate with computers. At CAMP/pixel, campers can learn common, transferrable coding languages such as Java, Lua, C+, HTML, and CSS. Coding skills are used to to develop video games, mobile apps, and crazy tech innovation like Google's Self-Driving Car Project.</p>
+								</div>
+								<div class = "iconRow">
+									<div class="skillIconContainer">
+										<img src = "images/skill_minecraft.png" class = "skillIcon">
+										<div class = "skillText" id = "skillMinecraft">MINECRAFT PROGRAM-<br>MING</div>
+									</div>
+									<div class = "iconDescription">Minecraft Programming uses Minecraft as a vehicle to apply introductory coding and engineering concepts. At CAMP/pixel, campers use command blocks, program in-game robots, and even mod the game itself using visual scripting or coding languages like Lua or Java. Our Minecraft programmers learn critical digital thinking skills also used in software development, video games, and more.</div>
+								</div>
+							</span>	
+						</div>
+					</div>
+				</div>
+				<!-- END TEMPLATE -->
+				<!-- TEMPLATE -->
+				<div class="template" id="MINECRAFTcodingplus">
+					<div id="mainSection">
+					<div class="topicTemplate" >
+						<div class="topicTemplateInner" id="MINECRAFTcodingplusPic">
+
+						</div>
+						<div class="blackMask">
+							<a href="topics.html">
+								<span class="backToTopics">	
+									<img height="12" src="images/icon_arrow_back.png" style="margin-right:10px"/> Back to CAMP/topics
+								</span>
+							</a>
+
+							<div class="topTopicTemplate">
+								<span id="topicsNav">
+								<span class="navLink" onclick="prevTopic('MINECRAFTcodingplus');">	
+									<img height="12" src="images/icon_arrow_back.png" style="margin-right:10px"/> Previous 
+								</span>
+								<span style="color:white;">
+								/
+								</span>
+								<span class="navLink" onclick="nextTopic('MINECRAFTcodingplus');">	
+									Next Topic
+									<img height="12" src="images/icon_arrow_forward.png" style="margin-right:10px"/> 
+								</span>
+							</span>
+								<div class="topicName">
+									MINECRAFT/coding +
+								</div>
+								<div class="topicBlurb">
+									Program an Advanced Minecraft Mod / Connect an Arduino Controller
+								</div>
+								<center id="scrollDown"> 
+									Scroll Down
+								</center>
+							</div>
+							
+						</div>
+					</div>
+					</div>
+					<div class="bottomTopicTemplate">
+						<div class="projectDescriptions">
+							<span class="digitalProjectDescription">
+								<div class="digitalProjectText">
+									Kick it up a Notch and make an advanced Minecraft mod of epic proportions! Great for campers who will have already taken MINECRAFT/coding in this or a previous summer or anyone who has coded their own Minecraft mod in Java as a Pixel Academy member. Campers get to customize the real-world experience of their gameplay too, when they hook up their mods to playable Arduino controllers!	
+								</div>
+							<div class="topicScheduleLength">
+								<div class="scheduleLabel">Location (Ages)</div> Brooklyn (9 - 11), TriBeCa (9 - 11), UES (9 - 11)
+							</div>
+							<div class="topicScheduleLength">
+								<div class="scheduleLabel">Dates</div> <a href = "http://hq.pixelacademy.org/tickets/camp-pixel">View Dates</a>
+							</div>
+							<div class="topicScheduleDates">
+								<div class="scheduleLabel">Pairs Well With</div> 
+									<a href="topic.html#MINECRAFTcoding">
+										MINECRAFT/coding (required),
+									</a>
+									<a href="topic.html#APPcoding">
+										APP/coding
+									</a>
+							</div>
+							</span>	
+							<span class="physicalProjectDescription">
+								<div class="physicalProjectLabel">
+									Skills Used
+								</div>
+								<div class = "iconRow">
+									<div class="skillIconContainer">
+										<img src = "images/skill_coding.png" class = "skillIcon">
+									<div class = "skillText" id = "skillCoding">CODING</div>
+									</div>
+									<p class = "iconDescription">Coding is the way we communicate with computers. At CAMP/pixel, campers can learn common, transferrable coding languages such as Java, Lua, C+, HTML, and CSS. Coding skills are used to to develop video games, mobile apps, and crazy tech innovation like Google's Self-Driving Car Project.</p>
+								</div>
+								<div class = "iconRow">
+									<div class="skillIconContainer">
+										<img src = "images/skill_minecraft.png" class = "skillIcon">
+										<div class = "skillText" id = "skillMinecraft">MINECRAFT PROGRAM-<br>MING</div>
+									</div>
+									<div class = "iconDescription">Minecraft Programming uses Minecraft as a vehicle to apply introductory coding and engineering concepts. At CAMP/pixel, campers use command blocks, program in-game robots, and even mod the game itself using visual scripting or coding languages like Lua or Java. Our Minecraft programmers learn critical digital thinking skills also used in software development, video games, and more.</div>
+								</div>
+							</span>	
+						</div>
+					</div>
+				</div>
+				<!-- END TEMPLATE -->
+				<!-- TEMPLATE -->
+				<div class="template" id="MINECRAFTcircuits">
+					<div id="mainSection">
+					<div class="topicTemplate" >
+						<div class="topicTemplateInner" id="MINECRAFTcircuitsPic">
+
+						</div>
+						<div class="blackMask">
+							<a href="topics.html">
+								<span class="backToTopics">	
+									<img height="12" src="images/icon_arrow_back.png" style="margin-right:10px"/> Back to CAMP/topics
+								</span>
+							</a>
+
+							<div class="topTopicTemplate">
+								<span id="topicsNav">
+								<span class="navLink" onclick="prevTopic('MINECRAFTcircuits');">	
+									<img height="12" src="images/icon_arrow_back.png" style="margin-right:10px"/> Previous 
+								</span>
+								<span style="color:white;">
+								/
+								</span>
+								<span class="navLink" onclick="nextTopic('MINECRAFTcircuits');">	
+									Next Topic
+									<img height="12" src="images/icon_arrow_forward.png" style="margin-right:10px"/> 
+								</span>
+							</span>
+								<div class="topicName">
+									MINECRAFT/circuits
+								</div>
+								<div class="topicBlurb">
+									Design a Circuit in Minecraft / Create with littleBits and Minecraft
+								</div>
+								<center id="scrollDown"> 
+									Scroll Down
+								</center>
+							</div>
+							
+						</div>
+					</div>
+					</div>
+					<div class="bottomTopicTemplate">
+						<div class="projectDescriptions">
+							<span class="digitalProjectDescription">
+								<div class="digitalProjectText">
+									Build your own adventure map and connect it with circuits to the real world with littleBits! Great for Minecrafters, aspiring engineers, and storytellers. Campers embark on a creative adventure and employ video-game level-design concepts as well as Minecraft-specific skills like redstone or command blocks to create awesome Minecraft adventure maps and use littleBits--real-life electronic circuitry that is safe and snaps together!--to experience the real-world version of redstone (circuitry) and understand the digital world of Minecraft in new and exciting way!	
+								</div>
+							<div class="topicScheduleLength">
+								<div class="scheduleLabel">Location (Ages)</div> Brooklyn (7 - 11), TriBeCa (7 - 11), UES (7 - 11)
+							</div>
+							<div class="topicScheduleLength">
+								<div class="scheduleLabel">Dates</div> <a href = "http://hq.pixelacademy.org/tickets/camp-pixel">View Dates</a>
+							</div>
+							<div class="topicScheduleDates">
+								<div class="scheduleLabel">Pairs Well With</div> 
+									<a href="topic.html#MINECRAFTdesign">
+										MINECRAFT/design, 
+									</a>
+									<a href="topic.html#MINECRAFTcoding">
+										MINECRAFT/coding
+									</a>
+							</div>
+							</span>	
+							<span class="physicalProjectDescription">
+								<div class="physicalProjectLabel">
+									Skills Used
+								</div>
+								<div class = "iconRow">
+									<div class="skillIconContainer">
+										<img src = "images/skill_gamedesign.png" class = "skillIcon">
+									<div class = "skillText" id = "skillGameDesign">GAME DESIGN</div>
+									</div>
+									<p class = "iconDescription">Game Design combines storytelling, rulemaking, visual aesthetics, and interactive experience. At CAMP/pixel, campers learn to develop with industry-standard game engines, visual scripting or real code, and the fundamentals of game design. Outside of video games, game design elements can be seen everywhere from user experience to social media.</p>
+								</div>
+								<div class = "iconRow">
+									<div class="skillIconContainer">
+										<img src = "images/skill_minecraft.png" class = "skillIcon">
+										<div class = "skillText" id = "skillMinecraft">MINECRAFT PROGRAM-<br>MING</div>
+									</div>
+									<div class = "iconDescription">Minecraft Programming uses Minecraft as a vehicle to apply introductory coding and engineering concepts. At CAMP/pixel, campers use command blocks, program in-game robots, and even mod the game itself using visual scripting or coding languages like Lua or Java. Our Minecraft programmers learn critical digital thinking skills also used in software development, video games, and more.</div>
+								</div>
+								<div class = "iconRow">
+									<div class="skillIconContainer">
+										<img src = "images/skill_electronics.png" class = "skillIcon">
+										<div class = "skillText" id = "skillElectronics">ELECTRO-<br>NICS</div>
+									</div>
+									<div class = "iconDescription">Electronics are circuits or devices that use transistors, microchips, and other components. At CAMP/pixel, campers can work with wires, buttons, and circuitboards to make lights, sounds, games, and unique systems. Electrical engineers work with all kinds of electronic devices, from the smallest pocket devices to large supercomputers.</div>
+								</div>
+							</span>	
+						</div>
+					</div>
+				</div>
+				<!-- END TEMPLATE -->
+				<!-- TEMPLATE -->
+				<div class="template" id="VRdesign">
+					<div id="mainSection">
+					<div class="topicTemplate" >
+						<div class="topicTemplateInner" id="VRdesignPic">
+
+						</div>
+						<div class="blackMask">
+							<a href="topics.html">
+								<span class="backToTopics">	
+									<img height="12" src="images/icon_arrow_back.png" style="margin-right:10px"/> Back to CAMP/topics
+								</span>
+							</a>
+
+							<div class="topTopicTemplate">
+								<span id="topicsNav">
+								<span class="navLink" onclick="prevTopic('VRdesign');">	
+									<img height="12" src="images/icon_arrow_back.png" style="margin-right:10px"/> Previous 
+								</span>
+								<span style="color:white;">
+								/
+								</span>
+								<span class="navLink" onclick="nextTopic('VRdesign');">	
+									Next Topic
+									<img height="12" src="images/icon_arrow_forward.png" style="margin-right:10px"/> 
+								</span>
+							</span>
+								<div class="topicName">
+									VR/design
+								</div>
+								<div class="topicBlurb">
+									Make a 3D Video Game for Virtual Reality / Customize a Cardboard Headset
+								</div>
+								<center id="scrollDown"> 
+									Scroll Down
+								</center>
+							</div>
+							
+						</div>
+					</div>
+					</div>
+					<div class="bottomTopicTemplate">
+						<div class="projectDescriptions">
+							<span class="digitalProjectDescription">
+								<div class="digitalProjectText">
+									Design, develop, and play your own 3D virtual-reality video game! Great for aspiring coders, game designers, and anyone excited about the future of gaming. Campers learn to use the Unity game engine, work with the C# programming language, experience their own creations in virtual reality, and customize and keep their own Google Cardboard phone-mount headset!
+								</div>
+							<div class="topicScheduleLength">
+								<div class="scheduleLabel">Location (Ages)</div> Brooklyn (9 - 14), TriBeCa (9 - 11), UES (9 - 11)
+							</div>
+							<div class="topicScheduleLength">
+								<div class="scheduleLabel">Dates</div> <a href = "http://hq.pixelacademy.org/tickets/camp-pixel">View Dates</a>
+							</div>
+							<div class="topicScheduleDates">
+								<div class="scheduleLabel">Pairs Well With</div> 
+									<a href="topic.html#FUTUREgaming">
+										FUTURE/gaming, 
+									</a>
+									<a href="topic.html#ARCADEdesign">
+										ARCADE/design
+									</a>
+							</div>
+							</span>	
+							<span class="physicalProjectDescription">
+								<div class="physicalProjectLabel">
+									Skills Used
+								</div>
+								<div class = "iconRow">
+									<div class="skillIconContainer">
+										<img src = "images/skill_vr.png" class = "skillIcon">
+									<div class = "skillText" id = "skillVR">IMMERSION GAMING</div>
+									</div>
+									<p class = "iconDescription">Immersion Gaming enhances players' experiences beyond interacting with a flat screen. At CAMP/pixel, campers can learn with the first-ever volumetric display and cutting-edge virtual reality to create their own experiences. Arguably the future of digital experiences, immersion gaming experimentation and skills are swiftly being adopted by digital storytellers worldwide.</p>
+								</div>
+								<div class = "iconRow">
+									<div class="skillIconContainer">
+										<img src = "images/skill_gamedesign.png" class = "skillIcon">
+										<div class = "skillText" id = "skillGameDesign">GAME DESIGN</div>
+									</div>
+									<div class = "iconDescription">Game Design combines storytelling, rulemaking, visual aesthetics, and interactive experience. At CAMP/pixel, campers learn to develop with industry-standard game engines, visual scripting or real code, and the fundamentals of game design. Outside of video games, game design elements can be seen everywhere from user experience to social media.</div>
+								</div>
+							</span>	
+						</div>
+					</div>
+				</div>
+				<!-- END TEMPLATE -->
+				<!-- TEMPLATE -->
+				<div class="template" id="FASHIONdesign">
+					<div id="mainSection">
+					<div class="topicTemplate" >
+						<div class="topicTemplateInner" id="FASHIONdesignPic">
+
+						</div>
+						<div class="blackMask">
+							<a href="topics.html">
+								<span class="backToTopics">	
+									<img height="12" src="images/icon_arrow_back.png" style="margin-right:10px"/> Back to CAMP/topics
+								</span>
+							</a>
+
+							<div class="topTopicTemplate">
+								<span id="topicsNav">
+								<span class="navLink" onclick="prevTopic('FASHIONdesign');">	
+									<img height="12" src="images/icon_arrow_back.png" style="margin-right:10px"/> Previous 
+								</span>
+								<span style="color:white;">
+								/
+								</span>
+								<span class="navLink" onclick="nextTopic('FASHIONdesign');">	
+									Next Topic
+									<img height="12" src="images/icon_arrow_forward.png" style="margin-right:10px"/> 
+								</span>
+							</span>
+								<div class="topicName">
+									FASHION/design
+								</div>
+								<div class="topicBlurb">
+									Create a 3D Digital Fashion Show / Prototype Fashion Designs
+								</div>
+								<center id="scrollDown"> 
+									Scroll Down
+								</center>
+							</div>
+							
+						</div>
+					</div>
+					</div>
+					<div class="bottomTopicTemplate">
+						<div class="projectDescriptions">
+							<span class="digitalProjectDescription">
+								<div class="digitalProjectText">
+									Get runway-ready creating digital fashion in 3D! Digitally design and physically fabricate unique styles for animated and real-life fashion shows! Great for future fashion designers, artists, and makers. Campers learn pattern-based garment-modeling software, fashion-industry fundamentals, and fabrication techniques to prototype custom styles and create their own custom 3D-animated fashion shows.	
+								</div>
+							<div class="topicScheduleLength">
+								<div class="scheduleLabel">Location (Ages)</div> Brooklyn (7 - 9), TriBeCa (7 - 9), UES (7 - 9)
+							</div>
+							<div class="topicScheduleLength">
+								<div class="scheduleLabel">Dates</div> <a href = "http://hq.pixelacademy.org/tickets/camp-pixel">View Dates</a>
+							</div>
+							<div class="topicScheduleDates">
+								<div class="scheduleLabel">Pairs Well With</div> 
+									<a href="topic.html#DJproduction">
+										DJ/production, 
+									</a>
+									<a href="topic.html#MINECRAFTdesign">
+										MINECRAFT/design
+									</a>
+							</div>
+							</span>	
+							<span class="physicalProjectDescription">
+								<div class="physicalProjectLabel">
+									Skills Used
+								</div>
+								<div class = "iconRow">
+									<div class="skillIconContainer">
+										<img src = "images/skill_digitalmusic.png" class = "skillIcon">
+									<div class = "skillText" id = "skillDigitalMusic">DIGITAL ART</div>
+									</div>
+									<p class = "iconDescription">Digital Art is any creative practice or presentation that uses digital technology. At CAMP/pixel, campers can creatively use pro-grade production software to learn new industries like digital music and fashion. Digital Art is everywhere, like from app icons on our phones to the phones themselves, or from the characters of a video game to its music and sound effects.</p>
+								</div>
+								<div class = "iconRow">
+									<div class="skillIconContainer">
+										<img src = "images/skill_3d.png" class = "skillIcon">
+										<div class = "skillText" id = "skill3D">3D MODELING</div>
+									</div>
+									<div class = "iconDescription">3D modeling means designing three-dimensional shapes on a digital interface. At CAMP/pixel, campers use Computer-Aided Design (CAD) software and spacial thinking to create models for projects made with 3D printers or 3D video-game design engines. Engineers, Architects, Fashion Designers, and Animators often use CAD software for 3D modeling.</div>
+								</div>
+							</span>	
+						</div>
+					</div>
+				</div>
+				<!-- END TEMPLATE -->
+				<!-- TEMPLATE -->
+				<div class="template" id="ARCADEdesign">
+					<div id="mainSection">
+					<div class="topicTemplate" >
+						<div class="topicTemplateInner" id="ARCADEdesignPic">
+
+						</div>
+						<div class="blackMask">
+							<a href="topics.html">
+								<span class="backToTopics">	
+									<img height="12" src="images/icon_arrow_back.png" style="margin-right:10px"/> Back to CAMP/topics
+								</span>
+							</a>
+
+							<div class="topTopicTemplate">
+								<span id="topicsNav">
+								<span class="navLink" onclick="prevTopic('ARCADEdesign');">	
+									<img height="12" src="images/icon_arrow_back.png" style="margin-right:10px"/> Previous 
+								</span>
+								<span style="color:white;">
+								/
+								</span>
+								<span class="navLink" onclick="nextTopic('ARCADEdesign');">	
+									Next Topic
+									<img height="12" src="images/icon_arrow_forward.png" style="margin-right:10px"/> 
+								</span>
+							</span>
+								<div class="topicName">
+									ARCADE/design
+								</div>
+								<div class="topicBlurb">
+									Develop an arcade game / Create a video game controller
+								</div>
+								<center id="scrollDown"> 
+									Scroll Down
+								</center>
+							</div>
+							
+						</div>
+					</div>
+					</div>
+					<div class="bottomTopicTemplate">
+						<div class="projectDescriptions">
+							<span class="digitalProjectDescription">
+								<div class="digitalProjectText">
+									Launch into the retro gaming world by constructing your own arcade game and controller! Great for gamers, aspiring coders, and tactile learners. Campers use logic-based programming skills to design their own video games and wire and laser-cut a button-based custom game controller so they can physically play their digital arcade games!
+								</div>
+							<div class="topicScheduleLength">
+								<div class="scheduleLabel">Location (Ages)</div> Brooklyn (9 - 11), TriBeCa (7 - 11), UES (9 - 11)
+							</div>
+							<div class="topicScheduleLength">
+								<div class="scheduleLabel">Dates</div> <a href = "http://hq.pixelacademy.org/tickets/camp-pixel">View Dates</a>
+							</div>
+							<div class="topicScheduleDates">
+								<div class="scheduleLabel">Pairs Well With</div> 
+									<a href="topic.html#MINECRAFTcircuits">
+										MINECRAFT/circuits, 
+									</a>
+									<a href="topic.html#VRdesign">
+										VR/design
+									</a>
+							</div>
+							</span>	
+							<span class="physicalProjectDescription">
+								<div class="physicalProjectLabel">
+									Skills Used
+								</div>
+								<div class = "iconRow">
+									<div class="skillIconContainer">
+										<img src = "images/skill_gamedesign.png" class = "skillIcon">
+									<div class = "skillText" id = "skillGameDesign">GAME DESIGN</div>
+									</div>
+									<p class = "iconDescription">Game Design combines storytelling, rulemaking, visual aesthetics, and interactive experience. At CAMP/pixel, campers learn to develop with industry-standard game engines, visual scripting or real code, and the fundamentals of game design. Outside of video games, game design elements can be seen everywhere from user experience to social media.</p>
+								</div>
+								<div class = "iconRow">
+									<div class="skillIconContainer">
+										<img src = "images/skill_lasercutting.png" class = "skillIcon">
+										<div class = "skillText" id = "skillLaser">LASER CUTTING</div>
+									</div>
+									<div class = "iconDescription">Laser Cutting is the act of cutting precise vectors into various materials with an actual laser. At CAMP/pixel, campers can use vector-based design software (like Adobe Illustrator) to create their own unique designs that are cut on our totally safe equipment. Vector design is used to create digital images that can be made smaller or larger without losing resolution.</div>
+								</div>
+								<div class = "iconRow">
+									<div class="skillIconContainer">
+										<img src = "images/skill_electronics.png" class = "skillIcon">
+										<div class = "skillText" id = "skillElectronics">ELECTRO-<BR>NICS</div>
+									</div>
+									<div class = "iconDescription">Electronics are circuits or devices that use transistors, microchips, and other components. At CAMP/pixel, campers can work with wires, buttons, and circuitboards to make lights, sounds, games, and unique systems. Electrical engineers work with all kinds of electronic devices, from the smallest pocket devices to large supercomputers.</div>
+								</div>
+							</span>	
+						</div>
+					</div>
+				</div>
+				<!-- END TEMPLATE -->
+
+
+			<div id="DetailsSection">
+				<!-- The Camp Day section -->
+				<a name="learning"></a>
+				<div class="scheduleSubsection">
+					<div class="label">
+					<div class="labelImage" id="learningImage">
+					</div>
+					<div class="slashImage">
+					</div>
+					<div class="labelText">
+						LEARNING
+					</div>
+				</div>
+					<div class="scheduleDetail">
+						<a name="digitalprojects"></a>
+						<div class="scheduleSubsectionLabel">
+							DIGITAL PROJECT
+						</div>
+						<div class="detailText">
+							The first half of our meticulously-planned Combos this summer is the Digital Project. The <a href="http://www.telegraph.co.uk/technology/news/11051228/Digital-learning-how-technology-is-reshaping-teaching.html" target="_blank" >Telegraph</a> says that "using technology in an educational environment not only better reflects children's life outside the classroom, but also allows them to hone their digital skills in a way that will continue to be valuable throughout their adult life." Whether it's coding or modding a video game, digital animation, or music production, this is your child's opportunity to imagine, plan, and use digital technology to create a project of their very own. Using industry-grade technology, campers complete a week-long journey with our instructors to understand and develop skills in new software, design a unique project, and leave with knowledge they'll see time and time again in and out of their education.
+						</div>
+					</div>
+					<div class="scheduleDetail">
+						<a name="physicalprojects"></a>
+						<div class="scheduleSubsectionLabel">
+							PHYSICAL PROJECT
+						</div>
+						<div class="detailText">
+							As <a href="http://www.scholastic.com/browse/article.jsp?id=3751901" target="_blank">Scholastic</a> put so well, "hands-on, creative, and artistic activities help students to focus and retain knowledge, and at the same time emphasize the importance of beauty and design in our world." Each topic's complement to a week's Digital Project is the Physical Project; while each camper spends a good amount of time producing something digital, he or she will work to produce a physical product as well. Campers can work on laser cutting, 3D design, DJing, and much more. Each Physical Project will require some on-screen and off-screen work to accomplish its goal.
+						</div>
+					</div>
+				</div>
+				<a name="cost"></a>
+				<div class="costSubSection">
+					<div class="label">
+						<div class="labelImage" id="dropOffImage">
+						</div>
+						<div class="slashImage">
+						</div>
+						<div class="labelText">
+						CAMP/cost
+						</div>
+					</div>
+                    <div class = "costDetail">
+                    <div class = "costColumns">
+                        <div class = "costNewColumn">
+                            <div class = "costCallout" style = "background-color:white"></div>
+                            <div class = "costNewHeader">CAMP/topics (1 week)</div>
+                            <p class = "costNewDescription">Choose between our 12 tech topics and join us for a week of focused, project-based learning in various realms of cutting-edge technology.</p>
+                            <p class = "costStrike">Starting at</p>
+                            <div class = "discountFeaturePrice"><strike style = "color:gray; font-size: 16px">&#36;935</strike> &#36;715/week</div>
+                            <div class = "discountFeature" style = "color:yellow;">Prices increase Dec. 15!</div>
+                            <a href = "http://hq.pixelacademy.org/tickets/camp-pixel"><button class = "locationBuyButton">VIEW CAMP/topics</button></a>
+                        </div>
+                        <div class = "costNewColumn">
+                            <div class = "costCallout">Buy More and Save!</div>
+                            <div class = "costNewHeader">CAMP/packages (2-3 weeks)</div>
+                            <p class = "costNewDescription">Extend your stay: Combine CAMP/topics into our curated 2- or 3-week CAMP/packages for a more thorough understanding of a tech skill!</p>
+                            <p class = "costStrike">As low as</p>
+                            <div class = "discountFeaturePrice"><strike style = "color:gray; font-size: 16px">&#36;885</strike> &#36;665/week*</div>
+                            <div class = "discountFeature" style = "color:yellow;">Prices increase Dec. 15!</div>
+                            <a href = "http://hq.pixelacademy.org/tickets/camp-pixel"><button class = "locationBuyButton">VIEW CAMP/packages</button></a>
+                            <p class = "priceDisclaimer2">&#42;Discounts only apply for CAMP/pixel weeks purchased in the same transaction.</p>
+                        </div>
+               		</div>
+               		</div>
+            	</div>
+				<a name="dropoff"></a>
+				<div class="locationSubSection">
+					<div class="label">
+						<div class="labelImage" id="screenBreaksImage">
+						</div>
+						<div class="slashImage">
+						</div>
+						<div class="labelText">
+						LOCATION
+						</div>
+					</div>
+                    <div id="locationSection" class="sectionContent">
+                        <div id="locationBlurb">
+                            <p style = "font-family:Body"><a href = "http://camp.pixelacademy.org/" id="hiddenLinks">We carefully pick our CAMP/pixel</a> locations (and we're picky!) to be safe, inspiring, and convenient for our campers and families. Each location is teeming with cutting-edge technology and energetic Pixel Academy staff all summer long to give your camper the best experience wherever you choose to go.</p>
+                        </div>
+                        <div id = "mapTableContainer">
+                            <table class = "mapTable">
+                                <td>
+                                    <h1 class = "address" style = "margin-bottom: 15px">CAMP/pixel Brooklyn</h1>
+                                    <a class="mapTableHeader" target="_blank" href="https://www.google.com/maps/place/Pixel+Academy/@40.689595,-73.9963537,17z/data=!3m1!4b1!4m5!3m4!1s0x89c25a4f848e35a5:0xd7168bd8578df4a5!8m2!3d40.689595!4d-73.994165">Pixel Academy: Brooklyn<br>163 Pacific St.<br>Brooklyn, NY 11201</a>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48404.65115809002!2d-74.02918392092126!3d40.68959497933435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a4f848e35a5%3A0xd7168bd8578df4a5!2sPixel+Academy!5e0!3m2!1sen!2sus!4v1477082646192" class = "locationMap" width="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                    <div class="subwayIcons">
+                                        <img src="images/subways_2.png" alt="MTA 2 train"/>
+                                        <img src="images/subways_3.png" alt="MTA 3 train"/>
+                                        <img src="images/subways_4.png" alt="MTA 4 train"/>
+                                        <img src="images/subways_5.png" alt="MTA 5 train"/>
+                                        <img src="images/subways_A.png" alt="MTA A train"/>
+                                        <img src="images/subways_C.png" alt="MTA C train"/>
+                                        <img src="images/subways_R.png" alt="MTA R train"/>
+                                        <img src="images/subways_F.png" alt="MTA F train"/>
+                                        <img src="images/subways_G.png" alt="MTA G train"/>
+                                    </div>
+                                    <a href = "http://hq.pixelacademy.org/tickets/camp-pixel"><button class = "locationBuyButton">BUY TICKETS</button></a>
+                                </td>
+                                <td>
+                                    <h1 class = "address" style = "margin-bottom: 15px">CAMP/pixel Lower Manhattan</h1>
+                                    <a class="mapTableHeader" target="_blank" href="https://www.google.com/maps/place/Pixel+Academy:+TriBeCa/@40.72246,-74.0134807,17z/data=!3m1!4b1!4m5!3m4!1s0x89c259f4330652d9:0xdabd96f995da4043!8m2!3d40.72246!4d-74.011292">Pixel Academy: TriBeCa<br>256 West St.<br>New York, NY 10013</a>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.7981423020415!2d-74.0134806849422!3d40.7224599793308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259f4330652d9%3A0xdabd96f995da4043!2sPixel+Academy%3A+TriBeCa!5e0!3m2!1sen!2sus!4v1477344921703" class = "locationMap" width="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                    <div class="subwayIcons">
+                                        <img src="images/subways_1.png" alt="MTA 1 train"/>
+                                        <img src="images/subways_A.png" alt="MTA A train"/>
+                                        <img src="images/subways_C.png" alt="MTA C train"/>
+                                        <img src="images/subways_E.png" alt="MTA E train"/>
+                                    </div>
+                                    <a href = "http://hq.pixelacademy.org/tickets/camp-pixel"><button class = "locationBuyButton">BUY TICKETS</button></a>
+                                </td>
+                                <td>
+                                    <h1 class = "address" style = "margin-bottom: 15px">CAMP/pixel Upper East Side</h1>
+                                    <a class="mapTableHeader" target="_blank" href="https://www.google.com/maps/place/Trevor+Day+School/@40.7829807,-73.9489195,17z/data=!3m1!4b1!4m5!3m4!1s0x89c258af69358e33:0x9f618beaa2accac!8m2!3d40.7829807!4d-73.9467308">Location TBA<br>Upper East Side<br>New York, NY</a>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24171.949061922252!2d-73.97524361081823!3d40.77316067691362!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258bf08488f6b%3A0x618706a9142daa0d!2sUpper+East+Side%2C+New+York%2C+NY!5e0!3m2!1sen!2sus!4v1478552154131" class = "locationMap" width="100%" frameborder="0" style="border:0" allowfullscreen>></iframe>
+                                    <div class="subwayIcons">
+                                        <img src="images/subways_6.png" alt="MTA 6 train"/>
+                                        <img src="images/subways_M15.png" alt="MTA M15 bus"/>
+                                    </div>
+                                    <button class = "locationBuyButton" style = "background-color:gray; font-style:italic">COMING SOON</button>
+                                </td>
+                            </table>
+                        </div>
+                    </div>
+				</div>
+			</div>
+			
+	</div>
+</body>
+</html>

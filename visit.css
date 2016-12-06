@@ -1,0 +1,194 @@
+
+#visitSectionHeader .mainSectionImage {
+  background-image: url("images/_working.jpg") !important;
+      background-position: right center;
+      background-size: cover; }
+}
+
+.visitBlurb {
+
+	font-family: "body";
+	font-size: 16px;
+	line-height: 20px;
+}
+
+
+.openHouseLeft{
+	float: left;
+	width: 55%;
+    margin-bottom: 25px;
+}
+
+.openHouseRight{
+	float: right;
+	width: 40%;
+	margin-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.openHouseImage{
+	content: url("images/front_6.jpg");
+	width:  70%;
+	margin-bottom: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color:green;
+}
+
+
+.noOpenHouse {
+    width: 80%;
+    margin: auto;
+    font-family: "Body";
+    font-size: 20px;
+    background-color:#7fcca8;
+    padding: 20px 10px;
+    text-align: center;
+    color:white;
+}
+.optionsTitle {
+	color: #7fcca8;
+	font-family: "Header";
+	font-size: 25px;
+	margin-bottom: 20px;
+}
+
+.pineTitle {
+    font-family: "Header";
+    color: darkgray;
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    
+}
+.openHouseBlurb, .tourBlurb, .pineBlurb{
+	font-family: "body";
+	font-size: 14px;
+	line-height: 16px;
+	margin-bottom: 20px;
+}
+
+
+.tour {
+	clear:both;
+    
+}
+.tourleft {
+	float: left;
+	width: 48%;
+    margin-bottom: 40px;
+}
+
+.tourRight {
+	float: right;
+	width: 48%;
+}
+
+.tourButton{
+    border-style: none;
+	background-color: #7fcca8;
+	color: white;
+	font-family: "Header";
+	font-size: 20px;
+	width: 70%;
+	padding: 15px 0px;
+	text-align: center;
+	margin: auto;
+    display: none;
+	margin-bottom: 25px;
+}
+
+.pineButton {
+	border-style: none;
+	background-color: #7fcca8;
+	color: white;
+	font-family: "Header";
+	font-size: 20px;
+	width: 70%;
+	padding: 15px 0px;
+	text-align: center;
+	margin-top: 40px;
+	margin-right: auto;
+	margin-left: auto;
+    
+	display: block;
+}
+
+.tourButton:hover, .pineButton:hover {
+	background-color: gray;
+}
+
+#visitCTA {
+  padding-bottom: 30px;
+  clear: both;
+  margin: 60px auto;
+  text-align: center;
+ margin-top: 70px!important;
+}
+
+
+#visitCTA a {
+    text-decoration: none; }
+
+#visitCTA1, #visitCTA2 {
+  font-family: "Header";
+  display: inline-block;
+  text-align: center;
+  width: 250px;
+  font-size: 18px;
+  line-height: 60px;
+  height: 60px;
+  background: #ff017e;
+  font-weight: normal;
+  margin: auto;
+  color: white; }
+
+#visit:hover, #visit2:hover {
+    background: #e54785;
+    cursor: pointer;
+    color: #fff; }
+
+#visitCTA1 {
+  margin-right: 15px; }
+
+@media screen and (max-width: 690px) {
+    #visitCTA1 {
+    margin-right: 0px;
+    margin-bottom: 15px; } 
+
+    .openHouseLeft, .openHouseRight, .tourLeft, .tourRight{
+    float: none;
+    width: 100%;
+    }
+    
+    .tourButton {
+        display: block;
+    }
+    .pineButton {
+        margin-bottom: 0px;
+        margin-top: 10px;
+    }
+    
+    #tourembed{
+        display: none;
+    }
+    
+    .pineButton:hover, .tourButton:hover {
+        background-color: none;
+    }
+ 
+}
+
+@media screen and (max-width: 800) {
+
+.openHouseLeft, .openHouseRight, .tourLeft, .tourRight{
+    float: none;
+    width: 100%;
+    }
+    .openHouseImage {
+        min-width: 80%;
+        min-height: 100%;
+    }
+}
+

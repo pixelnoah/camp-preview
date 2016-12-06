@@ -1,0 +1,736 @@
+<html>
+    <head>
+        <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+        <link rel="manifest" href="favicon/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+        <link rel="stylesheet" type="text/css" href="cssReset.css">
+        <link rel="stylesheet" type="text/css" href="sharedStyle.css">
+        <link rel="stylesheet" type="text/css" href="sharedStyleMobile.css">
+        <link rel="stylesheet" type="text/css" href="topBar.css">
+        <link rel="stylesheet" type="text/css" href="contactfaq.css">
+        <script src="jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="ejs_production.js">	</script>
+        <!-- Renders the page -->
+        <!-- EJS HERE -->
+        <script type="text/javascript">
+            $(document).ready(function(){
+            	var topBar = new EJS({url: 'topBar.ejs'}).render();
+            	var bottomBar = new EJS({url: 'bottomBar.ejs'}).render();
+            
+            	$("#wrapper").prepend(topBar);
+            	$("#wrapper").append(bottomBar);
+            
+            });
+        </script>
+        <script src="allPages.js"></script>
+        <script src="contactfaq.js"></script>
+        <!-- Embedded affirm logo (cost page) -->
+        <script>
+            var _affirm_config = {
+              public_api_key:  "XXXXXXXXXXXXXXX",
+              script:          "https://cdn1-sandbox.affirm.com/js/v2/affirm.js"
+            };
+            (function(l,g,m,e,a,f,b){var d,c=l[m]||{},h=document.createElement(f),n=document.getElementsByTagName(f)[0],k=function(a,b,c){return function(){a[b]._.push([c,arguments])}};c[e]=k(c,e,"set");d=c[e];c[a]={};c[a]._=[];d._=[];c[a][b]=k(c,a,b);a=0;for(b="set add save post open empty reset on off trigger ready setProduct".split(" ");a<b.length;a++)d[b[a]]=k(c,e,b[a]);a=0;for(b=["get","token","url","items"];a<b.length;a++)d[b[a]]=function(){};h.async=!0;h.src=g[f];n.parentNode.insertBefore(h,n);delete g[f];d(g);l[m]=c})(window,_affirm_config,"affirm","checkout","ui","script","ready");
+        </script>
+        <!--Start of Zopim Live Chat Script-->
+        <script type="text/javascript">
+            window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+                    d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+                    _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+                $.src="//v2.zopim.com/?154sLdSAaw4zX6Hoq65ZMP28r6UXYRlH";z.t=+new Date;$.
+                        type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+        </script>
+        <!-- Google Analytics -->
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+            ga('create', 'UA-31308117-1', 'auto');
+            ga('require', 'linkid', 'linkid.js');
+            ga('send', 'pageview');
+            
+            var trackOutboundLink = function(url) {
+              		ga('send', 'event', url, 'click', url, {'hitCallback':
+                	function () {
+                
+                	}
+              	});
+            }
+        </script>
+		<script type="text/javascript"
+		  src="//www.googleadservices.com/pagead/conversion_async.js">
+		</script>
+         <!-- Drip -->
+        <script type="text/javascript">
+                  var _dcq = _dcq || [];
+                  var _dcs = _dcs || {};
+                  _dcs.account = '9346191';
+
+                  (function() {
+                    var dc = document.createElement('script');
+                    dc.type = 'text/javascript'; dc.async = true;
+                    dc.src = '//tag.getdrip.com/9346191.js';
+                    var s = document.getElementsByTagName('script')[0];
+                    s.parentNode.insertBefore(dc, s);
+                  })();
+        </script>
+        <!--End Drip-->
+        <!-- Begin Inspectlet Embed Code -->
+            <script type="text/javascript" id="inspectletjs">
+            window.__insp = window.__insp || [];
+            __insp.push(['wid', 575740643]);
+            (function() {
+            function ldinsp(){if(typeof window.__inspld != "undefined") return; window.__inspld = 1; var insp = document.createElement('script'); insp.type = 'text/javascript'; insp.async = true; insp.id = "inspsync"; insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://cdn.inspectlet.com/inspectlet.js'; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(insp, x); };
+            setTimeout(ldinsp, 500); document.readyState != "complete" ? (window.attachEvent ? window.attachEvent('onload', ldinsp) : window.addEventListener('load', ldinsp, false)) : ldinsp();
+            })();
+            </script>
+<!-- End Inspectlet Embed Code -->
+        <!-- Page Title -->
+        <title> CAMP/pixel: contact/FAQ: NYC's Best Technology Day Camp</title>
+        <meta name="description" content="We're standing by to answer your questions about CAMP/pixel.">
+    </head>
+<body>
+	<div id="wrapper">
+	
+	<div id="content">
+	<!-- CONTACT/FAQ SECTION -->
+	<div class="section">
+		<div class="mainSectionHeader">
+			<h1 class="mainSectionText">
+				<span>
+				Contact/FAQ
+				</span>
+			</h1>
+			<div class="mainSectionImageContainer" id="contactSectionHeader">
+				<div class="mainSectionImage"></div>
+				<div class="mainSectionImageSlash"></div>
+			</div>
+		</div>
+		<div class="sectionContent">
+			<div id="contactSection">
+				<div id="contactTable">
+					<div class="sectionBlurb">
+					We're standing by to answer your questions about CAMP/pixel. If you don't see what you're looking for on our website, search our FAQ below or get in touch with the CAMP/pixel team!
+				</div>
+					<table>
+						<tr>
+							<td class="contactTableLeft">
+								Email
+								<p class = "contactTableSubLeft">We'll be back to you ASAP</p>
+							</td>
+							<td class="contactTableRight">
+								<a href="mailto:info@pixelacademy.org">info@pixelacademy.org</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="contactTableLeft">
+								Phone
+								<p class = "contactTableSubLeft">Mon - Fri, 10 AM - 6 PM</p>
+							</td>
+							<td class="contactTableRight">
+								(866) 771-6837
+							</td>
+						</tr>
+						<tr>
+							<td class="contactTableLeft">
+								In Person
+								<p class = "contactTableSubLeft">Mon - Fri, 2:30 - 6 PM</p>
+							</td>
+							<td class="contactTableRight">
+								At <a href="http://www.pixelacademy.org">Pixel Academy</a> locations, weekdays between 2:30 and 6:00 PM.
+							</td>
+						</tr>
+						<tr>
+							<td class="contactTableLeft">
+								Live Chat
+								<p class = "contactTableSubLeft">Mon - Fri, 10 AM - 6 PM</p>
+							</td>
+							<td class="contactTableRight">
+								In the lower left-hand corner of this window
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div id="contactSectionImage">
+					<img src="images/standby.jpg" alt="Maker Kids"/>
+				</div>
+			</div>
+			<a name="top"></a>
+			<div id="FAQSection">
+				<div class="label">
+					FAQ
+				</div>
+				<div id="searchBar">
+					<form name="search">
+						<input id="searchBarText" placeholder="Search" type="text" name="searchBar">
+						<span id="searchBarButton">
+						</span>
+					</form>
+				</div>
+				<div id="noResultsMessage">
+					No results, try using the table of contents below:
+				</div> 
+				<div id="tableOfContents">
+					<a class="scrollTo" data-scroll="location">
+						LOCATION >
+					</a>
+					<a class="scrollTo" data-scroll="registration">
+						REGISTRATION/COST >
+					</a>
+					<a class="scrollTo" data-scroll="ages">
+						AGES >
+					</a>
+					<a class="scrollTo" data-scroll="thecampday">
+						THE CAMP DAY >
+					</a>
+					<a class="scrollTo" data-scroll="whattobring">
+						WHAT TO BRING >
+					</a>
+					<!--<a class="scrollTo" data-scroll="topics">
+						CAMPS >
+					</a>-->
+					<!--<a class="scrollTo" data-scroll="packages">
+						PACKAGES >
+					</a>-->
+					<a class="scrollTo" data-scroll="other">
+						MISCELLANEOUS >
+					</a>
+				</div>
+				<!-- Location Section -->
+				<a name="location"></a>
+				<div class="FAQSubsection">
+					<div class="FAQSubsectionLabel">
+						LOCATION
+					</div>
+					<div class="FAQQuestion" data-keywords="where,location,manhattan,brooklyn,financial,fidi, UES, uptown, upper, cobble, hill">
+						<div class="question">
+							Where is CAMP/pixel?
+						</div>
+						<div class="answer">
+							CAMP/pixel is in several New York City locations this summer! Visit our <a href="about.html#location">Location</a> page for more information.
+						</div>
+					</div>
+					<div class="FAQQuestion" data-keywords="brooklyn,manhattan,location,fidi,pixelacademy,cobble,hill,downtown, pine, street, PSS">
+						<div class="question">
+							Why isn't CAMP/pixel at Pine Street School again this summer?
+						</div>
+						<div class="answer">
+                            While CAMP/pixel 2016 was held at just one location in downtown Manhattan, CAMP/pixel 2017 will be held at several new locations to bring camp closer to our families! Visit our <a href="about.html#location">Location</a> page for more information.
+						</div>
+					</div>
+					<div class="FAQQuestion" data-keywords="pine street,pine,school,financial,fidi,location,manhattan,brooklyn,location,uptown,upper">
+						<div class="question">
+							How can I learn more about a camp location?
+						</div>
+						<div class="answer">
+                            CAMP/pixel locations operate as <a href = "http://www.pixelacademy.org" target = "_blank">Pixel Academy</a> makerspaces and party venues throughout the year. Drop us a line to talk to a team member about our locations!
+						</div>
+					</div>
+					<div class="FAQQuestion" data-keywords="tour,open,house,pinestreet,pine,school,financial,manhattan,brooklyn,fidi">
+						<div class="question">
+							Can I take a tour of a camp location before I register?
+						</div>
+						<div class="answer">
+							Yes! Head over to our <a href="visit.html">Visit page</a> to book a private tour and view any upcoming CAMP/pixel open houses.
+						</div>
+					</div>
+					<div class="FAQQuestion" data-keywords="pine street,pine,school,financial,fidi,location,manhattan,brooklyn,bus,subway,public,transportation,ferry,commute">
+						<div class="question">
+							Is CAMP/pixel near any public transportation?
+						</div>
+						<div class="answer">
+							Yes! Each of our locations is located near subways and buses for the convenience of our campers and families. You can view more information on our <a href="about.html#location">Location</a> page.
+						</div>
+					</div>
+					<div class="FAQQuestion" data-keywords="bus,add-on,transportation,pick-up,drop-off,bussing,buses">
+						<div class="question">
+							Are you offering bus transportation to CAMP/pixel?
+						</div>
+						<div class="answer">
+							We're excited to offer a <a href = "http://camp.pixelacademy.org/about/html#location">Brooklyn bus service</a> through Park Slope and Cobble Hill to get to our CAMP/pixel Brooklyn! Stay tuned for updates; if you have any suggestions or concerns, don't hesitate to <a href = "mailto:info@pixelacademy.org">email us</a>!
+						</div>
+					</div>
+					<!--<div class="FAQQuestion" data-keywords="bus,add-on,transportation,pick-up,drop-off,bussing,buses,stop,stops">
+						<div class="question">
+							When can I expect the bus to come by my stop?
+						</div>
+						<div class="answer">
+							We expect our buses to arrive at camp between 8:30 and 9:00 a.m., and depart between 2:30 and 3:00 p.m. Because of that, we project that the stops will take place 7:30-8:00 a.m. and drop-off at 3:30-4:00 p.m. We'll have a more exact idea of when to expect buses at your stop as the summer nears. For more information on buses, visit our <a href="about.html#location">location</a> page.
+						</div>
+					</div>
+					<div class="FAQQuestion" data-keywords="bus,add-on,transportation,pick-up,drop-off,bussing,buses,stop,stops,late">
+						<div class="question">
+							Is bus available after Extended Care?
+						</div>
+						<div class="answer">
+							It is not. Our buses leave CAMP/pixel for drop-off by 3:00 p.m. Campers staying for Extended Care will need pickup from the Pine Street School by 5:30 p.m.
+						</div>
+					</div>
+					<div class="FAQQuestion" data-keywords="bus,add-on,transportation,pick-up,drop-off,bussing,buses,stop,stops">
+						<div class="question">
+							I don't live near a bus stop. How can I request a new one?
+						</div>
+						<div class="answer">
+							If you'd like to request a different bus stop than we offer, please use our <a href="https://pixelacademy.formstack.com/forms/busrequest">Bus Stop Request form</a>. We can't guarantee that we'll add new stops,but we're constantly monitoring the submissions for areas with sufficient interest.
+						</div>
+					</div>-->
+					<a class="scrollTo scrollToTop" data-scroll="top">
+						BACK TO TOP >
+					</a>
+				</div>
+				<!-- Registration Section -->
+				<a name="registration"></a>
+				<div class="FAQSubsection">
+					<div class="FAQSubsectionLabel">
+						REGISTRATION/COST
+					</div>
+					<div class="FAQQuestion" data-keywords="add-on,on,add,cost,extra,extras,extended,PM,afternoon,EC,care,daycare,late">
+						<div class="question">
+							How much does the Extended Care add-on cost?
+						</div>
+						<div class="answer">
+							The Extended Care (3:00 - 5:30 PM) optional add-on costs $25 per day or $100 per week (Monday - Friday). We'll send you the information to select your add-ons once you're signed up for CAMP/pixel! For more information about add-ons, please visit our <a href="schedule.html">Schedule page</a>.
+						</div>
+					</div>
+					<div class="FAQQuestion" data-keywords="add-on,add,on,add,cost,extra,extras,lunch,lunches,food">
+						<div class="question">
+							How much does the Daily Lunch add-on cost?
+						</div>
+						<div class="answer">
+							Stay tuned for more information about our Lunch add-on! For more information, please visit our <a href="schedule.html">Schedule page</a>.
+						</div>
+					</div>
+					<!-- <div class="FAQQuestion" data-keywords="add-on,add,on,add,cost,extra,extras,lunch,lunches,food">
+						<div class="question">
+							How much does the Bus Transportation cost?
+						</div>
+						<div class="answer">
+							The Bus Transportation optional add-on is available by week. Cost and more information is available on our <a href="about.html#location">location</a> page. To select an add-on, reserve your CAMP/pixel experience! You'll be contacted soon thereafter with instructions on how to select your add-ons.
+						</div>
+					</div> -->
+					<div class="FAQQuestion" data-keywords="cost,expensive,money,cheap,combo,charge,scholarship,scholarships,financial,aid,lower-income,low-income">
+						<div class="question">
+							Do you offer scholarships or financial aid?
+						</div>
+						<div class="answer">
+							We know that summer camp costs aren't cheap, so we offer several ways to save on CAMP/pixel. These include early-bird, multi-week and sibling discounts, and low-APR financing options. Visit our <a href="about.html#cost">Cost page</a> for more details.
+						</div>
+					</div>
+					<div class="FAQQuestion" data-keywords="cost,expensive,money,cheap,combo,charge">
+						<div class="question">
+							Why are some camp topics more expensive than others?
+						</div>
+						<div class="answer">
+                            We've priced our offerings to accurately reflect the cost of the hardware, software, licenses, materials, and additional resources required to support each camp. Visit our <a href = "about.html#cost">Cost page</a> for more information and ways to save!
+						</div>
+					</div>
+					<div class="FAQQuestion" data-keywords="mobile,iOS,cell,phone,tablet,iPod,iPhone,iPod,Android,surface">
+						<div class="question">
+							I'm having trouble viewing the mobile version of your registration site. What's wrong?
+						</div>
+						<div class="answer">
+                            For best viewing of our CAMP/pixel and ticketing websites, we recommend you use the Google Chrome browser on a laptop or desktop computer. Some webpages may not be optimized for mobile or tablet display.
+						</div>
+					</div>
+					<div class="FAQQuestion" data-keywords="Sold,out,waiting,list,spots,spaces,space,available">
+						<div class="question">
+							How do I know if a camp is sold out?
+						</div>
+						<div class="answer">
+							On our <a href="https://hq.pixelacademy.org/tickets/camp-pixel/index">Tickets</a> page, sold-out camps are grayed out and not clickable in the schedule. You can see how many spots remain for each camp by looking right below the button for your desired camp. Reserve now to guarantee your spot!
+						</div>
+					</div>
+					<div class="FAQQuestion" data-keywords="Sold,out,waiting,list,spots,spaces,space,available">
+						<div class="question">
+							I'm sold out of a camp! Is there a waiting list?
+						</div>
+						<div class="answer">
+                            You can sign up for Availability Notifications on a sold-out camp via link directly below your desired camp on the <a href="https://hq.pixelacademy.org/tickets/camp-pixel/index">Tickets</a> page. We do recommend signing up for a different option within your week of choice to guarantee your spot at CAMP/pixel, but we'll notify the camp's active Availability Notifications list when a spot becomes available.
+						</div>
+					</div>
+					<div class="FAQQuestion" data-keywords="lunch,lunches,add,add-on,snack,extended,care,afternoon,daycare,pm,pickup,pick-up">
+						<div class="question">
+							How can I add an add-on to my reservation?
+						</div>
+						<div class="answer">
+							Your CAMP/pixel registration comes with a personal account on our online portal. There, you can view, modify, and add to your camp experience. We email you all the details when you sign up!
+						</div>
+					</div>
+                    <div class="FAQQuestion" data-keywords="refund, policy, refunds, registration, money, ticket, cancel, schedule, purchase, return, rebate, terms, conditions">
+						<div class="question">
+							What is your refund policy?
+						</div>
+						<div class="answer">
+							We offer 100% refunds on CAMP/pixel 2017 purchases for requests made before March 15, 2017. Please visit <a href = "http://hq.pixelacademy.org/refunds" target="_blank">hq.pixelacademy.org/refunds</a> to view our full policies on refunding or modifying a CAMP/pixel reservation.
+						</div>
+					</div>
+					<a class="scrollTo scrollToTop" data-scroll="top">
+						BACK TO TOP >
+					</a>
+				</div>
+				<!-- The Camp Day section -->
+				<a name="ages"></a>
+				<div class="FAQSubsection">
+					<div class="FAQSubsectionLabel">
+						AGES
+					</div>
+					<div class="FAQQuestion" data-keywords="9,age,ages,8,10,child,young,younger">
+						<div class="question">
+							My child is 9. For which age group do I sign up?
+						</div>
+						<div class="answer">
+							It's up to you! CAMP/pixel is both a learning and a social experience; you're free to put your camper in whichever age group you think he or she would feel more comfortable.
+						</div>
+					</div>
+					<div class="FAQQuestion" data-keywords="7,8,9,10,11,12,13,14,age,ages,child,younger,older,children,year,years">
+						<div class="question">
+							I want to put my child in a different age group than is advertised. Is that allowed?
+						</div>
+						<div class="answer">
+							We've designed our CAMP/pixel curriculum and activities to reflect ability relative to our 3 age groups: 7-9, 9-11, and 12-14. It's also very much a social experience of working and playing with like-minded individuals. We recommend the age groups we advertise for the optimal camp experience, but you're invited to register your child for whichever age group you think will make for the most rewarding experience, in keeping with our <a href = "http://hq.pixelacademy.org/terms">Terms and Conditions</a>.
+						</div>
+					</div>
+					<div class="FAQQuestion" data-keywords="Teens,14,15,16,17,18,19,CIT,C.I.T.,iobs,internships,internship,intern,counselor,counselors,training,teen,teenager,teenagers">
+						<div class="question">
+							How can teens older than 14 get involved?
+						</div>
+						<div class="answer">
+							Great question! Stay tuned for information on great opportunities for teens older than 14 to learn and lead with CAMP/pixel. Don't forget to <a href = "http://www.pixelacademy.org/subscribe" target = "_blank">subscribe to our mailing list</a> to be the first to know our updates!
+						</div>
+					</div>
+					<a class="scrollTo scrollToTop" data-scroll="top">
+						BACK TO TOP >
+					</a>
+				</div>
+
+				<!-- The Camp Day section -->
+				<a name="thecampday"></a>
+				<div class="FAQSubsection">
+					<div class="FAQSubsectionLabel">
+						THE CAMP DAY
+					</div>
+					<div class="FAQQuestion" data-keywords="hours,open,time,AM,morning,afternoon,PM,evening,drop-off,pick,up,pickup,pick-up,check,out,late,afternoon,evening,PM">
+						<div class="question">
+							What are CAMP/pixel's hours?
+						</div>
+						<div class="answer">
+							CAMP/pixel runs from 9:00 a.m. to 2:30 p.m. Monday through Friday during 9 weeks of the summer. Flexible check-in is at 8:30-9:00 a.m. and flexible check-out is from 2:30-3:00 p.m. Parents wishing to pick up later can add on Extended Care, which runs until 5:30 p.m. Learn more on our <a href="schedule.html">Schedule page</a>.
+						</div>
+					</div>
+					<!-- <div class="FAQQuestion" data-keywords="lunch,snack,meal,snacks,meals,pack,food">
+						<div class="question">
+							What do you offer for lunch and snack?
+						</div>
+						<div class="answer">
+							Delicious, nutritious lunches are delievered daily by <a href="http://www.inboxyourmeal.com/" target="_blank">IN'BOX</a>! Each day of a camp week will feature a different healthy, nutritious lunch for participating campers. Campers are also welcome to pack their own lunches and snacks! Learn more on our <a href="schedule.html">Day at CAMP/pixel</a> page.
+						</div>
+					</div> -->
+					<div class="FAQQuestion" data-keywords="schedule,sample,day,break,screen,break,outside,exercise,physical,gym,play,playground">
+						<div class="question">
+							Can I see a sample schedule of a CAMP/pixel day?
+						</div>
+						<div class="answer">
+                            Yes! Please visit our <a href="schedule.html">Schedule page</a> to discover what a typical day looks like and call us at <a href="tel:1-866-771-6837">(866) 771-6837</a> if you have any questions.
+						</div>
+					</div>
+					<div class="FAQQuestion" data-keywords="screen,break,outside,exercise,physical,gym,play,playground">
+						<div class="question">
+							Do campers just sit around and stare at the computer all day by themselves?
+						</div>
+						<div class="answer">
+							Absolutely not! In addition to on-screen learning, the camp day is packed with screen breaks, food breaks, physical activities, and more. Please visit our <a href="schedule.html">Schedule page</a> to learn more.
+                            
+						</div>
+					</div>
+					<div class="FAQQuestion" data-keywords="pick,up,pickup,pick-up,check,out,late,afternoon,evening,PM">
+						<div class="question">
+							Do you offer late pick-up?
+						</div>
+						<div class="answer">
+							Pick-up is at 2:30-3:00 p.m. You're welcome to add on Extended Care to your reservation, which gives you until 5:30 p.m. to pick up your camper. Learn more on our <a href="schedule.html">Schedule page</a>.
+						</div>
+					</div>
+					<div class="FAQQuestion" data-keywords="drop,off,dropoff,drop-off,check,in,early,morning,AM">
+						<div class="question">
+							Can we drop off early?
+						</div>
+						<div class="answer">
+                            We invite you to drop off as early as 8:30 a.m. for flexible check-in. Drop-off before 8:30 is not allowed as we won't be staffed to support your camper at that time. Learn more on our <a href="schedule.html">Schedule page</a>.
+						</div>
+					</div>
+					<div class="FAQQuestion" data-keywords="stay,parent,adult,hang,learn">
+						<div class="question">
+							Can I stay with my child at CAMP/pixel?
+						</div>
+						<div class="answer">
+							We ask camper parents to leave once the check-in process is complete. We have every parent's contact information on hand and we don't hesitate to call; please do the same at <a href = "tel:1-866-771-6837">(866) 771-6837</a> if you have any concerns!
+						</div>
+					</div>
+					<div class="FAQQuestion" data-keywords="game,games,free,time,minecraft,mine,craft">
+						<div class="question">
+							How do I know my child is not just playing video games all day? 
+						</div>
+						<div class="answer">
+							At CAMP/pixel, "free time" is earned and not abused. Campers may be found testing a game or mod they design or taking a few minutes for a well-earned fun break, but they know from day 1 that it's not what CAMP/pixel is all about. Learn more on our <a href="schedule.html">Schedule page</a>.
+						</div>
+					</div>
+					<a class="scrollTo scrollToTop" data-scroll="top">
+						BACK TO TOP >
+					</a>
+				</div>
+
+				<!-- What to bring section -->
+				<a name="whattobring"></a>
+				<div class="FAQSubsection">
+					<div class="FAQSubsectionLabel">
+						WHAT TO BRING
+					</div>
+					<div class="FAQQuestion" data-keywords="bring,pack,lunch,technology,computer,ipad,macbook,laptop,ipod,snack,meal,water">
+						<div class="question">
+							What should my child bring to CAMP/pixel?
+						</div>
+						<div class="answer">
+							We have snacks and water here, but you're welcome to pack both if you prefer! If you don't sign up for our daily lunches, please pack a lunch along with your camper.  We use our technology for learning, so no need to bring laptops or tablets. Most importantly, make sure your camper comes with a positive attitude and readiness to learn!
+						</div>
+					</div>
+					<!--<div class="FAQQuestion" data-keywords="lunch,snack,meal,snacks,meals,pack,food">
+						<div class="question">
+							Should I pack a lunch for my camper?
+						</div>
+						<div class="answer">
+							We offer a Lunch option as an add-on with our ticket. If you don't select the option, please bring a lunch with your camper every morning!
+						</div>
+					</div>-->
+					<div class="FAQQuestion" data-keywords="lunch,snack,meal,snacks,meals,pack,food">
+						<div class="question">
+							Should I pack a snack for my camper?
+						</div>
+						<div class="answer">
+							A twice-daily morning and afternoon snack are included in your reservation! You're also welcome to pack snacks of your own if you prefer. 
+						</div>
+					</div>
+					<div class="FAQQuestion" data-keywords="technology,computer,ipad,ipod,laptop,macbook">
+						<div class="question">
+							Do I need to bring any technology?
+						</div>
+						<div class="answer">
+							Nope! All of our camps are taught using our technology. That said, if your camper would like to bring his or her own device in the event there's downtime in a day, he or she is welcome to do so. 
+						</div>
+					</div>
+					<div class="FAQQuestion" data-keywords="doctor,note,medical,form,forms,doctors,signed,allergy,allergies,medicine,add,adhd,ld">
+						<div class="question">
+							Do I need a doctor-signed medical form to send my child to CAMP/pixel?
+						</div>
+						<div class="answer">
+							You do not! When you're signed up for camp and can access your Pixel Academy account, we'll ask you to please fill out your camper's Profile, which includes a box for Medical Information. We monitor and refer to this very closely and are happy to speak with any parents with medical or related concerns.
+						</div>
+					</div>
+					<div class="FAQQuestion" data-keywords="flash,drive,store,storage">
+						<div class="question">
+							Should my camper bring a flash drive?
+						</div>
+						<div class="answer">
+							Every registered camper gets one free 8GB flash drive each summer! Campers take the drive home with their finished projects at the end of each week.
+						</div>
+					</div>
+					<div class="FAQQuestion" data-keywords="rain,raining,rainy,rains,rainboots,outside,weather,inclement">
+						<div class="question">
+							What do you do when it rains?
+						</div>
+						<div class="answer">
+							Water and technology: Not a great mix. Make sure your camper is dry at drop-off on rainy days (raincoats, boots)! We tend to avoid going outside on days with inclement weather.
+						</div>
+					</div>
+					<a class="scrollTo scrollToTop" data-scroll="top">
+						BACK TO TOP >
+					</a>
+				</div>
+
+				<!-- Miscellaneous  section -->
+				<!-- <a name="topics"></a>
+				<div class="FAQSubsection">
+					<div class="FAQSubsectionLabel">
+						CAMPS
+					</div>
+					<div class="FAQQuestion" data-keywords="Combo,project,custom,topic,own">
+						<div class="question">
+							Can I make my own camp by combining any 2 skills?
+						</div>
+						<div class="answer">
+							We've paired up the camps we offer into an optimal experience of 2 related activities: One physical, the other digital. We feel that these 2 projects combined will make the best experience for your campers. However, there's lots of great ways to combine 1-week camps into deeper, multi-week learning! Visit our <a href = "http://hq.pixelacademy.org/tickets/camp-pixel/index">Tickets page</a> for more information.
+						</div>
+					</div>
+					<div class="FAQQuestion" data-keywords="7,8,9,10,11,12,13,14,age,ages,child,younger,older,children,year,years,topic,topics">
+						<div class="question">
+							My desired camp isn't available for my child's age group. What do I do?
+						</div>
+						<div class="answer">
+							We've designed our CAMP/pixel curriculum and activities to reflect ability relative to our 3 age groups: 7-9, 9-11, and 12-14. It's also very much a social experience of working and playing with like-minded individuals. We recommend the age groups we advertise for the optimal camp experience.
+						</div>
+					</div>
+					<div class="FAQQuestion" data-keywords="topic,topics,camp,camps,skill,skills">
+						<div class="question">
+							How do I pick the best camp for my child?
+						</div>
+						<div class="answer">
+							All of our camps are hands-on, intruguing, and involve the coolest, most cutting-edge tech! If you're undecided as to which to reserve for your child, we recommend you show them the camps and ask them which looks best! No prior experience is required for any CAMP/pixel camp topic, with the exception of <a href = "topic.html#MINECRAFTcodingplus">MINECRAFT/coding+</a>. Interest is always a huge plus!
+						</div>
+					</div>
+					<div class="FAQQuestion" data-keywords="buy,reserve,register,registration,checkout,topic">
+						<div class="question">
+							I know which camp(s) we want. How do I sign up?
+						</div>
+						<div class="answer">
+							Visit our <a href="https://hq.pixelacademy.org/tickets/camp-pixel/index">Tickets</a> page to view our camps schedule and reserve your CAMP/pixel experience!
+						</div>
+					</div>
+					<a class="scrollTo scrollToTop" data-scroll="top">
+						BACK TO TOP >
+					</a>
+				</div> -->
+
+
+				<!-- Miscellaneous  section -->
+				<!--<a name="packages"></a>
+				<div class="FAQSubsection">
+					<div class="FAQSubsectionLabel">
+						PACKAGES
+					</div>
+					<div class="FAQQuestion" data-keywords="package,packages,pack,packs">
+						<div class="question">
+							How do I add a Package?
+						</div>
+						<div class="answer">
+							If the dates work for you, you can add all items from a CAMP/pixel Package to your cart by pressing "Add This Package To Cart" on the individual <a href="packages.html">Package</a> page.
+						</div>
+					</div>
+					<div class="FAQQuestion" data-keywords="package,packages,pack,packs">
+						<div class="question">
+							What if I want a Package, but the dates don't work for me?
+						</div>
+						<div class="answer">
+							If the set of camps work for you, feel free to go to our <a href="https://hq.pixelacademy.org/tickets/camp-pixel/index">Tickets</a> page and add them on the dates that work for you as well! You'll get the same multi-week deal as if you added our suggested package.
+						</div>
+					</div>
+					<div class="FAQQuestion" data-keywords="package,packages,pack,packs">
+						<div class="question">
+							What if I want to slightly change a Package?
+						</div>
+						<div class="answer">
+							Totally fine! Our Packages are suggestions for optimizing your child's camp experience and can be changed however you'd like. Head to our <a href="https://hq.pixelacademy.org/tickets/camp-pixel/index">Tickets</a> page and add your camps at your convenience. You'll get the same multi-week deal as if you added our suggested package.
+						</div>
+					</div>
+					<div class="FAQQuestion" data-keywords="package,packages,pack,packs">
+						<div class="question">
+							I want to reserve a Package but have already bought camp(s) included. What do I do?
+						</div>
+						<div class="answer">
+							You can complete your Package by heading to our <a href="https://hq.pixelacademy.org/tickets/camp-pixel/index">Tickets</a> page and registering for the remaining camps on the days that work for you!
+						</div>
+					</div>
+					<a class="scrollTo scrollToTop" data-scroll="top">
+						BACK TO TOP >
+					</a>
+				</div>
+				-->
+				<!-- Miscellaneous  section -->
+				<a name="other"></a>
+				<div class="FAQSubsection">
+					<div class="FAQSubsectionLabel">
+						MISCELLANEOUS
+					</div>
+					<div class="FAQQuestion" data-keywords="pixel academy,academy,brooklyn,year-round,year,after-school,afterschool,school,academic">
+						<div class="question">
+							Is CAMP/pixel associated with Pixel Academy?
+						</div>
+						<div class="answer">
+							Yes! <a href="http://www.pixelacademy.org">Pixel Academy</a> runs CAMP/pixel during the summer and lots of other awesome, hands-on, future-focused technology learning during the year. If you like CAMP/pixel, join us during the year for <a href = "http://www.pixelacademy.org/membership" target = "_blank">after-school membership</a>, a <a href = "http://www.pixelacademy.org/birthdays" target = "_blank">birthday party</a>, <a href = "http://www.pixelacademy.org/mini-camps" target = "_blank">gaming events</a>, and much more!
+						</div>
+					</div>
+					<div class="FAQQuestion" data-keywords="adults,participate,grown-up,parent,parents,adult">
+						<div class="question">
+							Can adults participate?
+						</div>
+						<div class="answer">
+							Nope :( But take a look at our <a href="http://www.pixelacademy.org/employment/">job opportunities</a> if you're interested in joining the CAMP/pixel team!
+						</div>
+					</div>
+					<!--<div class="FAQQuestion" data-keywords="pixel academy,academy,brooklyn,year-round,year,after-school,afterschool,school,academic">
+						<div class="question">
+							Do you do anything during the year?
+						</div>
+						<div class="answer">
+							Yes! Check out <a href="http://www.pixelacademy.org">www.pixelacademy.org</a> to view our programs in Brooklyn and Manhattan during the school year.
+						</div>
+					</div>-->
+					<div class="FAQQuestion" data-keywords="special,needs,learning,disability,disabilities,ADHD,LD,2e,twice,exceptional,autism">
+						<div class="question">
+							Are you special needs friendly?
+						</div>
+						<div class="answer">
+							Our Instructors have experience and training with a variety of special needs and learning styles. CAMP/pixel creates an amazing environment for kids and teens who can think and act for themselves. In order to encourage creativity and facilitate a laid-back learning-environment, we try to keep our space an adult-free area (except for our Instructors); we unfortunately cannot currently accommodate anyone that requires an aide in school.  If you have any special questions or concerns, please give us a call. 
+						</div>
+					</div>
+					<div class="FAQQuestion" data-keywords="special,consideration,unique,unusual">
+						<div class="question">
+							What if I have a special circumstance?
+						</div>
+						<div class="answer">
+							Please let us know as soon as you can so we can make every effort to adjust and prepare accordingly. We're happy to be flexible and do our best to find a solution to any scenario we can! 
+						</div>
+					</div>
+					<div class="FAQQuestion" data-keywords="contact,support,FAQ,call,email,telephone,chat,question">
+						<div class="question">
+							How can I contact CAMP/pixel?
+						</div>
+						<div class="answer">
+							Email us at <a href = "mailto:info@pixelacademy.org">info@pixelacademy.org</a>, call us at <a href = "tel:1-866-771-6837">(866) 771-6837</a>, or live chat with us! We're standing by to help you during business hours Monday-Friday and will respond to your contact as soon as we can.
+						</div>
+					</div>
+					<div class="FAQQuestion" data-keywords="cost,expensive,money,cheap,combo,charge,save,ticket,registration">
+						<div class="question">
+							How can I stay notified about CAMP/pixel updates and promotions?
+						</div>
+						<div class="answer">
+							To be the first to know about any promotions we run on CAMP/pixel, please feel free to subscribe to our mailing list at <a href="http://www.pixelacademy.org/subscribe/">www.pixelacademy.org/subscribe/</a>.
+						</div>
+					</div>
+					<div class="FAQQuestion" data-keywords="contact,support,FAQ,call,email,telephone,chat,question">
+						<div class="question">
+							What if I have a question that isn't on your FAQ?
+						</div>
+						<div class="answer">
+							Give us a call at (866) 771-6837 or email at <a href="mailto:info@pixelacademy.org">info@pixelacademy.org</a>! We're standing by to help you during business hours Monday-Friday and will respond to your contact as soon as we can.
+						</div>
+					</div>
+					<a class="scrollTo scrollToTop" data-scroll="top">
+						BACK TO TOP >
+					</a>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!-- END CONTACT/FAQ SECTION -->
+	</div>
+		
+	</div>
+	</div>
+</body>
+</html>

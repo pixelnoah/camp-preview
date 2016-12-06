@@ -1,0 +1,440 @@
+<html>
+    <head>
+        <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+        <link rel="manifest" href="favicon/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+        <link rel="stylesheet" type="text/css" href="cssReset.css">
+        <link rel="stylesheet" type="text/css" href="sharedStyle.css">
+        <link rel="stylesheet" type="text/css" href="sharedStyleMobile.css">
+        <link rel="stylesheet" type="text/css" href="topBar.css">
+        <link rel="stylesheet" type="text/css" href="schedule.css">
+        <script src="jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="ejs_production.js">	</script>
+        <!-- Renders the page -->
+        <!-- EJS HERE -->
+        <script type="text/javascript">
+            $(document).ready(function(){
+            	var topBar = new EJS({url: 'topBar.ejs'}).render();
+            	var bottomBar = new EJS({url: 'bottomBar.ejs'}).render();
+            
+            $("#wrapper").prepend(topBar);
+            $("#wrapper").append(bottomBar);
+            
+            });
+        </script>
+        <script src="allPages.js"></script>
+        <script src="schedule.js"></script>
+        <!-- Embedded affirm logo (cost page) -->
+        <script>
+            var _affirm_config = {
+              public_api_key:  "XXXXXXXXXXXXXXX",
+              script:          "https://cdn1-sandbox.affirm.com/js/v2/affirm.js"
+            };
+            (function(l,g,m,e,a,f,b){var d,c=l[m]||{},h=document.createElement(f),n=document.getElementsByTagName(f)[0],k=function(a,b,c){return function(){a[b]._.push([c,arguments])}};c[e]=k(c,e,"set");d=c[e];c[a]={};c[a]._=[];d._=[];c[a][b]=k(c,a,b);a=0;for(b="set add save post open empty reset on off trigger ready setProduct".split(" ");a<b.length;a++)d[b[a]]=k(c,e,b[a]);a=0;for(b=["get","token","url","items"];a<b.length;a++)d[b[a]]=function(){};h.async=!0;h.src=g[f];n.parentNode.insertBefore(h,n);delete g[f];d(g);l[m]=c})(window,_affirm_config,"affirm","checkout","ui","script","ready");
+        </script>
+        <!--Start of Zopim Live Chat Script-->
+        <script type="text/javascript">
+            window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+                    d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+                    _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+                $.src="//v2.zopim.com/?154sLdSAaw4zX6Hoq65ZMP28r6UXYRlH";z.t=+new Date;$.
+                        type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+        </script>
+        <!-- Google Analytics -->
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+            ga('create', 'UA-31308117-1', 'auto');
+            ga('require', 'linkid', 'linkid.js');
+            ga('send', 'pageview');
+            
+            var trackOutboundLink = function(url) {
+              		ga('send', 'event', url, 'click', url, {'hitCallback':
+                	function () {
+                
+                	}
+              	});
+            }
+        </script>
+        <script type="text/javascript"
+            src="//www.googleadservices.com/pagead/conversion_async.js"></script>
+         <!-- Drip -->
+        <script type="text/javascript">
+              var _dcq = _dcq || [];
+              var _dcs = _dcs || {};
+              _dcs.account = '9346191';
+
+              (function() {
+                var dc = document.createElement('script');
+                dc.type = 'text/javascript'; dc.async = true;
+                dc.src = '//tag.getdrip.com/9346191.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(dc, s);
+              })();
+        </script>
+        <!--End Drip-->
+        <!-- Begin Inspectlet Embed Code -->
+            <script type="text/javascript" id="inspectletjs">
+            window.__insp = window.__insp || [];
+            __insp.push(['wid', 575740643]);
+            (function() {
+            function ldinsp(){if(typeof window.__inspld != "undefined") return; window.__inspld = 1; var insp = document.createElement('script'); insp.type = 'text/javascript'; insp.async = true; insp.id = "inspsync"; insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://cdn.inspectlet.com/inspectlet.js'; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(insp, x); };
+            setTimeout(ldinsp, 500); document.readyState != "complete" ? (window.attachEvent ? window.attachEvent('onload', ldinsp) : window.addEventListener('load', ldinsp, false)) : ldinsp();
+            })();
+            </script>
+<!-- End Inspectlet Embed Code -->
+        <!-- Page Title -->
+        <title> CAMP/pixel: CAMP/schedule: NYC's Best Technology Day Camp</title>
+        <!--Page Description-->
+        <meta name="description" content=" Every day at CAMP/pixel is packed from morning to afternoon with invigorating, inspiring activities both on and off the screen.">
+    </head>
+    <body>
+        <div id="wrapper">
+            <a name="top"></a>
+            <div id="content">
+                <!-- CONTACT/FAQ SECTION -->
+                <div class="section">
+                    <div class="mainSectionHeader" id="scheduleSectionHeader">
+                        <div class="mainSectionText">
+                            <span>
+                            CAMP/schedule
+                            </span>
+                        </div>
+                        <div class="mainSectionImageContainer">
+                            <div class="mainSectionImage" ></div>
+                            <div class="mainSectionImageSlash"></div>
+                        </div>
+                    </div>
+                    <div class="sectionContent">
+                        <div id="scheduleSection">
+                            <span id="scheduleInfo">
+                                <div class="sectionBlurb" style = "font-size: 14px" id="scheduleText">
+                                    <div id="scheduleImage">
+                                        <img src="images/_smiling.jpg" alt="Maker Kids"/>
+                                    </div>
+                                    Every day at CAMP/pixel is packed from morning to afternoon with invigorating, inspiring activities both on and off the screen. Campers are surrounded by amazing tech resources and immersed in rewarding group activities and social experiences. We've created and time-tested a perfect blend of focus and fun to build a social, motivating experience in which imaginative young minds can thrive. For a part of each day, they'll be honed in on their with our expert instructors. For another, they'll be bonding with each other at the playground. They're with <a href="http://www.pixelacademy.org/">Pixel Academy</a> staff throughout the day to ensure that they're always excited, engaged, and standing by our Rule #1: Have Fun.
+                                </div>
+                            </span>
+                            <span id="scheduleTable">
+                                <table>
+                                    <tr>
+                                        <td colspan="2">
+                                            <div id="scheduleTableLabel">
+                                                Sample Schedule
+                                            </div>
+                                            <!--<div id="scheduleTableCTA">-->
+                                            <!--Click on an activity for more information!-->
+                                            <!--</div>-->
+                                        </td>
+                                    </tr>
+                                    <tr class="highlightedRow">
+                                        <td class="scheduleTableLeft">
+                                            8:30-9:00 a.m.
+                                        </td>
+                                        <td class="scheduleTableRight">
+                                            <table>
+                                                <tr>
+                                                    <td class="scrollTo" data-scroll="dropoff">
+                                                        Flexible Check-In <span class="carat">></span>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="scheduleTableLeft">
+                                            Morning
+                                        </td>
+                                        <td class="scheduleTableRight">
+                                            <table>
+                                                <tr>
+                                                    <td class="scrollTo" data-scroll="learning">
+                                                        Project Time <span class="carat">></span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="scrollTo" data-scroll="meals">
+                                                        Snack <span class="carat">></span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="scrollTo" data-scroll="screenbreaks">
+                                                        Group Challenge/Activity <span class="carat">></span>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr  class="highlightedRow">
+                                        <td class="scheduleTableLeft">
+                                            Mid-day
+                                        </td>
+                                        <td class="scheduleTableRight">
+                                            <table>
+                                                <tr>
+                                                    <td class="scrollTo" data-scroll="meals">
+                                                        Lunch <span class="carat">></span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="scrollTo" data-scroll="screenbreaks">
+                                                        Outside Time <span class="carat">></span>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="scheduleTableLeft">
+                                            Afternoon
+                                        </td>
+                                        <td class="scheduleTableRight">
+                                            <table>
+                                                <tr>
+                                                    <td class="scrollTo" data-scroll="learning">
+                                                        Project Time <span class="carat">></span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="scrollTo" data-scroll="meals">
+                                                        Snack <span class="carat">></span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="scrollTo" data-scroll="screenbreaks">
+                                                        Group Challenge/Activity <span class="carat">></span>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr  class="highlightedRow">
+                                        <td class="scheduleTableLeft">
+                                            2:30-3:00 p.m.
+                                        </td>
+                                        <td class="scheduleTableRight">
+                                            <table>
+                                                <tr>
+                                                    <td class="scrollTo" data-scroll="dropoff">
+                                                        Flexible Check-Out <span class="carat">></span>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="scheduleTableLeft">
+                                            3:00-5:30 p.m.
+                                        </td>
+                                        <td class="scheduleTableRight">
+                                            <table>
+                                                <tr>
+                                                    <td class="scrollTo" data-scroll="dropoff">
+                                                        Extended Care <span class="carat">></span>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </span>
+                        </div>
+                        <div id="DetailsSection">
+                            <!-- The Camp Day section -->
+                            <a name="learning" ></a>
+                            <div class="scheduleSubsection">
+                                <div class="label">
+                                    <div class="labelImage" id="learningImage">
+                                    </div>
+                                    <div class="slashImage">
+                                    </div>
+                                    <div class="labelText">
+                                        <h1>LEARNING</h1>
+                                    </div>
+                                </div>
+                                <div class="scheduleDetail">
+                                    <a name="digitalprojects"></a>
+                                    <div class="scheduleSubsectionLabel">
+                                        <a name="digital" id ="hiddenLinks" style="color:#59a4a3 !important">DIGITAL PROJECT</a>
+                                    </div>
+                                    <div class="detailText">
+                                        The first half of our meticulously-planned Combos this summer is the Digital Project. The <a href="http://www.telegraph.co.uk/technology/news/11051228/Digital-learning-how-technology-is-reshaping-teaching.html" target="_blank" >Telegraph</a> says that "using technology in an educational environment not only better reflects children's life outside the classroom, but also allows them to hone their digital skills in a way that will continue to be valuable throughout their adult life." Whether it's coding or modding a video game, digital animation, or music production, this is your child's opportunity to imagine, plan, and use digital technology to create a project of their very own. Using industry-grade technology, campers complete a week-long journey with our instructors to understand and develop skills in new software, design a unique project, and leave with knowledge they'll see time and time again in and out of their education.
+                                    </div>
+                                </div>
+                                <div class="scheduleDetail">
+                                    <a name="physicalprojects"></a>
+                                    <div class="scheduleSubsectionLabel">
+                                        <a name="physical" id ="hiddenLinks" style="color:#59a4a3 !important">PHYSICAL PROJECT</a>
+                                    </div>
+                                    <div class="detailText">
+                                        As <a href="http://www.scholastic.com/browse/article.jsp?id=3751901" target="_blank">Scholastic</a> put so well, "hands-on, creative, and artistic activities help students to focus and retain knowledge, and at the same time emphasize the importance of beauty and design in our world." Each topic's complement to a week's Digital Project is the Physical Project; while each camper spends a good amount of time producing something digital, he or she will work to produce a physical product as well. Campers can work on laser cutting, 3D design, DJing, and much more. Each Physical Project will require some on-screen and off-screen work to accomplish its goal.
+                                    </div>
+                                </div>
+                                <a class="scrollTo scrollToTop" data-scroll="top">
+                                BACK TO TOP >
+                                </a>
+                            </div>
+                            <a name="dropoff"></a>
+                            <div class="label">
+                                <div class="labelImage" id="dropOffImage">
+                                </div>
+                                <div class="slashImage">
+                                </div>
+                                <div class="labelText twoLines">
+                                    DROP-OFF <br> AND PICK-UP
+                                </div>
+                            </div>
+                            <!-- Registration Section -->
+                            <div class="scheduleSubsection">
+                                <div class="scheduleDetail">
+                                    <a name="flexiblecheckin"></a>
+                                    <div class="scheduleSubsectionLabel">
+                                        FLEXIBLE CHECK-IN
+                                    </div>
+                                    <div class="detailText">
+                                        We're offering a flexible timeframe for your convenience, every day of CAMP/pixel. We won't start the activities until 9:15 a.m.; you're welcome to drop off as early as 8:30 a.m. for your camper to come and have a bit of free time before the camp day begins.
+                                    </div>
+                                </div>
+                                <div class="scheduleDetail">
+                                    <a name="flexiblecheckout"></a>
+                                    <div class="scheduleSubsectionLabel">
+                                        FLEXIBLE CHECK-OUT
+                                    </div>
+                                    <div class="detailText">
+                                        Our program wraps up at 2:30 p.m. every day. You're welcome to drop in anytime between then and 3:00 p.m. to pick up your child. For security purposes, campers are only released from our supervision to individuals listed in their account. If you need time past 3:00 p.m., we offer Extended Care.
+                                    </div>
+                                </div>
+                                <div class="scheduleDetail">
+                                    <a name="extendedcare"></a>
+                                    <div class="scheduleSubsectionLabel">
+                                        EXTENDED CARE* (3:00-5:30 p.m.)
+                                    </div>
+                                    <div class="detailText">
+                                        Extended Care is a great option for campers who want more time to socialize and for parents who need to pick-up campers later than 3:00 p.m. After a full day of camp, Extended Care is not more of the same; instead of continuing to work with our Instructors and technology, campers in Extended Care have an opportunity to relax, socialize with one another, and play off-screen games.
+                                    </div>
+                                </div>
+                                <a class="scrollTo scrollToTop" data-scroll="top">
+                                BACK TO TOP >
+                                </a>
+                            </div>
+                            <!-- Miscellaneous  section -->
+                            <a name="screenbreaks"></a>
+                            <div class="scheduleSubsection">
+                                <div class="label">
+                                    <div class="labelImage" id="screenBreaksImage">
+                                    </div>
+                                    <div class="slashImage">
+                                    </div>
+                                    <div class="labelText twoLines">
+                                        SCREEN BREAKS <br>
+                                        AND ACTIVITIES
+                                    </div>
+                                </div>
+                                <div class="scheduleDetail">
+                                    <a name="challengeactivities"></a>
+                                    <div class="scheduleSubsectionLabel">
+                                        CHALLENGE ACTIVITIES
+                                    </div>
+                                    <div class="detailText">
+                                        Campers take several screen breaks throughout the Camp day as a chance to reset, move around, and socialize! Challenge Activities are kinetic, group-oriented games campers play for a few minutes to get to know each other and the instructors.
+                                    </div>
+                                </div>
+                                <div class="scheduleDetail">
+                                    <a name="circletime"></a>
+                                    <div class="scheduleSubsectionLabel">
+                                        CIRCLE TIME
+                                    </div>
+                                    <div class="detailText">
+                                        Every day begins and ends with a circle. It's an opportunity for the campers to ready, plan, reflect, and socialize to start and end the day. Your child will always have an opportunity to center him or herself before getting into the exciting activities of the day, and collect and reflect at the end. This is our first and last opportunity for us to ensure the entire group is following Rule 1: Have Fun.
+                                    </div>
+                                </div>
+                                <div class="scheduleDetail">
+                                    <a name="outsidetime"></a>
+                                    <div class="scheduleSubsectionLabel">
+                                        OUTSIDE TIME
+                                    </div>
+                                    <div class="detailText">
+                                        We love playing outside! Weather permitting, we head to a local playground around mid-day to take an extended screen break, get out some energy, and socialize and play together (yes, staff plays too!) On days when the weather prevents us from going outside, our inside activities promote the same goals.
+                                    </div>
+                                </div>
+                                <div class="scheduleDetail">
+                                    <a name="freetime"></a>
+                                    <div class="scheduleSubsectionLabel">
+                                        FREE TIME/GAMING
+                                    </div>
+                                    <div class="detailText">
+                                        Sitting around and passively consuming computer games isn't the CAMP/pixel formula. Depending on the topic, campers may earn a few moments to test the games they make or play on our servers as a well-deserved reward for hard work.
+                                    </div>
+                                </div>
+                                <a class="scrollTo scrollToTop" data-scroll="top">
+                                BACK TO TOP >
+                                </a>
+                            </div>
+                            <!-- Miscellaneous  section -->
+                            <a name="meals"></a>
+                            <div class="scheduleSubsection">
+                                <div class="label">
+                                    <div class="labelText">
+                                        MEALS
+                                    </div>
+                                    <div class="labelImage" id="mealsImage">
+                                    </div>
+                                    <div class="slashImage">
+                                    </div>
+                                </div>
+                                <div class="scheduleDetail">
+                                    <a name="snacks"></a>
+                                    <div class="scheduleSubsectionLabel">
+                                        HEALTHY SNACKS**
+                                    </div>
+                                    <div class="detailText">
+                                        Two snacks per day are included in your CAMP/pixel ticket! We carefully select healthy, delicious snacks for our campers to nibble on during these social, 15-minute screen breaks. Clif bars, KIND Healthy Grains bars, and Annie's Fruit Snacks are examples from our past camps.
+                                    </div>
+                                </div>
+                                <div class="scheduleDetail">
+                                    <a name="lunch"></a>
+                                    <div class="scheduleSubsectionLabel">
+                                        LUNCH TIME**
+                                    </div>
+                                    <div class="detailText">
+                                        We set aside plenty of time for a mid-day reset for our campers. Check back soon for information on an optional add-on for fresh daily lunches, provided by CAMP/pixel!
+                                    </div>
+                                </div>
+                                <div class="scheduleDetail">
+                                    <div class="detailText italics">
+                                        ** Please note that while we make our best efforts to make our food offerings healthy and available to all, we do not operate allergen-free facilities. Please send separate food items with your camper if it is a concern.
+                                    </div>
+                                </div>
+                                <a class="scrollTo scrollToTop" data-scroll="top">
+                                BACK TO TOP >
+                                </a>
+                            </div>
+                        </div>
+                        <div id="scheduleCTA" >
+                        </div>
+                    </div>
+                </div>
+                <!-- END CONTACT/FAQ SECTION -->
+            </div>
+        </div>
+        <!-- END BOTTOM BAR -->
+        </div>
+    </body>
+</html>

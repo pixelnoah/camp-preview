@@ -1,0 +1,328 @@
+.skilltab {
+  display: inline-block;
+  width: 12%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: auto;
+  padding-left: auto;
+  background-color: transparent;
+  opacity: 0.7;
+}
+
+.skilltab:hover {
+  background-color: #ccc;
+  border-radius:5px;
+
+}
+
+.skillImage{
+  margin: 0 auto;
+  text-align:center;
+  width: 100%;
+  overflow: visible;
+}
+.skillWord{
+  font-family: "Header";
+  font-size: 24px;
+  margin-right: 3px;
+
+}
+.skilltab.w--current {
+  width: 12%;
+  opacity: 1;
+}
+
+.skillcontent {
+  display: block;
+  width: 12%;
+  min-width: 80px;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.skilllabel {
+  display: block;
+  margin-top: 0px;
+  padding-top: 5px;
+  font-family: 'Droid Sans', sans-serif;
+  color: #f190ac;
+  font-size: 10px;
+  line-height: 12px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.skilllabel:hover {
+  display: block;
+}
+
+.skilllabel.red, .skillWord.red, .topicsheader.red{
+  color: #c1172c;
+}
+
+.skilllabel.orange, .skillWord.orange, .topicsheader.orange{
+  color: #ef8031;
+}
+
+.skilllabel.yellow, .skillWord.yellow, .topicsheader.yellow{
+  color: #ffec5f;
+}
+
+.skilllabel.green, .skillWord.green, .topicsheader.green{
+  color: #39b54a;
+}
+
+.skilllabel.blue, .skillWord.blue, .topicsheader.blue{
+  color: #0083ca;
+}
+
+.skilllabel.indigo, .skillWord.indigo, .topicsheader.indigo{
+  color: #333391;
+}
+
+.skilllabel.purple, .skillWord.purple, .topicsheader.purple{
+  color: #a967aa;
+}
+.skilllabel.pink, .skillWord.pink, .topicsheader.pink{
+  color: #f190ac;
+}
+
+.tabcontainer {
+  position: relative;
+  display: inline-block;
+  overflow: none;
+}
+
+.skilldescription {
+  position: relative;
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+  line-height: 150%;
+}
+
+.skillquote {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 15px;
+  color: #8f8f8f;
+  font-size: 18px;
+  line-height: 120%;
+  font-style: italic;
+  text-align: left;
+}
+
+.skilllinks {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.topiclink {
+  display: block;
+  width: 50%;
+  margin-right: auto;
+  margin-bottom: 10px;
+  margin-left: auto;
+  background-color: #7fcca8;
+}
+.topicsheader{
+  font-family: "Header";
+  font-size: 30px;
+  color:white;
+  padding-top: 5px;
+}
+.tabsmenu {
+  display: block;
+  overflow: visible;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.skilltabs {
+  padding-right: 4%;
+  padding-left: 4%;
+}
+
+.tabinfo {
+  margin-top: 10px;
+}
+
+.skilltopics {
+  position: relative;
+  display: block;
+  margin-top: 15px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  background-color: #c7c7c7;
+  background-image: url("images/crumples.png");
+  background-size: 100% 150%;
+  background-repeat: no-repeat;
+  text-align: center;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+.skilltopics.red {
+  background-color: #c1172c;
+}
+
+.skilltopics.orange {
+  background-color: #ef8031;
+}
+
+.skilltopics.yellow {
+  background-color: #ffec5f;
+}
+
+.skilltopics.green {
+  background-color: #39b54a;
+}
+
+.skilltopics.blue {
+  background-color: #0083ca;
+}
+
+.skilltopics.indigo {
+  background-color: #333391;
+}
+
+.skilltopics.purple {
+  background-color: #a967aa;
+}
+.skilltopics.pink {
+  background-color: #f190ac;
+}
+.skillTopicImage {
+  display: block;
+  position: relative;
+  height: 60px;
+  padding-top: 15px;
+  text-align: center;
+  margin: 0 auto;
+}
+.tabimg {
+  display: inline-block;
+  max-width: 50%;
+  padding-left: 11px;
+  float: right;
+}
+
+.workimg {
+  position: relative;
+  display: block;
+  overflow: visible;
+  width: 45px;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-right: 10px;
+  float: left;
+  clear: none;
+  opacity: 0.3;
+}
+
+.tabtext {
+  display: inline;
+}
+
+@media (max-width: 991px) {
+  .skillcontent {
+    min-width: 50px;
+  }
+  .skilltab {
+  width: 11% !important;
+}
+.skilltab.w--current {
+  width: 11%;
+  }
+}
+
+@media (max-width: 767px) {
+  .skilltab {
+    padding-right: 5px;
+    padding-left: 5px;
+    width: 11% !important;
+  }
+  .skilltab.w--current {
+    padding-right: 0px;
+    padding-left: 0px;
+    width: 11%;
+  }
+  .skilllabel.pink {
+    display: block;
+    font-size: 8px;
+    text-align: center;
+  }
+  .skilllabel.red {
+    font-size: 8px;
+  }
+  .skilllabel.orange {
+    font-size: 8px;
+  }
+  .skilllabel.yellow {
+    font-size: 8px;
+  }
+  .skilllabel.green {
+    font-size: 8px;
+  }
+  .skilllabel.blue {
+    font-size: 8px;
+  }
+  .skilllabel.indigo {
+    font-size: 8px;
+  }
+  .skilllabel.purple {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 479px) {
+  .skilltab {
+    display: inline-block;
+    width: 20%;
+  }  
+  .skilltab.w--current {
+    width: 20%;
+  }
+  .skillcontent {
+    min-width: 30px;
+  }
+  .skilllabel.pink {
+    font-size: 7px;
+  }
+  .skilllabel.red {
+    font-size: 7px;
+  }
+  .skilllabel.orange {
+    font-size: 7px;
+  }
+  .skilllabel.yellow {
+    font-size: 7px;
+  }
+  .skilllabel.green {
+    font-size: 7px;
+  }
+  .skilllabel.blue {
+    font-size: 7px;
+  }
+  .skilllabel.indigo {
+    font-size: 7px;
+  }
+  .skilllabel.purple {
+    font-size: 7px;
+  }
+  .tabimg {
+    display: block;
+    max-width: 100%;
+    margin-bottom: 10px;
+    float: none;
+  }
+    .skilldescription, .skillquote {
+    width: 80vw;
+    word-break: normal;
+    font-size: 14px;
+  }
+}

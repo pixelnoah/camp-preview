@@ -1,0 +1,175 @@
+@media screen and (max-width: 875px) {
+  .section .mainSectionText span {
+    font-size: 26px;
+    display: inline-block;
+    min-width: 300px; 
+  } 
+}
+
+@media screen and (max-width: 768px) {
+
+  #content {
+    padding-bottom: 160px; 
+  }
+
+  .section {
+    top: 23px; 
+  }
+  .section .sectionContent {
+    padding: 15px 15px; 
+  }
+  .section .mainSectionHeader {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 25px; 
+  }
+  .section .mainSectionHeader .mainSectionText {
+    width: 100%;
+    background-color: rgba(27, 35, 37, 0.6);
+    display: inline-block;
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    position: absolute;
+    left: 0px; 
+  }
+  .section .mainSectionHeader .mainSectionText span {
+    padding-left: 0px;
+    font-size: 36px; 
+  }
+  .section .mainSectionHeader .mainSectionImageContainer {
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    left: 0px; 
+  }
+  .section .mainSectionHeader .mainSectionImageContainer .mainSectionImage {
+    position: absolute;
+    right: 0px;
+    height: 125px;
+    width: 100%;
+    left: 0px;
+    background-size: cover;
+    background-position: center; 
+  }
+  .section .mainSectionHeader .mainSectionImageContainer .mainSectionImageSlash {
+    display: none; 
+  } 
+  #bottomBarCampLogo {
+    float: none;
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    margin-right: 10px; 
+  }
+  #bottomBarPixelLogo {
+    float: none;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    font-size: 18px; 
+  }
+  #bottomBar #phoneNumber{
+    text-align: center;
+  }
+  #bottomBar #phone{
+    margin: auto;
+    float: none;
+  }
+  #bottomBarLogos{
+    width: 250px;
+    top: 12px;
+    display: inline-block;
+  }
+  #bottomBarLinks {
+    position: absolute;
+    top: 0px;
+    left: 70px;
+    display: inline-block;
+    float: none;
+    width: 140px;
+    height: 100%; 
+  }
+  #bottomBarContact {
+    font-size: 18px;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 20px;
+    font-family: "Header";
+    margin-right: 15px;
+    float: right;
+    text-align: center;
+    color: white;
+    background-color: #570fa7;
+    margin-top: 20px;
+    cursor: pointer; 
+  }
+  #bottomBarContact:hover {
+    background-color: #6666dd;
+    color: #ccc; 
+  }
+
+}
+
+
+@media screen and (max-width: 530px) {
+    
+  #bottomBar {
+    padding: 0px 15px; 
+  }
+  #bottomBarButtons{
+    right: 15px;
+  }
+}
+
+@media screen and (max-width: 670px){
+  .section .sectionContent {
+      padding: 15px inherit;
+  }
+}
+
+
+@media screen and (max-width: 435px) {
+    
+   
+  #bottomBar{
+    text-align: center;
+  }
+  #bottomBarCampLogo{
+    display: inline-block;
+    margin: 0px;
+  }
+  #bottomBarButtons{
+    width: 260px;
+    right: 0px;
+    padding-top: 5px;
+   
+    text-align: left;
+    top: 5px;
+    position: relative;
+    margin: auto;
+  }
+  #bottomBarSignUp{
+    display: inline-block;
+    width: 100px;
+    font-size: 14px;
+    padding: 0px 8px;
+    margin-right:10px;
+  }
+  #bottomBarLogos{
+    width: 100%;
+    height: 60px;
+    top:0px;
+    
+  }
+  #bottomBarLinks {
+    display: none;
+  }
+  #bottomBarContainer{
+    top: 25px;
+    height: 73px;
+  }
+}
+

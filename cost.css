@@ -1,0 +1,277 @@
+
+#costSection .details {
+  font-size: 22px;
+  font-family: "Body";
+  width: 100%;
+}
+
+#discountsSection{
+  border-bottom: none;
+  padding-bottom: 0px;
+}
+
+
+
+.tableLabel{
+  font-family: 'Header';
+}
+
+.detailColumn{
+  display: block;
+  width: 250px;
+  margin-bottom: 5px;
+  vertical-align: top;
+}
+
+.costTableInfo{
+  vertical-align: middle;
+  height: 50px;
+  color: #59a4a3;
+  font-family: "Special";
+}
+
+#swagList{
+  font-family: "Body";
+  font-size: 16px;
+  line-height: 20px;
+}
+#swagListLabel{
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+td{
+  margin: 25px;
+}
+
+.discount{
+  margin-bottom: 20px;
+}
+
+.discountsTableLabel{
+  color: #59a4a3;
+  font-size: 18px;
+  font-family: "Subheader";
+  display: inline-block;
+}
+
+.discountsTableInfo{
+  font-family: "Body";
+  line-height: 20px;
+  font-size: 16px;
+  color: #000;
+}
+
+li{
+  margin-bottom: 5px;
+}
+
+.finePrint{
+  font-family: "Body";
+  color: #666;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+#costColumn{
+  vertical-align: top;
+  width: 30%;
+  display: inline-block;
+}
+
+#saveColumn{
+  vertical-align: top;
+  width: 65%;
+  display: inline-block;
+  margin-top: 40px;
+}
+
+.saveColumn{
+  font-size: 12px;
+  width: 100%;
+  text-align: left;
+  vertical-align: top;
+  margin-bottom: 25px;
+}
+
+.saveTableLabel{
+  display: inline-block;
+  font-size: 16px;
+  text-align: left;
+  margin: 0px 0 10px 0;
+  font-family: 'Body';
+}
+
+.saveTableInfo{
+  display: inline-block;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: left;
+}
+
+.saveIcon{
+  display: inline-block;
+  width: 150px;
+  text-align: center;
+}
+.saveLink{
+  color: #1b2325;
+}
+.saveLink:hover{
+  color: #59a4a3;
+}
+
+.saveDetails{
+  display: inline-block;
+  width: 65%;
+  vertical-align: top;
+}
+
+
+@media screen and (max-width: 634px) {
+  .saveIcon{
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .detailColumn{
+    margin-bottom: 25px;
+    width: 100%;
+    text-align: center;
+  }
+  #costSection .finePrint{
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 875px) {
+  .section .mainSectionText span {
+    font-size: 26px;
+    display: inline-block;
+    min-width: 300px; 
+  }
+
+  #saveColumn, #costColumn{
+    width: 100%;
+    display: block;
+    margin-bottom: 25px;
+
+  }
+  
+  .detailColumn{
+    display: inline-block;
+    margin-bottom: 20px;  
+  }
+
+  .saveDetails{
+    text-align: left;
+  }
+
+
+  } 
+
+
+
+#costSectionHeader .mainSectionImage {
+  background-image: url("images/header-cost.jpg") !important;
+  background-position: left 85%; 
+}
+
+
+#costSection, #swagSection, #discountsSection  {
+  padding-bottom: 50px;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 50px;
+  font-family: "Header";
+  background: white;
+}
+#costSection, #swagSection  {
+  margin-bottom: 0px;
+}
+#discountsSection{
+  border-bottom: none;
+  padding-bottom: 0px;
+}
+#costSection .label, #swagSection .label, #discountsSection .label{
+    color: #1b2325;
+    font-size: 24px;
+    margin-bottom: 35px; 
+    font-family: 'Header';
+}
+.costLabel{
+   color: #1b2325;
+    font-size: 24px;
+    margin-bottom: 35px; 
+}
+
+ #costCTA {
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    text-align: center; 
+  }
+ #costCTA a {
+      text-decoration: none; }
+
+ #costCTA1, #costCTA2 {
+    font-family: "Header";
+    display: inline-block;
+    text-align: center;
+    width: 250px;
+    font-size: 18px;
+    line-height: 60px;
+    height: 60px;
+    background: #570fa7;
+    font-weight: normal;
+    margin: auto;
+    color: white; }
+#costCTA1:hover,  #costCTA2:hover {
+      background: #6666dd;
+      cursor: pointer;
+      color: #ccc; }
+#costCTA1{
+    margin-right: 15px;
+  }
+
+
+
+
+
+@media screen and (max-width: 690px) {
+  #costCTA1 {
+    margin-right: 0px; 
+    margin-bottom: 15px;
+  }
+  #costCTA{
+    padding-bottom: 25px;
+  }
+
+}
+
+
+
+@media screen and (max-width: 815px) {
+  .label{
+    text-align: center;
+  }
+
+  #costColumn, .details{
+    text-align: center;
+  }
+
+  .saveColumn{
+    text-align: center;
+  }
+
+  .saveDetails{
+  display: inline-block;
+  width: 74%;
+  vertical-align: top;
+}
+
+
+}
+
+

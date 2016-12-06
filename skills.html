@@ -1,0 +1,1038 @@
+<html>
+    <head>
+        <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+        <link rel="manifest" href="favicon/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+        <link rel="stylesheet" type="text/css" href="cssReset.css">
+        <link rel="stylesheet" type="text/css" href="sharedStyle.css">
+        <link rel="stylesheet" type="text/css" href="sharedStyleMobile.css">
+        <link rel="stylesheet" type="text/css" href="topBar.css">
+        <link rel="stylesheet" type="text/css" href="visit.css">
+        <link rel="stylesheet" type="text/css" href="topics.css">
+          <meta content="width=device-width, initial-scale=1" name="viewport">
+          <meta content="Webflow" name="generator">
+          <link href="normalize.css" rel="stylesheet" type="text/css">
+          <link href="webflow.css" rel="stylesheet" type="text/css">
+          <link href="skills-test.webflow.css" rel="stylesheet" type="text/css">
+          <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+          <script type="text/javascript">
+            WebFont.load({
+              google: {
+                families: ["Droid Sans:400,700"]
+              }
+            });
+          </script>
+        <script src="modernizr.js" type="text/javascript"></script>
+        <script src="jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="ejs_production.js"> </script>
+        <!-- Renders the page -->
+        <!-- EJS HERE -->
+        <script type="text/javascript">
+            $(document).ready(function(){
+                var topBar = new EJS({url: 'topBar.ejs'}).render();
+                var bottomBar = new EJS({url: 'bottomBar.ejs'}).render();
+            
+            $("#wrapper").prepend(topBar);
+            $("#wrapper").append(bottomBar);
+            
+            });
+        </script>
+        <script src="allPages.js"></script>
+        <!-- Embedded affirm logo (cost page) -->
+        <script>
+            var _affirm_config = {
+              public_api_key:  "XXXXXXXXXXXXXXX",
+              script:          "https://cdn1-sandbox.affirm.com/js/v2/affirm.js"
+            };
+            (function(l,g,m,e,a,f,b){var d,c=l[m]||{},h=document.createElement(f),n=document.getElementsByTagName(f)[0],k=function(a,b,c){return function(){a[b]._.push([c,arguments])}};c[e]=k(c,e,"set");d=c[e];c[a]={};c[a]._=[];d._=[];c[a][b]=k(c,a,b);a=0;for(b="set add save post open empty reset on off trigger ready setProduct".split(" ");a<b.length;a++)d[b[a]]=k(c,e,b[a]);a=0;for(b=["get","token","url","items"];a<b.length;a++)d[b[a]]=function(){};h.async=!0;h.src=g[f];n.parentNode.insertBefore(h,n);delete g[f];d(g);l[m]=c})(window,_affirm_config,"affirm","checkout","ui","script","ready");
+        </script>
+        <!--Start of Zopim Live Chat Script-->
+        <script type="text/javascript">
+            window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+                    d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+                    _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+                $.src="//v2.zopim.com/?154sLdSAaw4zX6Hoq65ZMP28r6UXYRlH";z.t=+new Date;$.
+                        type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+        </script>
+        <!-- Google Analytics -->
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+            ga('create', 'UA-31308117-1', 'auto');
+            ga('require', 'linkid', 'linkid.js');
+            ga('send', 'pageview');
+            
+            var trackOutboundLink = function(url) {
+                    ga('send', 'event', url, 'click', url, {'hitCallback':
+                    function () {
+                
+                    }
+                });
+            }
+        </script>
+        <!--End Google Analytics-->
+        <!--schedule a tour Embed-->
+            <script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'widget.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script>
+         <!--End of tour Embed-->  
+         <!-- Drip -->
+        <script type="text/javascript">
+              var _dcq = _dcq || [];
+              var _dcs = _dcs || {};
+              _dcs.account = '9346191';
+
+              (function() {
+                var dc = document.createElement('script');
+                dc.type = 'text/javascript'; dc.async = true;
+                dc.src = '//tag.getdrip.com/9346191.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(dc, s);
+              })();
+        </script>
+    <!--End Drip-->
+        <!-- Begin Inspectlet Embed Code -->
+            <script type="text/javascript" id="inspectletjs">
+            window.__insp = window.__insp || [];
+            __insp.push(['wid', 575740643]);
+            (function() {
+            function ldinsp(){if(typeof window.__inspld != "undefined") return; window.__inspld = 1; var insp = document.createElement('script'); insp.type = 'text/javascript'; insp.async = true; insp.id = "inspsync"; insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://cdn.inspectlet.com/inspectlet.js'; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(insp, x); };
+            setTimeout(ldinsp, 500); document.readyState != "complete" ? (window.attachEvent ? window.attachEvent('onload', ldinsp) : window.addEventListener('load', ldinsp, false)) : ldinsp();
+            })();
+            </script>
+<!-- End Inspectlet Embed Code -->
+        <!-- Page Title -->
+        <title>CAMP/pixel: Skills: NYC's Best Technology Day Camp</title>
+        <meta name="description" content="Come visit us before the summer starts! Meet our staff, view the camp floor and rooms, and learn more about our one-of-a-kind experience.">
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <div id="content">
+                <div class="section">
+                    <div class="mainSectionHeader" id="visitSectionHeader">
+                        <div class="mainSectionText">
+                            <span>
+                            Skills
+                            </span>
+                        </div>
+                        <div class="mainSectionImageContainer">
+                            <div class="mainSectionImage"></div>
+                            <div class="mainSectionImageSlash"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="sectionContent">
+                        <div class="skilltabs w-tabs" data-duration-in="700" data-duration-out="100">
+                          <div class="tabsmenu w-tab-menu">
+                            <a class="skilltab w-inline-block w-tab-link" data-w-tab="Tab 1">
+                              <div class="skillcontent"><img src="images/skill_electronics.png" class ="skillImage">
+                                <div class="pink skilllabel">ELECTRONICS</div>
+                              </div>
+                            </a>
+                            <a class="skilltab w-inline-block w-tab-link" data-w-tab="Tab 2">
+                              <div class="skillcontent"><img src="images/skill_digitalmusic.png" class ="skillImage">
+                                <div class="purple skilllabel">DIGITAL ARTS</div>
+                              </div>
+                            </a>
+                            <a class="skilltab w-inline-block w-tab-link" data-w-tab="Tab 3">
+                              <div class="skillcontent"><img src="images/skill_vr.png" class ="skillImage">
+                                <div class="indigo skilllabel">IMMERSION GAMING</div>
+                              </div>
+                            </a>
+                            <a class="skilltab w-inline-block w-tab-link" data-w-tab="Tab 4">
+                              <div class="skillcontent"><img src="images/skill_lasercutting.png" class ="skillImage">
+                                <div class="blue skilllabel">LASER CUTTING</div>
+                              </div>
+                            </a>
+                            <a class="skilltab w-inline-block w-tab-link" data-w-tab="Tab 5">
+                              <div class="skillcontent"><img src="images/skill_minecraft.png" class ="skillImage">
+                                <div class="green skilllabel">MINECRAFT PROGRAMMING</div>
+                              </div>
+                            </a>
+                            <a class="skilltab w-inline-block w-tab-link" data-w-tab="Tab 6">
+                              <div class="skillcontent"><img src="images/skill_3d.png" class ="skillImage">
+                                <div class="skilllabel yellow">3D MODELING</div>
+                              </div>
+                            </a>
+                            <a class="skilltab w-inline-block w-tab-link" data-w-tab="Tab 7">
+                              <div class="skillcontent"><img src="images/skill_coding.png" class ="skillImage">
+                                <div class="orange skilllabel">CODING</div>
+                              </div>
+                            </a>
+                            <a class="skilltab w--current w-inline-block w-tab-link" data-w-tab="Tab 8">
+                              <div class="skillcontent"><img src="images/skill_gamedesign.png" class ="skillImage">
+                                <div class="red skilllabel">GAME DESIGN</div>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="w-tab-content">
+                            <div class="tabinfo w-tab-pane" data-w-tab="Tab 1">
+                              <div class="tabcontainer w-clearfix">
+                                <div class="tabimg"><img sizes="(max-width: 479px) 97vw, 45vw" src="images/skill_electronics.jpg" srcset="images/skill_electronics-p-500x334.jpeg 500w, images/skill_electronics-p-800x534.jpeg 800w, images/skill_electronics-p-1080x720.jpeg 1080w, images/skill_electronics.jpg 1280w" width="500">
+                                </div><img class="workimg" src="images/help.png">
+                                <p class="skilldescription"><span class = "skillWord pink">ELECTRONICS</span> are circuits or devices that use transistors, microchips, and other components. At CAMP/pixel, campers can work with wires, circuit boards, and external digital controllers as unique ways to manipulate and program technology.</p>
+                                <p class="skillquote">"Inventing is a skill that some people have and some people don't. But you can learn how to invent." -Ray Dolby</p>
+                                <div class="tabtext w-clearfix"><img class="workimg" src="images/work.png">
+                                  <p class="skilldescription">Electrical engineers work with all kinds of electronic devices, from the smallest pocket devices to large supercomputers.</p>
+                                </div>
+                              </div>
+                              <div class="skilltopics pink">
+                                <img src="images/skill_electronics.png" class="skillTopicImage">
+                                <h2 class="topicsheader">Camp Topics offered</h2>
+                                <div id="topicsTable">
+                                  <div class="topic left" id="topic13">
+                                    <a href="topic.html#ARCADEdesign">
+                                    <div class="topicsTitle">
+                                      ARCADE/design
+                                    </div>
+                                    <div class="topicsPicture"> 
+                                      <img src="images/topics_arcade_design.jpg" alt="Arcade Design">
+                                      <div class="topicsInformation" id="topicDescription10">
+                                        <div class="topicsDescription">
+                                          Develop an arcade game / Create a video game controller 
+                                          <div class = "iconsContainer">
+                                            <img src = "images/skill_gamedesign.png" class = "topicsIcon">
+                                            <img src = "images/skill_lasercutting.png" class = "topicsIcon">
+                                            <img src = "images/skill_electronics.png" class = "topicsIcon">
+                                          </div>
+                                          <div class="topicDates">
+                                            Brooklyn (9 - 11), TriBeCa (7 - 11), UES (9 - 11) 
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    </a>
+                                    <div class="topicsSignUp">
+                                      <a href="topic.html#ARCADEdesign">MORE INFO</a>
+                                      <a href="https://hq.pixelacademy.org/tickets/camp-pixel/index">SIGN UP</a>
+                                    </div>
+                                  </div>
+                                  <div class="topic" id="topic09">
+                                    <a href="topic.html#MINECRAFTcircuits">
+                                    <div class="topicsTitle">
+                                      <div class="newTopic">
+                                        NEW
+                                      </div>
+                                      MINECRAFT/circuits
+                                    </div>
+                                    <div class="topicsPicture"> 
+                                      <img src="images/topics_minecraft_circuits.jpg" alt="Minecraft Circuits">
+                                      <div class="topicsInformation" id="topicDescription09">
+                                        <div class="topicsDescription">
+                                          Design a Circuit in Minecraft / Create with littleBits and Minecraft 
+                                          <div class = "iconsContainer">
+                                            <img src = "images/skill_gamedesign.png" class = "topicsIcon">
+                                            <img src = "images/skill_minecraft.png" class = "topicsIcon">
+                                            <img src = "images/skill_electronics.png" class = "topicsIcon">
+                                          </div>
+                                          <div class="topicDates">
+                                            Brooklyn (7 - 11), TriBeCa (7 - 11), UES (7 - 11) 
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    </a>
+                                    <div class="topicsSignUp">
+                                      <a href="topic.html#MINECRAFTcircuits">MORE INFO</a>
+                                      <a href="https://hq.pixelacademy.org/tickets/camp-pixel/index">SIGN UP</a>
+                                    </div>
+                                  </div>
+                                  <div class="topic" id="topic02">
+                                    <a href="topic.html#DJproduction">
+                                    <div class="topicsTitle">
+                                      DJ/production
+                                    </div>
+                                    <div class="topicsPicture"> 
+                                      <img src="images/topics_dj_production.jpg" alt="DJ Production">
+                                      <div class="topicsInformation" id="topicDescription02">
+                                        <div class="topicsDescription">
+                                          Make and Mix Music Samples / Spin and Scratch on DJ Equipment 
+                                          <div class = "iconsContainer">
+                                            <img src = "images/skill_digitalmusic.png" class = "topicsIcon">
+                                            <img src = "images/skill_electronics.png" class = "topicsIcon">
+                                          </div>
+                                          <div class="topicDates">
+                                            Brooklyn (7 - 9), TriBeCa (7 - 9), UES (7 - 9) 
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    </a>
+                                    <div class="topicsSignUp">
+                                      <a href="topic.html#DJproduction">MORE INFO</a>
+                                      <a href="https://hq.pixelacademy.org/tickets/camp-pixel/index">SIGN UP</a>
+                                    </div>
+                                  </div> 
+                                </div>
+                              </div>
+                            </div>
+                            <div class="tabinfo w-tab-pane" data-w-tab="Tab 2">
+                              <div class="tabcontainer w-clearfix">
+                                <div class="tabimg"><img sizes="(max-width: 479px) 97vw, 45vw" src="images/skill_digital_art.jpg" srcset="images/skill_digital_art-p-500x334.jpg 500w, images/skill_digital_art-p-800x534.jpg 800w, images/skill_digital_art-p-1080x720.jpg 1080w, images/skill_digital_art.jpg 1280w" width="500">
+                                </div><img class="workimg" src="images/help.png">
+                                <p class="skilldescription"><span class = "skillWord purple">DIGITAL ART</span> is any creative process or presentation that uses digital tools. At CAMP/pixel, campers can creatively use pro-grade production software to learn new industries like digital music and fashion.</p>
+                                <p class="skillquote">"GE hires a lot of engineers. We want young people who can do more than add up a string of numbers and write a coherent sentence. They must be able to solve problems, communicate ideas and be sensitive to the world around them. Participation in the arts is one of the best ways to develop these abilities." -Clifford V. Smith, President of the General Electric Foundation</p>
+                                <div class="tabtext w-clearfix"><img class="workimg" src="images/work.png">
+                                  <p class="skilldescription">Digital Art is everywhere, from the app icons on our phones to the phones themselves and from the sizes, colors, and shapes of cars to sneakers.</p>
+                                </div>
+                              </div>
+                              <div class="skilltopics purple">
+                                <img src="images/skill_digitalmusic.png" class="skillTopicImage">
+                                <h2 class="topicsheader">Camp Topics offered</h2>
+                                <div id="topicsTable">
+                                  <div class="topic left" id="topic12">
+                                    <a href="topic.html#FASHIONdesign">
+                                    <div class="topicsTitle">
+                                      FASHION/design
+                                    </div>
+                                    <div class="topicsPicture"> 
+                                      <img src="images/topics_fashion_design.jpg" alt="Fashion Design">
+                                      <div class="topicsInformation" id="topicDescription12">
+                                        <div class="topicsDescription">
+                                          Create a 3D Digital Fashion Show / Prototype Fashion Designs
+                                          <div class = "iconsContainer">
+                                            <img src = "images/skill_digitalmusic.png" class = "topicsIcon">
+                                            <img src = "images/skill_3d.png" class = "topicsIcon">
+                                          </div>
+                                          <div class="topicDates">
+                                            Brooklyn (7 - 9), TriBeCa (7 - 9), UES (7 - 9) 
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    </a>
+                                    <div class="topicsSignUp">
+                                      <a href="topic.html#FASHIONdesign">MORE INFO</a>
+                                      <a href="https://hq.pixelacademy.org/tickets/camp-pixel/index">SIGN UP</a>
+                                    </div>
+                                  </div>
+                                  <div class="topic" id="topic02">
+                                    <a href="topic.html#DJproduction">
+                                    <div class="topicsTitle">
+                                      DJ/production
+                                    </div>
+                                    <div class="topicsPicture"> 
+                                      <img src="images/topics_dj_production.jpg" alt="DJ Production">
+                                      <div class="topicsInformation" id="topicDescription02">
+                                        <div class="topicsDescription">
+                                          Make and Mix Music Samples / Spin and Scratch on DJ Equipment 
+                                          <div class = "iconsContainer">
+                                            <img src = "images/skill_digitalmusic.png" class = "topicsIcon">
+                                            <img src = "images/skill_electronics.png" class = "topicsIcon">
+                                          </div>
+                                          <div class="topicDates">
+                                            Brooklyn (7 - 9), TriBeCa (7 - 9), UES (7 - 9) 
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    </a>
+                                    <div class="topicsSignUp">
+                                      <a href="topic.html#DJproduction">MORE INFO</a>
+                                      <a href="https://hq.pixelacademy.org/tickets/camp-pixel/index">SIGN UP</a>
+                                    </div>
+                                  </div> 
+                                </div>
+                              </div>
+                            </div>
+                            <div class="tabinfo w-tab-pane" data-w-tab="Tab 3">
+                              <div class="tabcontainer w-clearfix">
+                                <div class="tabimg"><img sizes="(max-width: 479px) 97vw, 45vw" src="images/skill_immersion_gaming.jpg" srcset="images/skill_immersion_gaming-p-500x334.jpg 500w, images/skill_immersion_gaming-p-800x534.jpg 800w, images/skill_immersion_gaming-p-1080x720.jpg 1080w, images/skill_immersion_gaming.jpg 1280w" width="500">
+                                </div><img class="workimg" src="images/help.png">
+                                <p class="skilldescription"><span class = "skillWord indigo">IMMERSION GAMING</span> enhances players' experiences beyond interacting with a flat screen. At CAMP/pixel, campers learn to use cutting-edge tech like the first-ever volumetric display and virtual reality to create their own experiences.</p>
+                                <p class="skillquote">"We're finally going to be free of the 2D monitor. It's been a window into virtual reality that we've all looked into for 30 or 40 years." -Brendan Iribe, Oculus</p>
+                                <div class="tabtext w-clearfix"><img class="workimg" src="images/work.png">
+                                  <p class="skilldescription">Arguably the future of digital experiences, immersion gaming experimentation and skills are swiftly being adopted by digital storytellers worldwide.</p>
+                                </div>
+                              </div>
+                              <div class="skilltopics indigo">
+                                <img src="images/skill_vr.png" class="skillTopicImage">
+                                <h2 class="topicsheader">Camp Topics offered</h2>
+                                <div id="topicsTable">
+                                  <div class="topic left" id="topic05">
+                                    <a href="topic.html#FUTUREgaming">
+                                    <div class="topicsTitle">
+                                      <div class="newTopic">
+                                        NEW
+                                      </div>
+                                      FUTURE/gaming
+                                    </div>
+                                    <div class="topicsPicture"> 
+                                      <img src="images/topics_future_gaming.jpg" alt="Future Gaming">
+                                      <div class="topicsInformation" id="topicDescription05">
+                                        <div class="topicsDescription">
+                                          Design a 3D Video Game / Create a Multi-Dimensional Volumetric Experience 
+                                          <div class = "iconsContainer">
+                                            <img src = "images/skill_gamedesign.png" class = "topicsIcon">
+                                            <img src = "images/skill_vr.png" class = "topicsIcon">
+                                          </div>
+                                          <div class="topicDates">
+                                            Brooklyn (7 - 11), UES (7 - 11)
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    </a>
+                                    <div class="topicsSignUp">
+                                      <a href="topic.html#FUTUREgaming">MORE INFO</a>
+                                      <a href="https://hq.pixelacademy.org/tickets/camp-pixel/index">SIGN UP</a>
+                                    </div>
+                                  </div>
+                                  <div class="topic" id="topic10">
+                                    <a href="topic.html#VRdesign" alt="VR Design">
+                                    <div class="topicsTitle">
+                                      VR/design
+                                    </div>
+                                    <div class="topicsPicture"> 
+                                      <img src="images/topics_vr_design.jpg">
+                                      <div class="topicsInformation" id="topicDescription10">
+                                        <div class="topicsDescription">
+                                          Make a 3D Video Game for Virtual Reality / Customize a Cardboard Headset 
+                                          <div class = "iconsContainer">
+                                            <img src = "images/skill_gamedesign.png" class = "topicsIcon">
+                                            <img src = "images/skill_vr.png" class = "topicsIcon">
+                                          </div>
+                                          <div class="topicDates">
+                                            Brooklyn (9 - 14), TriBeCa (9 - 11), UES (9 - 11) 
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    </a>
+                                    <div class="topicsSignUp">
+                                      <a href="topic.html#VRdesign">MORE INFO</a>
+                                      <a href="https://hq.pixelacademy.org/tickets/camp-pixel/index">SIGN UP</a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="tabinfo w-tab-pane" data-w-tab="Tab 4">
+                              <div class="tabcontainer w-clearfix">
+                                <div class="tabimg"><img sizes="(max-width: 479px) 97vw, 45vw" src="images/skill_laser_cutting.jpg" srcset="images/skill_laser_cutting-p-500x334.jpg 500w, images/skill_laser_cutting-p-800x534.jpg 800w, images/skill_laser_cutting-p-1080x720.jpg 1080w, images/skill_laser_cutting.jpg 1280w" width="500">
+                                </div><img class="workimg" src="images/help.png">
+                                <p class="skilldescription"><span class = "skillWord blue">LASER CUTTING</span> is the act of cutting super-precise vectors into various materials with an actual laser. At CAMP/pixel, campers can use vector-based design software (like Adobe Illustrator) to create their own unique designs that are cut on our totally safe equipment.</p>
+                                <p class="skillquote">"Design is thinking made visual." -Saul Bass</p>
+                                <div class="tabtext w-clearfix"><img class="workimg" src="images/work.png">
+                                  <p class="skilldescription">Vector design is used to create digital images that can be made smaller or larger without losing resolution.</p>
+                                </div>
+                              </div>
+                              <div class="skilltopics blue">
+                                <img src="images/skill_lasercutting.png" class="skillTopicImage">
+                                <h2 class="topicsheader">Camp Topics offered</h2>
+                                <div id="topicsTable">
+                                  <div class="topic left" id="topic01">
+                                    <a href="topic.html#APPcoding">
+                                    <div class="topicsTitle">
+                                      <div class="newTopic">
+                                        NEW
+                                      </div>
+                                      APP/coding
+                                    </div>
+                                    <div class="topicsPicture"> 
+                                      <img src="images/topics_app_coding.jpg" alt="App Coding">
+                                      <div class="topicsInformation" id="topicDescription01">
+                                        <div class="topicsDescription">
+                                          Code a Mobile Application / Laser-Cut a Custom Phone Case 
+                                          <div class = "iconsContainer">
+                                            <img src = "images/skill_coding.png" class = "topicsIcon">
+                                            <img src = "images/skill_lasercutting.png" class = "topicsIcon">
+                                          </div>
+                                          <div class="topicDates">
+                                            Brooklyn (9 - 14), TriBeCa (7 - 11), UES (9 - 11)
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    </a>
+                                    <div class="topicsSignUp">
+                                      <a href="topic.html#APPcoding">MORE INFO</a>
+                                      <a href="https://hq.pixelacademy.org/tickets/camp-pixel/index">SIGN UP</a>
+                                    </div>
+                                  </div>
+                                  <div class="topic" id="topic04">
+                                    <a href="topic.html#FLIGHTdesign">
+                                    <div class="topicsTitle">
+                                      FLIGHT/design
+                                    </div>
+                                    <div class="topicsPicture"> 
+                                      <img src="images/topics_flight_design.jpg" alt="Flight Design">
+                                      <div class="topicsInformation" id="topicDescription04">
+                                        <div class="topicsDescription">
+                                          Develop a 3D Video Game / Laser-cut a Model Rocket
+                                          <div class = "iconsContainer">
+                                            <img src = "images/skill_gamedesign.png" class = "topicsIcon">
+                                            <img src = "images/skill_lasercutting.png" class = "topicsIcon">
+                                          </div>
+                                          <div class="topicDates">
+                                            Brooklyn (7 - 9), TriBeCa (7 - 11), UES (7 - 9) 
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    </a>
+                                    <div class="topicsSignUp">
+                                      <a href="topic.html#FLIGHTdesign">MORE INFO</a>
+                                      <a href="https://hq.pixelacademy.org/tickets/camp-pixel/index">SIGN UP</a>
+                                    </div>
+                                  </div>
+                                  <div class="topic" id="topic13">
+                                    <a href="topic.html#ARCADEdesign">
+                                    <div class="topicsTitle">
+                                      ARCADE/design
+                                    </div>
+                                    <div class="topicsPicture"> 
+                                      <img src="images/topics_arcade_design.jpg" alt="Arcade Design">
+                                      <div class="topicsInformation" id="topicDescription10">
+                                        <div class="topicsDescription">
+                                          Develop an arcade game / Create a video game controller 
+                                          <div class = "iconsContainer">
+                                            <img src = "images/skill_gamedesign.png" class = "topicsIcon">
+                                            <img src = "images/skill_lasercutting.png" class = "topicsIcon">
+                                            <img src = "images/skill_electronics.png" class = "topicsIcon">
+                                          </div>
+                                          <div class="topicDates">
+                                            Brooklyn (9 - 11), TriBeCa (7 - 11), UES (9 - 11) 
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    </a>
+                                    <div class="topicsSignUp">
+                                      <a href="topic.html#ARCADEdesign">MORE INFO</a>
+                                      <a href="https://hq.pixelacademy.org/tickets/camp-pixel/index">SIGN UP</a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="tabinfo w-tab-pane" data-w-tab="Tab 5">
+                              <div class="tabcontainer w-clearfix">
+                                <div class="tabimg"><img sizes="(max-width: 479px) 97vw, 45vw" src="images/skill_minecraft_programming.jpg" srcset="images/skill_minecraft_programming-p-500x334.jpg 500w, images/skill_minecraft_programming-p-800x534.jpg 800w, images/skill_minecraft_programming-p-1080x720.jpg 1080w, images/skill_minecraft_programming.jpg 1280w" width="500">
+                                </div><img class="workimg" src="images/help.png">
+                                <p class="skilldescription"><span class = "skillword green">MINECRAFT PROGRAMMING</span> uses Minecraft as a vehicle to apply introductory coding and engineering concepts. At CAMP/pixel, campers use command blocks, program in-game robots, and even mod the game itself using visual scripting or coding languages like Lua or Java.</p>
+                                <p class="skillquote">"Computer programming jobs are growing at 2X the national average." -Code.org</p>
+                                <div class="tabtext w-clearfix"><img class="workimg" src="images/work.png">
+                                  <p class="skilldescription">Our Minecraft programmers learn critical coding and digital thinking skills also used in software development, video games, and much more.</p>
+                                </div>
+                              </div>
+                              <div class="skilltopics green">
+                                <img src="images/skill_minecraft.png" class="skillTopicImage">
+                                <h2 class="topicsheader">Camp Topics offered</h2>
+                                <div id="topicsTable">
+                                  <div class="topic left" id="topic06">
+                                    <a href="topic.html#MINECRAFTdesign">
+                                    <div class="topicsTitle">
+                                      <div class="newTopic">
+                                        NEW
+                                      </div>
+                                      MINECRAFT/design
+                                    </div>
+                                    <div class="topicsPicture"> 
+                                      <img src="images/topics_minecraft_design.png" alt="Minecraft Design">
+                                      <div class="topicsInformation" id="topicDescription06">
+                                        <div class="topicsDescription">
+                                          Code in Minecraft / Become an Architect of the Future 
+                                          <div class = "iconsContainer">
+                                            <img src = "images/skill_coding.png" class = "topicsIcon">
+                                            <img src = "images/skill_minecraft.png" class = "topicsIcon">
+                                            <img src = "images/skill_3d.png" class = "topicsIcon">
+                                          </div>
+                                          <div class="topicDates">
+                                            Brooklyn (7 - 9), TriBeCa (7 - 9), UES (7 - 9) 
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    </a>
+                                    <div class="topicsSignUp">
+                                      <a href="topic.html#MINECRAFTdesign">MORE INFO</a>
+                                      <a href="https://hq.pixelacademy.org/tickets/camp-pixel/index">SIGN UP</a>
+                                    </div>
+                                  </div>
+                                  <div class="topic" id="topic09">
+                                    <a href="topic.html#MINECRAFTcircuits">
+                                    <div class="topicsTitle">
+                                      <div class="newTopic">
+                                        NEW
+                                      </div>
+                                      MINECRAFT/circuits
+                                    </div>
+                                    <div class="topicsPicture"> 
+                                      <img src="images/topics_minecraft_circuits.jpg" alt="Minecraft Circuits">
+                                      <div class="topicsInformation" id="topicDescription09">
+                                        <div class="topicsDescription">
+                                          Design a Circuit in Minecraft / Create with littleBits and Minecraft 
+                                          <div class = "iconsContainer">
+                                            <img src = "images/skill_gamedesign.png" class = "topicsIcon">
+                                            <img src = "images/skill_minecraft.png" class = "topicsIcon">
+                                            <img src = "images/skill_electronics.png" class = "topicsIcon">
+                                          </div>
+                                          <div class="topicDates">
+                                            Brooklyn (7 - 11), TriBeCa (7 - 11), UES (7 - 11) 
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    </a>
+                                    <div class="topicsSignUp">
+                                      <a href="topic.html#MINECRAFTcircuits">MORE INFO</a>
+                                      <a href="https://hq.pixelacademy.org/tickets/camp-pixel/index">SIGN UP</a>
+                                    </div>
+                                  </div>
+                                  <div class="topic left" id="topic07">
+                                    <a href="topic.html#MINECRAFTcoding">
+                                    <div class="topicsTitle">
+                                      MINECRAFT/coding
+                                    </div>
+                                    <div class="topicsPicture"> 
+                                      <img src="images/topics_minecraft_coding.jpg" alt="Minecraft Coding">
+                                      <div class="topicsInformation" id="topicDescription07">
+                                        <div class="topicsDescription">
+                                          Program a Minecraft Mod / Connect an Arduino Controller 
+                                          <div class = "iconsContainer">
+                                            <img src = "images/skill_minecraft.png" class = "topicsIcon">
+                                            <img src = "images/skill_coding.png" class = "topicsIcon">
+                                          </div>
+                                          <div class="topicDates">
+                                            Brooklyn (7 - 11), TriBeCa (7 - 11), UES (7 - 11)
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    </a>
+                                    <div class="topicsSignUp">
+                                      <a href="topic.html#MINECRAFTcoding">MORE INFO</a>
+                                      <a href="https://hq.pixelacademy.org/tickets/camp-pixel/index">SIGN UP</a>
+                                    </div>
+                                  </div>
+                                  <div class="topic" id="topic08">
+                                    <a href="topic.html#MINECRAFTcodingplus">
+                                    <div class="topicsTitle">
+                                      MINECRAFT/coding+
+                                    </div>
+                                    <div class="topicsPicture"> 
+                                      <img src="images/topics_minecraft_coding_plus.jpg" alt="Minecraft Coding Plus">
+                                      <div class="topicsInformation" id="topicDescription08">
+                                        <div class="topicsDescription">
+                                           Program an Advanced Minecraft Mod / Connect an Arduino Controller
+                                          <div class = "iconsContainer">
+                                            <img src = "images/skill_minecraft.png" class = "topicsIcon">
+                                            <img src = "images/skill_coding.png" class = "topicsIcon">
+                                          </div>
+                                          <div class="topicDates">
+                                            Brooklyn (9 - 11), TriBeCa (9 - 11), UES (9 - 11) 
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    </a>
+                                    <div class="topicsSignUp">
+                                      <a href="topic.html#MINECRAFTcodingplus">MORE INFO</a>
+                                      <a href="https://hq.pixelacademy.org/tickets/camp-pixel/index">SIGN UP</a>
+                                    </div>
+                                  </div>
+                                  <div class="fineprint" style="font-size:12px;padding-bottom: 15px;">
+                                    "Minecraft" is a trademark of Mojang Synergies AB. Pixel Academy is in no way affiliated with or endorsed by Mojang.
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="tabinfo w-tab-pane" data-w-tab="Tab 6">
+                              <div class="tabcontainer w-clearfix">
+                                <div class="tabimg"><img sizes="(max-width: 479px) 97vw, 45vw" src="images/skill_3d_modeling.jpg" srcset="images/skill_3d_modeling-p-500x334.jpg 500w, images/skill_3d_modeling-p-800x534.jpg 800w, images/skill_3d_modeling-p-1080x720.jpg 1080w, images/skill_3d_modeling.jpg 1280w" width="500">
+                                </div><img class="workimg" src="images/help.png">
+                                <p class="skilldescription"><span class = "skillWord yellow">3D MODELING</span> means designing three-dimensional shapes on a digital interface. At CAMP/pixel, campers use Computer-Aided Design (CAD) software and spacial thinking to create models for projects made with 3D printers or 3D video-game design engines.</p>
+                                <p class="skillquote">"Application of CAD includes interior design, mechanics, engineering, electronics, architecture, animation and modeling. In addition to this, CAD has created a number of new approaches in diverse industries; this is especially noticeable in the fashion industry." -Frank Thompson (<a href = "http://inspirationfeed.com/articles/design-articles/application-of-computer-aided-designs/" target = "blank">source</a>)</p>
+                                <div class="tabtext w-clearfix"><img class="workimg" src="images/work.png">
+                                  <p class="skilldescription">Electrical engineers work with all kinds of electronic devices, from the smallest pocket devices to large supercomputers.</p>
+                                </div>
+                              </div>
+                              <div class="skilltopics yellow">
+                                <img src="images/skill_3d.png" class="skillTopicImage">
+                                <h2 class="topicsheader">Camp Topics offered</h2>
+                                <div id="topicsTable">
+                                  <div class="topic left" id="topic12">
+                                    <a href="topic.html#FASHIONdesign">
+                                    <div class="topicsTitle">
+                                      FASHION/design
+                                    </div>
+                                    <div class="topicsPicture"> 
+                                      <img src="images/topics_fashion_design.jpg" alt="Fashion Design">
+                                      <div class="topicsInformation" id="topicDescription12">
+                                        <div class="topicsDescription">
+                                          Create a 3D Digital Fashion Show / Prototype Fashion Designs
+                                          <div class = "iconsContainer">
+                                            <img src = "images/skill_digitalmusic.png" class = "topicsIcon">
+                                            <img src = "images/skill_3d.png" class = "topicsIcon">
+                                          </div>
+                                          <div class="topicDates">
+                                            Brooklyn (7 - 9), TriBeCa (7 - 9), UES (7 - 9) 
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    </a>
+                                    <div class="topicsSignUp">
+                                      <a href="topic.html#FASHIONdesign">MORE INFO</a>
+                                      <a href="https://hq.pixelacademy.org/tickets/camp-pixel/index">SIGN UP</a>
+                                    </div>
+                                  </div>
+                                  <div class="topic" id="topic06">
+                                    <a href="topic.html#MINECRAFTdesign">
+                                    <div class="topicsTitle">
+                                      <div class="newTopic">
+                                        NEW
+                                      </div>
+                                      MINECRAFT/design
+                                    </div>
+                                    <div class="topicsPicture"> 
+                                      <img src="images/topics_minecraft_design.png" alt="Minecraft Design">
+                                      <div class="topicsInformation" id="topicDescription06">
+                                        <div class="topicsDescription">
+                                          Code in Minecraft / Become an Architect of the Future 
+                                          <div class = "iconsContainer">
+                                            <img src = "images/skill_coding.png" class = "topicsIcon">
+                                            <img src = "images/skill_minecraft.png" class = "topicsIcon">
+                                            <img src = "images/skill_3d.png" class = "topicsIcon">
+                                          </div>
+                                          <div class="topicDates">
+                                            Brooklyn (7 - 9), TriBeCa (7 - 9), UES (7 - 9) 
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    </a>
+                                    <div class="topicsSignUp">
+                                      <a href="topic.html#MINECRAFTdesign">MORE INFO</a>
+                                      <a href="https://hq.pixelacademy.org/tickets/camp-pixel/index">SIGN UP</a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="tabinfo w-tab-pane" data-w-tab="Tab 7">
+                              <div class="tabcontainer w-clearfix">
+                                <div class="tabimg"><img sizes="(max-width: 479px) 97vw, 45vw" src="images/skill_coding.jpg" srcset="images/skill_coding-p-500x334.jpg 500w, images/skill_coding-p-800x534.jpg 800w, images/skill_coding-p-1080x720.jpg 1080w, images/skill_3d_modeling.jpg 1280w" width="500">
+                                </div><img class="workimg" src="images/help.png">
+                                <p class="skilldescription"><span class = "skillWord orange">CODING</span> is the way we communicate with computers. At CAMP/pixel, campers can learn common, transferrable coding languages such as Java, Lua, C+, HTML, and CSS.</p>
+                                <p class="skillquote">"I think everybody in this country should learn how to program a computer because it teaches you how to think." -Steve Jobs</p>
+                                <div class="tabtext w-clearfix"><img class="workimg" src="images/work.png">
+                                  <p class="skilldescription">Coding skills are used to to develop video games, mobile apps, and crazy tech innovation like the Google Self-Driving Car Project.</p>
+                                </div>
+                              </div>
+                              <div class="skilltopics orange">
+                                <img src="images/skill_coding.png" class="skillTopicImage">
+                                <h2 class="topicsheader">Camp Topics offered</h2>
+                                <div id="topicsTable">
+                                  <div class="topic left" id="topic01">
+                                    <a href="topic.html#APPcoding">
+                                    <div class="topicsTitle">
+                                      <div class="newTopic">
+                                        NEW
+                                      </div>
+                                      APP/coding
+                                    </div>
+                                    <div class="topicsPicture"> 
+                                      <img src="images/topics_app_coding.jpg" alt="App Coding">
+                                      <div class="topicsInformation" id="topicDescription01">
+                                        <div class="topicsDescription">
+                                          Code a Mobile Application / Laser-Cut a Custom Phone Case 
+                                          <div class = "iconsContainer">
+                                            <img src = "images/skill_coding.png" class = "topicsIcon">
+                                            <img src = "images/skill_lasercutting.png" class = "topicsIcon">
+                                          </div>
+                                          <div class="topicDates">
+                                            Brooklyn (9 - 14), TriBeCa (7 - 11), UES (9 - 11)
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    </a>
+                                    <div class="topicsSignUp">
+                                      <a href="topic.html#APPcoding">MORE INFO</a>
+                                      <a href="https://hq.pixelacademy.org/tickets/camp-pixel/index">SIGN UP</a>
+                                    </div>
+                                  </div>
+                                  <div class="topic" id="topic06">
+                                    <a href="topic.html#MINECRAFTdesign">
+                                    <div class="topicsTitle">
+                                      <div class="newTopic">
+                                        NEW
+                                      </div>
+                                      MINECRAFT/design
+                                    </div>
+                                    <div class="topicsPicture"> 
+                                      <img src="images/topics_minecraft_design.png" alt="Minecraft Design">
+                                      <div class="topicsInformation" id="topicDescription06">
+                                        <div class="topicsDescription">
+                                          Code in Minecraft / Become an Architect of the Future 
+                                          <div class = "iconsContainer">
+                                            <img src = "images/skill_coding.png" class = "topicsIcon">
+                                            <img src = "images/skill_minecraft.png" class = "topicsIcon">
+                                            <img src = "images/skill_3d.png" class = "topicsIcon">
+                                          </div>
+                                          <div class="topicDates">
+                                            Brooklyn (7 - 9), TriBeCa (7 - 9), UES (7 - 9) 
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    </a>
+                                    <div class="topicsSignUp">
+                                      <a href="topic.html#MINECRAFTdesign">MORE INFO</a>
+                                      <a href="https://hq.pixelacademy.org/tickets/camp-pixel/index">SIGN UP</a>
+                                    </div>
+                                  </div>
+                                  <div class="topic left" id="topic07">
+                                    <a href="topic.html#MINECRAFTcoding">
+                                    <div class="topicsTitle">
+                                      MINECRAFT/coding
+                                    </div>
+                                    <div class="topicsPicture"> 
+                                      <img src="images/topics_minecraft_coding.jpg" alt="Minecraft Coding">
+                                      <div class="topicsInformation" id="topicDescription07">
+                                        <div class="topicsDescription">
+                                          Program a Minecraft Mod / Connect an Arduino Controller 
+                                          <div class = "iconsContainer">
+                                            <img src = "images/skill_minecraft.png" class = "topicsIcon">
+                                            <img src = "images/skill_coding.png" class = "topicsIcon">
+                                          </div>
+                                          <div class="topicDates">
+                                            Brooklyn (7 - 11), TriBeCa (7 - 11), UES (7 - 11)
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    </a>
+                                    <div class="topicsSignUp">
+                                      <a href="topic.html#MINECRAFTcoding">MORE INFO</a>
+                                      <a href="https://hq.pixelacademy.org/tickets/camp-pixel/index">SIGN UP</a>
+                                    </div>
+                                  </div>
+                                  <div class="topic" id="topic08">
+                                    <a href="topic.html#MINECRAFTcodingplus">
+                                    <div class="topicsTitle">
+                                      MINECRAFT/coding+
+                                    </div>
+                                    <div class="topicsPicture"> 
+                                      <img src="images/topics_minecraft_coding_plus.jpg" alt="Minecraft Coding Plus">
+                                      <div class="topicsInformation" id="topicDescription08">
+                                        <div class="topicsDescription">
+                                           Program an Advanced Minecraft Mod / Connect an Arduino Controller
+                                          <div class = "iconsContainer">
+                                            <img src = "images/skill_minecraft.png" class = "topicsIcon">
+                                            <img src = "images/skill_coding.png" class = "topicsIcon">
+                                          </div>
+                                          <div class="topicDates">
+                                            Brooklyn (9 - 11), TriBeCa (9 - 11), UES (9 - 11) 
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    </a>
+                                    <div class="topicsSignUp">
+                                      <a href="topic.html#MINECRAFTcodingplus">MORE INFO</a>
+                                      <a href="https://hq.pixelacademy.org/tickets/camp-pixel/index">SIGN UP</a>
+                                    </div>
+                                  </div>
+                                  <div class="fineprint" style="font-size:12px;padding-bottom: 15px;">
+                                    "Minecraft" is a trademark of Mojang Synergies AB. Pixel Academy is in no way affiliated with or endorsed by Mojang.
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="tabinfo w--tab-active w-tab-pane" data-w-tab="Tab 8">
+                              <div class="tabcontainer w-clearfix">
+                                <div class="tabimg"><img sizes="(max-width: 479px) 97vw, 45vw" src="images/skill_game_design.jpg" srcset="images/skill_game_design-p-500x334.jpg 500w, images/skill_game_design-p-800x534.jpg 800w, images/skill_game_design-p-1080x720.jpg 1080w, images/skill_game_design.jpg 1280w" width="500">
+                                </div><img class="workimg" src="images/help.png">
+                                <p class="skilldescription"><span class = "skillWord red">GAME DESIGN</span> combines storytelling, rulemaking, visual aesthetics, and interactive experience. At CAMP/pixel, campers learn to develop with industry-standard game engines, visual scripting or real code, and the fundamentals of game design.</p>
+                                <p class="skillquote">"A game is a series of interesting choices." -Sid Meier</p>
+                                <div class="tabtext w-clearfix"><img class="workimg" src="images/work.png">
+                                  <p class="skilldescription">Outside of video games, game design elements can be seen everywhere from user experience to social media.</p>
+                                </div>
+                              </div>
+                              <div class="skilltopics red">
+                                <img src="images/skill_gamedesign.png" class="skillTopicImage">
+                                <h2 class="topicsheader">Camp Topics offered</h2>
+                                <div id = "topicsTable">
+                                  <div class="topic left" id="topic05">
+                                    <a href="topic.html#FUTUREgaming">
+                                    <div class="topicsTitle">
+                                      <div class="newTopic">
+                                        NEW
+                                      </div>
+                                      FUTURE/gaming
+                                    </div>
+                                    <div class="topicsPicture"> 
+                                      <img src="images/topics_future_gaming.jpg" alt="Future Gaming">
+                                      <div class="topicsInformation" id="topicDescription05">
+                                        <div class="topicsDescription">
+                                          Design a 3D Video Game / Create a Multi-Dimensional Volumetric Experience 
+                                          <div class = "iconsContainer">
+                                            <img src = "images/skill_gamedesign.png" class = "topicsIcon">
+                                            <img src = "images/skill_vr.png" class = "topicsIcon">
+                                          </div>
+                                          <div class="topicDates">
+                                            Brooklyn (7 - 11), UES (7 - 11)
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    </a>
+                                    <div class="topicsSignUp">
+                                      <a href="topic.html#FUTUREgaming">MORE INFO</a>
+                                      <a href="https://hq.pixelacademy.org/tickets/camp-pixel/index">SIGN UP</a>
+                                    </div>
+                                  </div>
+                                  <div class="topic" id="topic13">
+                                    <a href="topic.html#ARCADEdesign">
+                                    <div class="topicsTitle">
+                                      ARCADE/design
+                                    </div>
+                                    <div class="topicsPicture"> 
+                                      <img src="images/topics_arcade_design.jpg" alt="Arcade Design">
+                                      <div class="topicsInformation" id="topicDescription10">
+                                        <div class="topicsDescription">
+                                          Develop an arcade game / Create a video game controller 
+                                          <div class = "iconsContainer">
+                                            <img src = "images/skill_gamedesign.png" class = "topicsIcon">
+                                            <img src = "images/skill_lasercutting.png" class = "topicsIcon">
+                                            <img src = "images/skill_electronics.png" class = "topicsIcon">
+                                          </div>
+                                          <div class="topicDates">
+                                            Brooklyn (9 - 11), TriBeCa (7 - 11), UES (9 - 11) 
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    </a>
+                                    <div class="topicsSignUp">
+                                      <a href="topic.html#ARCADEdesign">MORE INFO</a>
+                                      <a href="https://hq.pixelacademy.org/tickets/camp-pixel/index">SIGN UP</a>
+                                    </div>
+                                  </div>
+                                  <div class="topic left" id="topic10">
+                                    <a href="topic.html#VRdesign" alt="VR Design">
+                                    <div class="topicsTitle">
+                                      VR/design
+                                    </div>
+                                    <div class="topicsPicture"> 
+                                      <img src="images/topics_vr_design.jpg">
+                                      <div class="topicsInformation" id="topicDescription10">
+                                        <div class="topicsDescription">
+                                          Make a 3D Video Game for Virtual Reality / Customize a Cardboard Headset 
+                                          <div class = "iconsContainer">
+                                            <img src = "images/skill_gamedesign.png" class = "topicsIcon">
+                                            <img src = "images/skill_vr.png" class = "topicsIcon">
+                                          </div>
+                                          <div class="topicDates">
+                                            Brooklyn (9 - 14), TriBeCa (9 - 11), UES (9 - 11) 
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    </a>
+                                    <div class="topicsSignUp">
+                                      <a href="topic.html#VRdesign">MORE INFO</a>
+                                      <a href="https://hq.pixelacademy.org/tickets/camp-pixel/index">SIGN UP</a>
+                                    </div>
+                                  </div>
+                                  <div class="topic" id="topic04">
+                                    <a href="topic.html#FLIGHTdesign">
+                                    <div class="topicsTitle">
+                                      FLIGHT/design
+                                    </div>
+                                    <div class="topicsPicture"> 
+                                      <img src="images/topics_flight_design.jpg" alt="Flight Design">
+                                      <div class="topicsInformation" id="topicDescription04">
+                                        <div class="topicsDescription">
+                                          Develop a 3D Video Game / Laser-cut a Model Rocket
+                                          <div class = "iconsContainer">
+                                            <img src = "images/skill_gamedesign.png" class = "topicsIcon">
+                                            <img src = "images/skill_lasercutting.png" class = "topicsIcon">
+                                          </div>
+                                          <div class="topicDates">
+                                            Brooklyn (7 - 9), TriBeCa (7 - 11), UES (7 - 9) 
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    </a>
+                                    <div class="topicsSignUp">
+                                      <a href="topic.html#FLIGHTdesign">MORE INFO</a>
+                                      <a href="https://hq.pixelacademy.org/tickets/camp-pixel/index">SIGN UP</a>
+                                    </div>
+                                  </div>
+                                  <div class="topic" id="topic09">
+                                    <a href="topic.html#MINECRAFTcircuits">
+                                    <div class="topicsTitle">
+                                      <div class="newTopic">
+                                        NEW
+                                      </div>
+                                      MINECRAFT/circuits
+                                    </div>
+                                    <div class="topicsPicture"> 
+                                      <img src="images/topics_minecraft_circuits.jpg" alt="Minecraft Circuits">
+                                      <div class="topicsInformation" id="topicDescription09">
+                                        <div class="topicsDescription">
+                                          Design a Circuit in Minecraft / Create with littleBits and Minecraft 
+                                          <div class = "iconsContainer">
+                                            <img src = "images/skill_gamedesign.png" class = "topicsIcon">
+                                            <img src = "images/skill_minecraft.png" class = "topicsIcon">
+                                            <img src = "images/skill_electronics.png" class = "topicsIcon">
+                                          </div>
+                                          <div class="topicDates">
+                                            Brooklyn (7 - 11), TriBeCa (7 - 11), UES (7 - 11) 
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    </a>
+                                    <div class="topicsSignUp">
+                                      <a href="topic.html#MINECRAFTcircuits">MORE INFO</a>
+                                      <a href="https://hq.pixelacademy.org/tickets/camp-pixel/index">SIGN UP</a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div><!--End sectionContent div-->
+            
+                    <div id="visitCTA">
+                        <a href="topics.html">
+                            <div id="visitCTA1">
+                                VIEW ALL TOPICS
+                            </div>
+                        </a>
+                        <a href="https://hq.pixelacademy.org/tickets/camp-pixel">
+                            <div id="visitCTA2">
+                                SIGN UP
+                            </div>
+                        </a>
+                    </div>
+                </div><!--End "section" div-->
+            </div><!-- End Content div-->
+        </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js" type="text/javascript"></script>
+    <script src="webflow.js" type="text/javascript"></script>
+    </body>

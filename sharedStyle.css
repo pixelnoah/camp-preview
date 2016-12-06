@@ -1,0 +1,223 @@
+/* GENERAL STYLE */
+
+body{
+  min-width: 320px;
+}
+
+@font-face {
+  font-family: 'Header';
+  src: url("fonts/GlacialIndifference-Bold.otf"); }
+@font-face {
+  font-family: 'Subheader';
+  src: url("fonts/GlacialIndifference-Regular.otf"); }
+@font-face {
+  font-family: 'Body';
+  src: url("fonts/Gen-Light.otf"); }
+@font-face {
+  font-family: 'Special';
+  src: url("fonts/AHAMONO-Regular.otf"); }
+body {
+  font-family: "Body";
+  background: #ffffff;
+  color: #1b2325; }
+#wrapper {
+min-height: 100%;
+  position: relative; }f
+#content {
+  padding-bottom: 200px; }
+a {
+  text-decoration: none;
+  color: #ff017e;
+  cursor: pointer !important; 
+}
+a:hover {
+  color: #e54785; 
+}
+.italics {
+  font-size: 11px !important;
+  line-height: 12px !important;
+  font-style: italic; }
+.thisPageLink {
+  color: #ff017e !important;
+}
+#hiddenLinks{
+    text-decoration: none;
+    color: black !important;
+}
+#bottomBar #phoneNumber {
+  position: absolute;
+  background-color: #313743;
+  bottom: 0px;
+  left: 0px;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, .3);
+  height: 30px;
+  width: 100%;
+  font-family: 'Subheader';
+  color: white;
+}
+
+#bottomBar #phone{
+  line-height: 30px;
+  font-size: 14px;
+  display: inline-block;
+  float: left;
+  margin-left: 75px;
+}
+/* SECTION */
+.section {
+  position: relative;
+  top: 60px;
+  left: 0px;
+  right: 0px;
+  background-size: cover;
+  background-position: center top; 
+}
+.section .sectionBlurb {
+  margin-bottom: 50px;
+  font-family: "Body";
+  line-height: 24px;
+  font-size: 16px; 
+}
+.mainSectionHeader {
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, .3);
+  background: white;
+  height: 125px;
+  margin-bottom: 25px;
+  border-bottom: 20px solid #e54785;
+  clear:both;
+}
+.section .mainSectionHeader .mainSectionImageContainer {
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+}
+.section .mainSectionHeader .mainSectionImageContainer .mainSectionImage {
+  position: absolute;
+  right: 0px;
+  height: 125px;
+  width: 60%;
+  background-size: cover;
+  background-position: center; 
+}
+.section .mainSectionHeader .mainSectionImageContainer .mainSectionImageSlash {
+  height: 125px;
+  width: 135px;
+  background: url("images/slash_2.png");
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  left: 40%; 
+}
+.section .mainSectionHeader .mainSectionText {
+  font-family: "Header";
+  height: 125px;
+  line-height: 125px;
+  z-index: 2;
+  width: 40%;
+  background-color: #aaa;
+  background-image: url("images/crumples.png");
+  display: inline-block;
+  color: #eee;
+  font-size: 36px;
+  font-weight: bold;
+  position: absolute; 
+}
+.section .mainSectionHeader .mainSectionText span {
+  padding-left: 75px; 
+}
+.section .sectionContent {
+  padding: 25px 75px; 
+}
+
+/* BOTTOM BAR */
+#bottomBar {
+  background: #515763;
+  bottom: -200px !important;
+  position: absolute;
+  z-index: 20;
+  left: 0px;
+  right: 0px;
+  height: 160px;
+  padding: 0px 75px 0px 55px;
+}
+#bottomBarContainer {
+  height: 100px;
+  position: relative;
+  top: 16px; 
+}
+#bottomBarCampLogo {
+  background-image: url("images/bottom_bar_camp_logo.png");
+  background-size: cover;
+  float: left;
+  width: 106.66667px;
+  height: 100%;
+  margin-right: 10px;
+}
+#bottomBarPixelLogo {
+  background-image: url("images/bottom_bar_pixel_logo.png");
+  background-size: cover;
+  float: left;
+  width: 106.66667px;
+  height: 100%;
+  margin-right: 25px; 
+}
+#bottomBarLinks {
+  display: inline-block;
+  /*width: 140px;*/
+  height: 100%;
+  font-family: "Subheader";
+  padding: 8px;
+}
+#bottomBarLinks #mainLinks {
+  padding-bottom: 8px;
+  /*border-bottom: 5px solid #e54785;*/
+  float:left;
+  margin-right: 30px;
+  }
+#bottomBarLinks #aboutLinks {
+  /*padding-top: 8px; */
+  float: left;
+}
+#bottomBarLinks a {
+  text-decoration: none;
+  display: block;
+  font-size: 12px;
+  line-height: 15px;
+  color: white; 
+}
+#bottomBarLinks a:hover {
+  color: #ccc;
+  cursor: pointer; 
+}
+#bottomBarLogos{
+  position: relative;
+  top: -10px;
+  width: 250px;
+  display: inline-block;
+}
+#bottomBarButtons{
+  position: absolute;
+  right: 75px;
+  top: 26.66667px;
+}
+#bottomBarSignUp {
+  font-size: 18px;
+  height: 45px;
+  line-height: 45px;
+  padding: 0 20px;
+  font-family: "Header";
+  text-align: center;
+  color: white;
+  background-color: #ff017e;
+  margin-bottom: 15px;
+  cursor: pointer; 
+}
+#bottomBarSignUp:hover {
+  cursor: pointer;
+  background-color: #e54785;
+  color: #fff; 
+}
+
+
+
+

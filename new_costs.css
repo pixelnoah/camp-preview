@@ -1,0 +1,374 @@
+#costSectionHeader .mainSectionImage {
+  background-image: url("images/header-cost.jpg") !important;
+  background-position: left 85%;}
+
+.costs_column{
+    width: 49%;
+    display: inline-block;
+    margin-right: 1%;
+}
+
+.costRight {
+    float: right;
+    width: 49%;
+    margin-left: 1%;
+}
+.fullcostSection, .affirmSection {
+}
+
+
+.orDivider {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-family: "Subheader";
+}
+.costHeader{
+    color: black;
+    font-family: "Header";
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.price {
+    margin-bottom: 5px;
+    color: #59a4a3;
+    font-family: "Special";
+    font-size: 24px;
+   
+}
+
+.priceDetails {
+    font-size: 16px;
+    font-family: "Body";
+    line-height: 20px;
+    margin-bottom: 5px;
+}
+.priceDetails-label{
+    margin-top: 20px;
+    color: #59a4a3;
+    font-family: "Subheader";
+    font-size: 18px;
+    display: inline-block;
+}
+.priceDisclaimer {
+  font-family: "Body";
+  color: #666;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+hr.costDivider {
+  width: 50%;
+  margin-bottom: 40px;
+  border: 0; 
+  height: 1px; 
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.affirmLogo {
+    width: 80px;
+}
+
+.costExtras{
+  margin-top: 20px;
+}
+
+#costButtons{
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+}
+#affirmButton, .buyButton{
+    background-color: #59a4a3;
+    color: White;
+    font-family: "Header";
+    font-size: 18px;
+    padding: 5px 0px;
+    width: 40%;
+    border-style: none;
+    margin: 5px 0px;
+    display: inline-block;
+    cursor: pointer;
+}
+#affirmButton {
+    margin-right: 20px;
+}
+#affirmButton:hover, .buyButton:hover{
+    background-color: gray;
+}
+.borderColor {
+    top: 0;
+    width: 100%;
+    height: 30px;
+     background-color: #59a4a3;
+}
+.modal {
+    display: none;
+    z-index: 12;
+    top: 0;
+    left: 0;
+    position: fixed;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    /* Black w/ opacity */
+    text-align: center;
+}
+#costSection {
+    overflow: auto;
+    overflow-x: hidden;
+    max-width: 100%;
+}
+.popup-content{
+    margin: 100px auto 0;
+    display: block;
+    border-radius: 10px;
+    background-color:#f9f9f9;
+    text-align: center;
+    overflow: auto;
+    z-index: 13;
+    width: 50%;}
+.content {
+    padding: 50px;}
+.close {
+    float: right;
+    font-size: 28px;
+    margin-right: 20px;
+    color: darkgray;}
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;}
+.affirmTitle {
+    font-family: "Header";
+    font-size: 40px;
+    margin-bottom: 25px;}
+.affirmBlurb {
+    margin-bottom: 30px;}
+#affirmDetails {
+    display:inline-block;
+    margin-bottom: 30px;}
+.cartColumn, .financeColumn, .payColumn {
+    text-align: center;
+    float: left;
+    height: auto;
+    display: block;}
+.cartColumn, .financeColumn{
+    margin-right: 40px;}
+.affirm-icon {
+    max-height: 100px;
+    max-width: 100px;}
+.affirm-label {
+    font-size: 12px;
+    font-family: "body";
+}
+
+.affirmLinks {
+    margin-bottom: 25px;}
+.learnMore, .buyTickets {
+    border-style: none;
+    background-color:#ff017e;
+    color: white;
+    font-family: "Header";
+    font-size:20px;
+    cursor: pointer;
+    text-align: center;
+    padding: 15px 20px;
+    
+    display: inline-block;}
+.button-space{
+    margin:10px;
+    display: inline-block;
+}
+.costColumns {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+.costNewColumn {
+  display: inline-block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: center;
+  width: 40% !important;
+  float: left;
+}
+.costCallout {
+  height: 30px;
+  line-height: 30px;
+  background-color: yellow;
+  font-family: "Special";
+  border-radius: 10px 10px 0px 0px;
+}
+.costNewHeader {
+  background: #7fcca8;
+  height: 35px;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  font-family: "Header";
+  padding-top: 15px; 
+}
+.costNewDescription {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.costStrike {
+  margin-top: 0px;
+  color: gray;
+  font-family: "Special";
+  font-size: 20px;
+}
+.discountFeature {
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 0px;
+  margin-bottom: 30px;
+  padding: 7px;
+  background:#7fcca8;
+  border-radius: 5px;
+  color: white;
+  font-family: "Special";
+}
+.affirmPromotion{
+  width: auto;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  padding: 7px;
+  background:#7fcca8;
+  border-radius: 5px;
+  color: yellow;
+  font-family: "Special";  
+}
+.discountFeatureText {
+  padding: 5px;
+}
+.discountFeaturePrice {
+  background: white;
+  color: #59a4a3;
+  font-family: "Special";
+  font-size: 24px;
+  padding: 10px;
+}
+.priceDisclaimer2{
+  color: gray;
+  font-size: 10px;
+  font-style: italic;
+  margin-top: 10px;
+}
+.guaranteeContainer{
+  text-align: center;
+  display: block;
+  margin-top: 20px;
+  clear:both;
+  overflow: auto;
+}
+.guarantee-img{
+  width: 30%;
+  min-width: 100px;
+  max-width: 200px; 
+}
+/*slideshow css*/
+
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 10px 0px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  background-color:#7fcca8;
+  margin-bottom: 0px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .slprev, .slnext,.text {font-size: 11px}
+}
+
+@media screen and (max-width: 690px) {
+   .costs_column, .costRight {
+        float: none;
+        width: 100%;
+    }
+}
